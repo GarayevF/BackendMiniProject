@@ -7,7 +7,6 @@ namespace Pustok.Models
     {
         [StringLength(255)]
         public string Name { get; set; }
-        [StringLength(255)]
         public bool IsMain { get; set; }
         public int? ParentId { get; set; }
         public Category? Parent { get; set; }

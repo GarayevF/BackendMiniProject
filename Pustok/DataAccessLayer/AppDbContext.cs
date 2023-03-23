@@ -26,5 +26,6 @@ namespace Pustok.DataAccessLayer
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<Blog> Blogs { get; set; }
+        public DbSet<Deal> Deals { get; set; }
     }
 }

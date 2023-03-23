@@ -17,6 +17,7 @@ namespace Pustok.Controllers
 
         public async Task<IActionResult> Index()
         {
+            //ViewBag.Authors = await _context.Tags.Where(c => c.IsDeleted == false).ToListAsync();
 
             HomeVM homeVM = new HomeVM
             {
@@ -24,7 +25,8 @@ namespace Pustok.Controllers
                 Categories = await _context.Categories.Where(c => c.IsDeleted == false && c.IsMain).ToListAsync(),
                 MostViewed = await _context.Products.Where(c => c.IsDeleted == false && c.IsMostViewed).ToListAsync(),
                 NewArrival = await _context.Products.Where(c => c.IsDeleted == false && c.IsNewArrival).ToListAsync(),
-                Featured = await _context.Products.Where(c => c.IsDeleted == false && c.IsFeatured).ToListAsync()
+                Featured = await _context.Products.Where(c => c.IsDeleted == false && c.IsFeatured).ToListAsync(),
+                Deals = await _context.Deals.Where(c => c.IsDeleted == false).ToListAsync()
             };
 
             return View(homeVM);
