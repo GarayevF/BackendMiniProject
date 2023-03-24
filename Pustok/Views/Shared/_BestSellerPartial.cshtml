@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Product>
+
+<div class="row align-items-center">
+    <div class="col-lg-12 col-md-12">
+        <div class="sb-slick-slider product-slider product-list-slider multiple-row slider-border-multiple-row"
+             data-slick-setting='{
+                                "autoplay": false,
+                                "autoplaySpeed": 8000,
+                                "slidesToShow":2,
+                                "rows":2,
+                                "dots":true
+                            }' data-slick-responsive='[
+                                {"breakpoint":1200, "settings": {"slidesToShow": 1} },
+                                {"breakpoint":992, "settings": {"slidesToShow": 1} },
+                                {"breakpoint":768, "settings": {"slidesToShow": 1} },
+                                {"breakpoint":575, "settings": {"slidesToShow": 1} },
+                                {"breakpoint":490, "settings": {"slidesToShow": 1} }
+                            ]'>
+            @foreach (Product product in Model.Take(20))
+            {
+            <div class="single-slide">
+                <div class="product-card card-style-list">
+                    <div class="card-image">
+                        <img src="~/assets/image/products/@product.MainImage" alt="">
+                    </div>
+                    <div class="product-card--body">
+                        <div class="product-header">
+                                @if (product != null)
+                                {
+                                    @if (product.ProductAuthors != null && product.ProductAuthors.Count() > 0)
+                                    {
+                                        <a href="#" class="author">@string.Join(", ", product?.ProductAuthors?.Select(x=>x.Author.Name))</a>
+                                    }
+                                }
+                            <h3>
+                                <a href="product-details.html">
+                                    @product.Title
+                                </a>
+                            </h3>
+                        </div>
+                            <div class="price-block">
+                                <span class="price">£@(product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price)</span>
+                                @if (product.DiscountedPrice > 0)
+                                {
+                                    <del class="price-old">£@product.Price</del>
+                                    <span class="price-discount">@((100 - 100 * (product.DiscountedPrice / product.Price)).ToString("N2"))%</span>
+                                }
+                            </div>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>

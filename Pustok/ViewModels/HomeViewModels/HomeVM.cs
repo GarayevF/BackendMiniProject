@@ -10,5 +10,6 @@ namespace Pustok.ViewModels.HomeViewModels
         public IEnumerable<Product> MostViewed { get; set; }
         public IEnumerable<Product> Featured { get; set; }
         public IEnumerable<Deal> Deals { get; set; }
+        public IEnumerable<Product> BestSellers { get; set; }
     }
 }

@@ -15,6 +15,7 @@ namespace Pustok.Models
         [Column(TypeName = "money")]
         public double ExTax { get; set; }
         public int Count { get; set; }
+        public int TotalSold { get; set; }
         [StringLength(1000)]
         public string? Description { get; set; }
         [StringLength(4)]

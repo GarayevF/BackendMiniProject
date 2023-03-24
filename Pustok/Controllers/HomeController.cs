@@ -23,10 +23,17 @@ namespace Pustok.Controllers
             {
                 Sliders = await _context.Sliders.Where(s => s.IsDeleted == false).ToListAsync(),
                 Categories = await _context.Categories.Where(c => c.IsDeleted == false && c.IsMain).ToListAsync(),
-                MostViewed = await _context.Products.Where(c => c.IsDeleted == false && c.IsMostViewed).ToListAsync(),
-                NewArrival = await _context.Products.Where(c => c.IsDeleted == false && c.IsNewArrival).ToListAsync(),
-                Featured = await _context.Products.Where(c => c.IsDeleted == false && c.IsFeatured).ToListAsync(),
-                Deals = await _context.Deals.Where(c => c.IsDeleted == false).ToListAsync()
+                MostViewed = await _context.Products.Where(c => c.IsDeleted == false && c.IsMostViewed)
+                .Include(p => p.ProductAuthors.Where(a => a.IsDeleted == false))
+                .ThenInclude(pa => pa.Author).Where(a => a.IsDeleted == false).ToListAsync(),
+                NewArrival = await _context.Products.Where(c => c.IsDeleted == false && c.IsNewArrival)
+                .Include(p => p.ProductAuthors.Where(a => a.IsDeleted == false))
+                .ThenInclude(pa => pa.Author).Where(a => a.IsDeleted == false).ToListAsync(),
+                Featured = await _context.Products.Where(c => c.IsDeleted == false && c.IsFeatured)
+                .Include(p => p.ProductAuthors.Where(a => a.IsDeleted == false))
+                .ThenInclude(pa => pa.Author).Where(a => a.IsDeleted == false).ToListAsync(),
+                Deals = await _context.Deals.Where(c => c.IsDeleted == false).ToListAsync(),
+                BestSellers = await _context.Products.Where(c => c.IsDeleted == false).OrderByDescending(a => a.TotalSold).ToListAsync(),
             };
 
             return View(homeVM);
