@@ -1,0 +1,58 @@
+﻿@model List<BasketVM>
+
+<div class="cart_area cart-area-padding">
+	<div class="container">
+		<div class="page-section-title">
+			<h1>Shopping Cart</h1>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<form action="#" class="">
+					<!-- Cart Table -->
+					<div class="cart-table table-responsive mb--40">
+						<table class="table">
+							<!-- Head Row -->
+							<thead>
+								<tr>
+									<th class="pro-remove"></th>
+									<th class="pro-thumbnail">Image</th>
+									<th class="pro-title">Product</th>
+									<th class="pro-price">Price</th>
+									<th class="pro-quantity">Quantity</th>
+									<th class="pro-subtotal">Total</th>
+								</tr>
+							</thead>
+							<tbody class="cart-main-checkoutpage">
+								<!-- Product Row -->
+								@foreach (BasketVM basketVM in Model)
+								{
+									<tr>
+										<td class="pro-remove">
+											<a asp-action="removebasket" asp-controller="basket" asp-route-id="@basketVM.Id" class="basketRemover"><i class="far fa-trash-alt"></i></a>
+										</td>
+										<td class="pro-thumbnail">
+											<a href="#">
+												<img src="~/assets/image/products/@basketVM.Image" alt="Product">
+											</a>
+										</td>
+										<td class="pro-title"><a href="#">@basketVM.Title</a></td>
+										<td class="pro-price"><span>$@basketVM.Price</span></td>
+										<td class="pro-quantity">
+											<div class="pro-qty">
+												<div class="count-input-block">
+													<input type="number" class="form-control text-center"
+													   value="@basketVM.Count">
+												</div>
+											</div>
+										</td>
+										<td class="pro-subtotal"><span>$@(basketVM.Price * basketVM.Count)</span></td>
+									</tr>
+								}
+							</tbody>
+						</table>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Xpv29BeBhZNbyNU6heJ+Kz7slONhGVNjeafVS/hf/f0=",
+  "Hash": "t+TYAsFUWqpN9TuKq0DsTdKjmF+iNlfVSDbtnCGfVP4=",
   "Source": "Pustok",
   "BasePath": "_content/Pustok",
   "Mode": "Default",
@@ -1732,6 +1732,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\js\\custom.js"
+    },
+    {
+      "Identity": "C:\\Users\\Farid\\Desktop\\Pustok\\Pustok\\wwwroot\\assets\\js\\custom-2.js",
+      "SourceId": "Pustok",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Farid\\Desktop\\Pustok\\Pustok\\wwwroot\\",
+      "BasePath": "_content/Pustok",
+      "RelativePath": "assets/js/custom-2.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\custom-2.js"
     },
     {
       "Identity": "C:\\Users\\Farid\\Desktop\\Pustok\\Pustok\\wwwroot\\assets\\js\\plugins.js",

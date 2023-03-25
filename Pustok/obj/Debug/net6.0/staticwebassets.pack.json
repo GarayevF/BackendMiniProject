@@ -401,6 +401,10 @@
       "PackagePath": "staticwebassets\\assets\\js\\ajax-mail.js"
     },
     {
+      "Id": "C:\\Users\\Farid\\Desktop\\Pustok\\Pustok\\wwwroot\\assets\\js\\custom-2.js",
+      "PackagePath": "staticwebassets\\assets\\js\\custom-2.js"
+    },
+    {
       "Id": "C:\\Users\\Farid\\Desktop\\Pustok\\Pustok\\wwwroot\\assets\\js\\custom.js",
       "PackagePath": "staticwebassets\\assets\\js\\custom.js"
     },
