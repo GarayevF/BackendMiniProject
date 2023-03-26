@@ -160,6 +160,7 @@ namespace Pustok.Controllers
             basketVMs.Find(b => b.Id == id).Count += 1;
 
 
+
             cookie = JsonConvert.SerializeObject(basketVMs);
             HttpContext.Response.Cookies.Append("basket", cookie);
 
@@ -262,9 +263,6 @@ namespace Pustok.Controllers
 		}
 
 
-
-
-
 		public async Task<IActionResult> RemoveBasket(int? id)
         {
             if (id == null) return BadRequest();
@@ -285,16 +283,15 @@ namespace Pustok.Controllers
                     {
                         basketVMs.Find(b => b.Id == id).Count -= 1;
                     }
-                    else
-                    {
-                        basketVMs.Remove(basketVMs.FirstOrDefault(b => b.Id == id));
-                    }
+                    //else
+                    //{
+                    //    basketVMs.Remove(basketVMs.FirstOrDefault(b => b.Id == id));
+                    //}
 
                 }
                 else
                 {
                     return BadRequest();
-                    //basketVMs.Remove(new BasketVM { Id = (int)id, Count = 1 });
                 }
             }
 
@@ -316,6 +313,50 @@ namespace Pustok.Controllers
 
             return PartialView("_BasketCartPartial", basketVMs);
         }
+
+        public async Task<IActionResult> DeleteBasket(int? id)
+        {
+			if (id == null) return BadRequest();
+
+			if (!await _context.Products.AnyAsync(p => p.IsDeleted == false && p.Id == id)) return NotFound();
+
+			string cookie = HttpContext.Request.Cookies["basket"];
+
+			List<BasketVM> basketVMs = null;
+
+			if (!string.IsNullOrWhiteSpace(cookie))
+			{
+				basketVMs = JsonConvert.DeserializeObject<List<BasketVM>>(cookie);
+
+				if (basketVMs.Exists(p => p.Id == id))
+				{
+					basketVMs.Remove(basketVMs.FirstOrDefault(b => b.Id == id));
+
+				}
+				else
+				{
+					return BadRequest();
+				}
+			}
+
+			foreach (BasketVM basketVM in basketVMs)
+			{
+				Product product = await _context.Products.FirstOrDefaultAsync(p => p.IsDeleted == false && p.Id == basketVM.Id);
+
+				if (product != null)
+				{
+					basketVM.Title = product.Title;
+					basketVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
+					basketVM.Image = product.MainImage;
+					basketVM.ExTax = product.ExTax;
+				}
+			}
+
+			cookie = JsonConvert.SerializeObject(basketVMs);
+			HttpContext.Response.Cookies.Append("basket", cookie);
+
+			return PartialView("_BasketCartPartial", basketVMs);
+		}
 
         public async Task<IActionResult> GetBasket()
         {

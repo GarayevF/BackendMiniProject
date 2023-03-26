@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
-    console.log('kjdfhkjdsfh')
-    $(document).on('click', '.basketRemover, .addbasket', function (e) {
+    console.log(window.location.pathname)
+    $(document).on('click', '.basketRemover, .addbasket, .subbasket', function (e) {
         if ($(this).hasClass('basketRemover')) {
             e.preventDefault();
 
@@ -12,22 +12,16 @@
                 })
                 .then(data => {
                     $('.cart-dropdown-block').html(data)
-                    console.log(url.replace("removebasket/" + url.split('/')[url.split('/').length - 1], 'mainbasket'))
-                    fetch(url.replace("removebasket/" + url.split('/')[url.split('/').length - 1], 'mainbasket'))
-                        .then(res2 => {
-                            return res2.text()
-                        })
-                        .then(data2 => {
-                            $('.cart-main-checkoutpage').html(data2)
-                            console.log(url.replace("removebasket/" + url.split('/')[url.split('/').length - 1], 'MainBasketPrice'))
-                            fetch(url.replace("removebasket/" + url.split('/')[url.split('/').length - 1], 'MainBasketPrice'))
-                                .then(res3 => {
-                                    return res3.text()
-                                })
-                                .then(data3 => {
-                                    $('.checkout-price-div').html(data3)
-                                })
-                        })
+                    if (window.location.pathname.split('/')[1].toLowerCase() == 'basket') {
+                        fetch(url.replace("deletebasket/" + url.split('/')[url.split('/').length - 1], 'mainbasket'))
+                            .then(res2 => {
+                                return res2.text()
+                            })
+                            .then(data2 => {
+                                $('.cart-page-main-block').html(data2)
+                                refreshSlick();
+                            })
+                    }
                 })
         }
         else if ($(this).hasClass('addbasket')) {
@@ -40,7 +34,41 @@
                 })
                 .then(data => {
                     $('.cart-dropdown-block').html(data)
+                    if (window.location.pathname.split('/')[1].toLowerCase() == 'basket') {
+                        fetch(url.replace("addbasket/" + url.split('/')[url.split('/').length - 1], 'mainbasket'))
+                            .then(res2 => {
+                                return res2.text()
+                            })
+                            .then(data2 => {
+                                $('.cart-page-main-block').html(data2)
+                                refreshSlick();
+                            })
+                    }
                 })
+                
+        }
+        else if ($(this).hasClass('subbasket')) {
+            e.preventDefault();
+
+            let url = $(this).attr('href');
+            fetch(url)
+                .then(res => {
+                    return res.text()
+                })
+                .then(data => {
+                    $('.cart-dropdown-block').html(data)
+                    if (window.location.pathname.split('/')[1].toLowerCase() == 'basket') {
+                        fetch(url.replace("removebasket/" + url.split('/')[url.split('/').length - 1], 'mainbasket'))
+                            .then(res2 => {
+                                return res2.text()
+                            })
+                            .then(data2 => {
+                                $('.cart-page-main-block').html(data2)
+                                refreshSlick();
+                            })
+                    }
+                })
+
         }
     })
     .on('keyup', '.ProductCountInp', function (e) {
@@ -54,23 +82,36 @@
                 })
                 .then(data => {
                     $('.cart-dropdown-block').html(data)
-                    fetch("/basket/mainbasket/" + $(this).attr("data-id"))
-                        .then(res2 => {
-                            return res2.text()
-                        })
-                        .then(data2 => {
-                            $('.cart-main-checkoutpage').html(data2)
-                            fetch("/basket/MainBasketPrice/" + $(this).attr("data-id"))
-                                .then(res3 => {
-                                    return res3.text()
-                                })
-                                .then(data3 => {
-                                    $('.checkout-price-div').html(data3)
-                                })
-                        })
+                    if (window.location.pathname.split('/')[1].toLowerCase() === 'basket') {
+                        fetch("/basket/mainbasket/" + $(this).attr("data-id"))
+                            .then(res2 => {
+                                return res2.text()
+                            })
+                            .then(data2 => {
+                                $('.cart-page-main-block').html(data2)
+                                refreshSlick();
+                            })
+                    }
+                    
                 })
         }
         
     })
 
 })
+
+function refreshSlick() {
+    $('.sb-slick-slider').not('.slick-initialized').slick({
+        autoplay: true,
+        autoplaySpeed: 8000,
+        slidesToShow: 2,
+        arrows: false,
+        responsive: [
+            { "breakpoint": 992, "settings": { "slidesToShow": 2 } },
+            { "breakpoint": 768, "settings": { "slidesToShow": 3 } },
+            { "breakpoint": 575, "settings": { "slidesToShow": 2 } },
+            { "breakpoint": 480, "settings": { "slidesToShow": 1 } },
+            { "breakpoint": 320, "settings": { "slidesToShow": 1 } }
+        ]
+    });
+}

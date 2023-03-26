@@ -48,7 +48,7 @@
 										{
 											<tr>
 												<td class="pro-remove">
-													<a asp-action="removebasket" asp-controller="basket" asp-route-id="@basketVM.Id" class="basketRemover"><i class="far fa-trash-alt"></i></a>
+													<a asp-action="deletebasket" asp-controller="basket" asp-route-id="@basketVM.Id" class="basketRemover"><i class="far fa-trash-alt"></i></a>
 												</td>
 												<td class="pro-thumbnail">
 													<a href="#">
@@ -58,12 +58,16 @@
 												<td class="pro-title"><a href="#">@basketVM.Title</a></td>
 												<td class="pro-price"><span>$@basketVM.Price</span></td>
 												<td class="pro-quantity">
-													<div class="pro-qty">
-														<div class="count-input-block">
+													<div style="width: auto" class="pro-qty d-flex justify-content-around align-items-center">
+														<a asp-controller="basket" asp-action="removebasket" asp-route-id="@basketVM.Id" class="subbasket"><i class="fa-solid fa-minus"></i></a>
+														<div class="count-input-block ">
+															
 															<input type="number" class="form-control text-center ProductCountInp"
 														   data-id="@basketVM.Id"
 														   value="@basketVM.Count">
+															
 														</div>
+														<a asp-controller="basket" asp-action="addbasket" asp-route-id="@basketVM.Id" class="addbasket"><i class="fa-solid fa-plus"></i></a>
 													</div>
 												</td>
 												<td class="pro-subtotal"><span>$@(basketVM.Price * basketVM.Count)</span></td>
