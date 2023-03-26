@@ -21,54 +21,58 @@
 	<div class="cart_area cart-area-padding cart-main-checkoutpage">
 		<div class="container">
 			<div class="page-section-title">
-				<h1>Shopping Cart</h1>
+				<h1>Shopping Cart@((Model != null && Model.Count() > 0) ? "" : " is empty")</h1>
 			</div>
 			<div class="row">
 				<div class="col-12">
 					<form action="#" class="">
 						<!-- Cart Table -->
-						<div class="cart-table table-responsive mb--40">
-							<table class="table">
-								<!-- Head Row -->
-								<thead>
-									<tr>
-										<th class="pro-remove"></th>
-										<th class="pro-thumbnail">Image</th>
-										<th class="pro-title">Product</th>
-										<th class="pro-price">Price</th>
-										<th class="pro-quantity">Quantity</th>
-										<th class="pro-subtotal">Total</th>
-									</tr>
-								</thead>
-								<tbody>
-									<!-- Product Row -->
-									@foreach (BasketVM basketVM in Model)
-									{
+						@if (Model != null && Model.Count() > 0)
+						{
+							<div class="cart-table table-responsive mb--40">
+								<table class="table">
+									<!-- Head Row -->
+									<thead>
 										<tr>
-											<td class="pro-remove">
-												<a asp-action="removebasket" asp-controller="basket" asp-route-id="@basketVM.Id" class="basketRemover"><i class="far fa-trash-alt"></i></a>
-											</td>
-											<td class="pro-thumbnail">
-												<a href="#">
-													<img src="~/assets/image/products/@basketVM.Image" alt="Product">
-												</a>
-											</td>
-											<td class="pro-title"><a href="#">@basketVM.Title</a></td>
-											<td class="pro-price"><span>$@basketVM.Price</span></td>
-											<td class="pro-quantity">
-												<div class="pro-qty">
-													<div class="count-input-block">
-														<input type="number" class="form-control text-center"
-														   value="@basketVM.Count">
-													</div>
-												</div>
-											</td>
-											<td class="pro-subtotal"><span>$@(basketVM.Price*basketVM.Count)</span></td>
+											<th class="pro-remove"></th>
+											<th class="pro-thumbnail">Image</th>
+											<th class="pro-title">Product</th>
+											<th class="pro-price">Price</th>
+											<th class="pro-quantity">Quantity</th>
+											<th class="pro-subtotal">Total</th>
 										</tr>
-									}
-								</tbody>
-							</table>
-						</div>
+									</thead>
+									<tbody>
+										<!-- Product Row -->
+										@foreach (BasketVM basketVM in Model)
+										{
+											<tr>
+												<td class="pro-remove">
+													<a asp-action="removebasket" asp-controller="basket" asp-route-id="@basketVM.Id" class="basketRemover"><i class="far fa-trash-alt"></i></a>
+												</td>
+												<td class="pro-thumbnail">
+													<a href="#">
+														<img src="~/assets/image/products/@basketVM.Image" alt="Product">
+													</a>
+												</td>
+												<td class="pro-title"><a href="#">@basketVM.Title</a></td>
+												<td class="pro-price"><span>$@basketVM.Price</span></td>
+												<td class="pro-quantity">
+													<div class="pro-qty">
+														<div class="count-input-block">
+															<input type="number" class="form-control text-center ProductCountInp"
+														   data-id="@basketVM.Id"
+														   value="@basketVM.Count">
+														</div>
+													</div>
+												</td>
+												<td class="pro-subtotal"><span>$@(basketVM.Price * basketVM.Count)</span></td>
+											</tr>
+										}
+									</tbody>
+								</table>
+							</div>
+						}
 					</form>
 				</div>
 			</div>
@@ -77,7 +81,7 @@
 	<div class="cart-section-2">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 col-12 mb--30 mb-lg--0">
+				<div class="@((Model != null && Model.Count() > 0) ? "col-lg-6" : "col-lg-12") col-12 mb--30 mb-lg--0">
 					<!-- slide Block 5 / Normal Slider -->
 					<div class="cart-block-title">
 						<h2>YOU MAY BE INTERESTED IN…</h2>
@@ -303,20 +307,23 @@
 					</div>
 				</div>
 				<!-- Cart Summary -->
-				<div class="col-lg-6 col-12 d-flex checkout-price-div">
-					<div class="cart-summary">
-						<div class="cart-summary-wrap">
-							<h4><span>Cart Summary</span></h4>
-							<p>Sub Total <span class="text-primary">$@(Model.Sum(b => b.Price * b.Count))</span></p>
-							<p>ExTax <span class="text-primary">$@Model.Sum(b => b.ExTax)</span></p>
-							<h2>Grand Total <span class="text-primary">$@(Model.Sum(b => b.Price * b.Count + b.Count * b.ExTax))</span></h2>
-						</div>
-						<div class="cart-summary-button">
-							<a href="checkout.html" class="checkout-btn c-btn btn--primary">Checkout</a>
-							<button class="update-btn c-btn btn-outlined">Update Cart</button>
+				@if(Model != null && Model.Count() > 0)
+				{
+					<div class="col-lg-6 col-12 d-flex checkout-price-div">
+						<div class="cart-summary">
+							<div class="cart-summary-wrap">
+								<h4><span>Cart Summary</span></h4>
+								<p>Sub Total <span class="text-primary">$@(Model.Sum(b => b.Price * b.Count))</span></p>
+								<p>ExTax <span class="text-primary">$@Model.Sum(b => b.ExTax)</span></p>
+								<h2>Grand Total <span class="text-primary">$@(Model.Sum(b => b.Price * b.Count + b.Count * b.ExTax))</span></h2>
+							</div>
+							<div class="cart-summary-button">
+								<a href="checkout.html" class="checkout-btn c-btn btn--primary">Checkout</a>
+								<button class="update-btn c-btn btn-outlined">Update Cart</button>
+							</div>
 						</div>
 					</div>
-				</div>
+				}
 			</div>
 		</div>
 	</div>

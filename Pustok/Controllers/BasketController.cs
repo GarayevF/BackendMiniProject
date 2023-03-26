@@ -202,6 +202,45 @@ namespace Pustok.Controllers
             return PartialView("_BasketMainPartial", basketVMs);
         }
 
+		public async Task<IActionResult> BasketCartRefresh(int? id, int count)
+		{
+			if (id == null) return BadRequest();
+
+			if (!await _context.Products.AnyAsync(p => p.IsDeleted == false && p.Id == id)) return NotFound();
+
+			string cookie = HttpContext.Request.Cookies["basket"];
+
+			List<BasketVM> basketVMs = null;
+
+			if (!string.IsNullOrWhiteSpace(cookie))
+			{
+				basketVMs = JsonConvert.DeserializeObject<List<BasketVM>>(cookie);
+
+				if (basketVMs.Exists(p => p.Id == id))
+				{
+					basketVMs.Find(b => b.Id == id).Count = count;
+				}
+			}
+
+			cookie = JsonConvert.SerializeObject(basketVMs);
+			HttpContext.Response.Cookies.Append("basket", cookie);
+
+			foreach (BasketVM basketVM in basketVMs)
+			{
+				Product product = await _context.Products.FirstOrDefaultAsync(p => p.IsDeleted == false && p.Id == basketVM.Id);
+
+				if (product != null)
+				{
+					basketVM.Title = product.Title;
+					basketVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
+					basketVM.Image = product.MainImage;
+					basketVM.ExTax = product.ExTax;
+				}
+			}
+
+			return PartialView("_BasketCartPartial", basketVMs);
+		}
+
 		public async Task<IActionResult> MainBasketPrice()
         {
 			string basket = HttpContext.Request.Cookies["basket"];
@@ -221,6 +260,8 @@ namespace Pustok.Controllers
 
 			return PartialView("_BasketCartPricePartial", basketVMs);
 		}
+
+
 
 
 

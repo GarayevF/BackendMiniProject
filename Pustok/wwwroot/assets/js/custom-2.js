@@ -1,8 +1,6 @@
 ﻿$(document).ready(function () {
     console.log('kjdfhkjdsfh')
     $(document).on('click', '.basketRemover, .addbasket', function (e) {
-        console.log($(this))
-        console.log($(this).hasClass('addbasket'))
         if ($(this).hasClass('basketRemover')) {
             e.preventDefault();
 
@@ -31,7 +29,8 @@
                                 })
                         })
                 })
-        } else if ($(this).hasClass('addbasket')) {
+        }
+        else if ($(this).hasClass('addbasket')) {
             e.preventDefault();
 
             let url = $(this).attr('href');
@@ -43,6 +42,35 @@
                     $('.cart-dropdown-block').html(data)
                 })
         }
+    })
+    .on('keyup', '.ProductCountInp', function (e) {
+        e.preventDefault();
+        let inpVal = $(this).val()
+        let code = e.keyCode || e.which
+        if ($.isNumeric(inpVal) && inpVal % 1 === 0 && inpVal > 0 && parseInt(inpVal) != NaN && inpVal.indexOf('.') === -1 && code != 190) {
+            fetch("/basket/BasketCartRefresh/" + $(this).attr("data-id") + "?count=" + inpVal)
+                .then(res => {
+                    return res.text()
+                })
+                .then(data => {
+                    $('.cart-dropdown-block').html(data)
+                    fetch("/basket/mainbasket/" + $(this).attr("data-id"))
+                        .then(res2 => {
+                            return res2.text()
+                        })
+                        .then(data2 => {
+                            $('.cart-main-checkoutpage').html(data2)
+                            fetch("/basket/MainBasketPrice/" + $(this).attr("data-id"))
+                                .then(res3 => {
+                                    return res3.text()
+                                })
+                                .then(data3 => {
+                                    $('.checkout-price-div').html(data3)
+                                })
+                        })
+                })
+        }
+        
     })
 
 })
