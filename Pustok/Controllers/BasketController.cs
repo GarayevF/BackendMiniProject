@@ -262,7 +262,6 @@ namespace Pustok.Controllers
 			return PartialView("_BasketCartPricePartial", basketVMs);
 		}
 
-
 		public async Task<IActionResult> RemoveBasket(int? id)
         {
             if (id == null) return BadRequest();

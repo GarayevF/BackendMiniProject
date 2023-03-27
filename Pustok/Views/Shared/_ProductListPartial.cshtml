@@ -1,7 +1,10 @@
 ﻿@model IEnumerable<Product>
 
+@inject ILayoutService layoutService
+
 @{
     string authors = "";
+    List<WishlistVM> wishlistVMs = await layoutService.GetWishLists();
 }
 
 <div class="product-slider multiple-row  slider-border-multiple-row  sb-slick-slider"
@@ -45,7 +48,8 @@
                                 <a asp-action="addbasket" asp-controller="basket" asp-route-id="@product.Id" class="single-btn addbasket">
                                     <i class="fas fa-shopping-basket"></i>
                                 </a>
-                                <a href="wishlist.html" class="single-btn">
+                                <a asp-controller="wishlist" asp-action="AddWishlist" asp-route-id="@product.Id"
+                                class="single-btn addwish" style="@(wishlistVMs != null && wishlistVMs.Count() > 0 && wishlistVMs.Any(w => w.Id == product.Id) ? "color: green" : "") ">
                                     <i class="fas fa-heart"></i>
                                 </a>
                                 <a href="compare.html" class="single-btn">

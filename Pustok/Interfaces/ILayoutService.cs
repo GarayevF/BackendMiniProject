@@ -1,5 +1,6 @@
 ﻿using Pustok.Models;
 using Pustok.ViewModels.BasketViewModels;
+using Pustok.ViewModels.WishlistViewModels;
 
 namespace Pustok.Interfaces
 {
@@ -8,5 +9,6 @@ namespace Pustok.Interfaces
         Task<IDictionary<string, string>> GetSettings();
         Task<IEnumerable<Category>> GetCategories();
         Task<List<BasketVM>> GetBaskets();
+        Task<List<WishlistVM>> GetWishLists();
     }
 }

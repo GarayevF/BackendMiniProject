@@ -1,0 +1,49 @@
+﻿@model IEnumerable<WishlistVM>
+
+@if (Model != null && Model.Count() > 0)
+{
+	<div class="cart_area inner-page-sec-padding-bottom wishlist-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<form action="https://demo.hasthemes.com/pustok-preview/pustok/">
+						<!-- Cart Table -->
+						<div class="cart-table table-responsive">
+							<table class="table">
+								<thead>
+									<tr>
+										<th class="pro-thumbnail">Image</th>
+										<th class="pro-title">Product</th>
+										<th class="pro-price">Price</th>
+										<th class="pro-price">Ex Tax</th>
+										<th class="pro-remove">Remove</th>
+									</tr>
+								</thead>
+								<tbody>
+									@foreach (WishlistVM wishlistVM in Model)
+									{
+										<tr>
+											<td class="pro-thumbnail">
+												<a href="#">
+													<img src="~/assets/image/products/@wishlistVM.Image" alt="Product">
+												</a>
+											</td>
+											<td class="pro-title"><a href="#">@wishlistVM.Title</a></td>
+											<td class="pro-price"><span>$@wishlistVM.Price</span></td>
+											<td class="pro-price"><span>$@wishlistVM.ExTax</span></td>
+											<td class="pro-remove"><a asp-controller="wishlist" asp-action="deletewishlist" asp-route-id="@wishlistVM.Id" class="deletewish"><i class="far fa-trash-alt"></i></a></td>
+										</tr>
+									}
+								</tbody>
+							</table>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+}
+else
+{
+	<h1>Wishlist is empty</h1>
+}

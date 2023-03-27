@@ -11,6 +11,7 @@ namespace Pustok.Models
         public string? SurName { get; set; }
         public bool IsActive { get; set; }
         public List<Basket>? Baskets { get; set; }
+        public List<Wishlist>? Wishlists { get; set; }
         public IEnumerable<Review>? Reviews { get; set; }
         public List<Address>? Addresses { get; set; }
         public List<Order>? Orders { get; set; }

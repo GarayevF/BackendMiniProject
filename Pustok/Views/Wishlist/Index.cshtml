@@ -1,4 +1,4 @@
-﻿@model List<BasketVM>
+﻿@model IEnumerable<WishlistVM>
 @{
     ViewData["Title"] = "Index";
 }
@@ -10,15 +10,13 @@
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-					<li class="breadcrumb-item active">Cart</li>
+					<li class="breadcrumb-item active">Wishlist</li>
 				</ol>
 			</nav>
 		</div>
 	</div>
 </section>
-<!-- Cart Page Start -->
-<main class="cart-page-main-block inner-page-sec-padding-bottom cart-main-checkoutpage">
-	@await Html.PartialAsync("_BasketMainPartial", Model)
-</main>
+<!-- Wishlist Page Start -->
+@await Html.PartialAsync("_WishlistMainPartial", Model)
 <!-- Cart Page End -->
 

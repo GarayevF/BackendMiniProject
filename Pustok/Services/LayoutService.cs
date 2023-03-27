@@ -5,6 +5,7 @@ using Pustok.DataAccessLayer;
 using Pustok.Interfaces;
 using Pustok.Models;
 using Pustok.ViewModels.BasketViewModels;
+using Pustok.ViewModels.WishlistViewModels;
 
 namespace Pustok.Services
 {
@@ -85,9 +86,70 @@ namespace Pustok.Services
             return new List<BasketVM>();
         }
 
+		public async Task<List<WishlistVM>> GetWishLists()
+		{
+			AppUser appUser = null;
+			List<Wishlist> wishlists = null;
+			if (_httpContextAccessor.HttpContext.User.Identity.IsAuthenticated &&
+				_httpContextAccessor.HttpContext.User.IsInRole("Member"))
+			{
+				appUser = await _userManager.Users
+					.Include(u => u.Wishlists.Where(b => b.IsDeleted == false)).ThenInclude(b => b.Product)
+					.FirstOrDefaultAsync(u => u.UserName == _httpContextAccessor.HttpContext.User.Identity.Name);
 
+				wishlists = appUser.Wishlists;
+			}
 
-        public async Task<IEnumerable<Category>> GetCategories()
+			string cookie = _httpContextAccessor.HttpContext.Request.Cookies["wishlist"];
+
+			if (!string.IsNullOrWhiteSpace(cookie))
+			{
+				List<WishlistVM> wishlistVMs = null;
+				if (wishlists != null && wishlists.Count > 0)
+				{
+					wishlistVMs = new List<WishlistVM>();
+					foreach (Wishlist wishlist in wishlists)
+					{
+						Product product = wishlist.Product;
+
+						if (product != null)
+						{
+							WishlistVM wishlistVM = new WishlistVM();
+
+							wishlistVM.Id = product.Id;
+							wishlistVM.Title = product.Title;
+							wishlistVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
+							wishlistVM.Image = product.MainImage;
+							wishlistVM.ExTax = product.ExTax;
+
+							wishlistVMs.Add(wishlistVM);
+						}
+					}
+				}
+				else
+				{
+					wishlistVMs = JsonConvert.DeserializeObject<List<WishlistVM>>(cookie);
+					foreach (WishlistVM wishlistVM in wishlistVMs)
+					{
+						Product product = await _context.Products.FirstOrDefaultAsync(p => p.Id == wishlistVM.Id);
+
+						if (product != null)
+						{
+							wishlistVM.Title = product.Title;
+							wishlistVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
+							wishlistVM.Image = product.MainImage;
+							wishlistVM.ExTax = product.ExTax;
+						}
+					}
+				}
+
+				return wishlistVMs;
+			}
+
+			return new List<WishlistVM>();
+		}
+
+		public async Task<IEnumerable<Category>> GetCategories()
         {
             return await _context.Categories
                 .Include(c => c.Children).Where(c => c.IsDeleted == false)

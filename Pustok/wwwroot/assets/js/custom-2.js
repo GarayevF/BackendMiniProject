@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     console.log(window.location.pathname)
-    $(document).on('click', '.basketRemover, .addbasket, .subbasket', function (e) {
+    $(document).on('click', '.basketRemover, .addbasket, .subbasket, .deletewish, .addwish', function (e) {
         if ($(this).hasClass('basketRemover')) {
             e.preventDefault();
 
@@ -45,7 +45,7 @@
                             })
                     }
                 })
-                
+
         }
         else if ($(this).hasClass('subbasket')) {
             e.preventDefault();
@@ -69,6 +69,28 @@
                     }
                 })
 
+        }
+        else if ($(this).hasClass('deletewish')) {
+            e.preventDefault();
+
+            let url = $(this).attr('href');
+            fetch(url)
+                .then(res => {
+                    return res.text()
+                })
+                .then(data => {
+                    $('.wishlist-content').html(data)
+                })
+        }
+        else if ($(this).hasClass('addwish')) {
+            e.preventDefault();
+            $(this).find('i').css('color', 'green');
+            let url = $(this).attr('href');
+            fetch(url)
+                .then(res => {
+                    return res.text()
+                })
+            
         }
     })
     .on('keyup', '.ProductCountInp', function (e) {
