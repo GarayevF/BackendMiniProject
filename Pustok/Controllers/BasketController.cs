@@ -23,18 +23,21 @@ namespace Pustok.Controllers
             string cookie = HttpContext.Request.Cookies["basket"];
             List<BasketVM> basketVMs = null;
 
-            basketVMs = JsonConvert.DeserializeObject<List<BasketVM>>(cookie);
-
-            foreach (BasketVM basketVM in basketVMs)
+            if (!string.IsNullOrWhiteSpace(cookie))
             {
-                Product product = await _context.Products.FirstOrDefaultAsync(p => p.IsDeleted == false && p.Id == basketVM.Id);
+                basketVMs = JsonConvert.DeserializeObject<List<BasketVM>>(cookie);
 
-                if (product != null)
+                foreach (BasketVM basketVM in basketVMs)
                 {
-                    basketVM.Title = product.Title;
-                    basketVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
-                    basketVM.Image = product.MainImage;
-                    basketVM.ExTax = product.ExTax;
+                    Product product = await _context.Products.FirstOrDefaultAsync(p => p.IsDeleted == false && p.Id == basketVM.Id);
+
+                    if (product != null)
+                    {
+                        basketVM.Title = product.Title;
+                        basketVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
+                        basketVM.Image = product.MainImage;
+                        basketVM.ExTax = product.ExTax;
+                    }
                 }
             }
 

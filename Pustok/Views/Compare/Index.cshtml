@@ -1,0 +1,27 @@
+﻿@model IEnumerable<CompareVM>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<section class="breadcrumb-section">
+    <h2 class="sr-only">Site Breadcrumb</h2>
+    <div class="container">
+        <div class="breadcrumb-contents">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Compare</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</section>
+<!-- Compare Page Start -->
+<main class="compare_area inner-page-sec-padding-bottom">
+    @if(Model != null && Model.Count() > 0)
+    {
+        await Html.PartialAsync("_CompareMainPartial", Model);
+    }
+</main>
+<!-- Compare Page End -->
+
