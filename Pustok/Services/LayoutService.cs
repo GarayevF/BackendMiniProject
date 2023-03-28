@@ -5,6 +5,7 @@ using Pustok.DataAccessLayer;
 using Pustok.Interfaces;
 using Pustok.Models;
 using Pustok.ViewModels.BasketViewModels;
+using Pustok.ViewModels.CompareViewModels;
 using Pustok.ViewModels.WishlistViewModels;
 
 namespace Pustok.Services
@@ -41,7 +42,7 @@ namespace Pustok.Services
             if (!string.IsNullOrWhiteSpace(cookie))
             {
                 List<BasketVM> basketVMs = null;
-                if (baskets != null && baskets.Count > 0)
+                if (baskets != null && baskets.Count() > 0)
                 {
                     basketVMs = new List<BasketVM>();
                     foreach (Basket basket in baskets)
@@ -105,7 +106,7 @@ namespace Pustok.Services
 			if (!string.IsNullOrWhiteSpace(cookie))
 			{
 				List<WishlistVM> wishlistVMs = null;
-				if (wishlists != null && wishlists.Count > 0)
+				if (wishlists != null && wishlists.Count() > 0)
 				{
 					wishlistVMs = new List<WishlistVM>();
 					foreach (Wishlist wishlist in wishlists)
@@ -149,7 +150,60 @@ namespace Pustok.Services
 			return new List<WishlistVM>();
 		}
 
-		public async Task<IEnumerable<Category>> GetCategories()
+        public async Task<List<CompareVM>> GetCompares()
+        {
+            List<Compare> compares = null;
+
+            string cookie = _httpContextAccessor.HttpContext.Request.Cookies["compare"];
+
+            if (!string.IsNullOrWhiteSpace(cookie))
+            {
+                List<CompareVM> compareVMs = null;
+                if (compares != null && compares.Count() > 0)
+                {
+                    compareVMs = new List<CompareVM>();
+                    foreach (Compare compare in compares)
+                    {
+                        Product product = compare.Product;
+
+                        if (product != null)
+                        {
+                            CompareVM compareVM = new CompareVM();
+
+                            compareVM.Id = product.Id;
+                            compareVM.Title = product.Title;
+                            compareVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
+                            compareVM.Image = product.MainImage;
+                            compareVM.ExTax = product.ExTax;
+
+                            compareVMs.Add(compareVM);
+                        }
+                    }
+                }
+                else
+                {
+                    compareVMs = JsonConvert.DeserializeObject<List<CompareVM>>(cookie);
+                    foreach (CompareVM compareVM in compareVMs)
+                    {
+                        Product product = await _context.Products.FirstOrDefaultAsync(p => p.Id == compareVM.Id);
+
+                        if (product != null)
+                        {
+                            compareVM.Title = product.Title;
+                            compareVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
+                            compareVM.Image = product.MainImage;
+                            compareVM.ExTax = product.ExTax;
+                        }
+                    }
+                }
+
+                return compareVMs;
+            }
+
+            return new List<CompareVM>();
+        }
+
+        public async Task<IEnumerable<Category>> GetCategories()
         {
             return await _context.Categories
                 .Include(c => c.Children).Where(c => c.IsDeleted == false)

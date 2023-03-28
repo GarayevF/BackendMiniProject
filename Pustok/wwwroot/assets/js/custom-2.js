@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     console.log(window.location.pathname)
-    $(document).on('click', '.basketRemover, .addbasket, .subbasket, .deletewish, .addwish', function (e) {
+    $(document).on('click', '.basketRemover, .addbasket, .subbasket, .deletewish, .addwish, .addcompare', function (e) {
         if ($(this).hasClass('basketRemover')) {
             e.preventDefault();
 
@@ -85,6 +85,16 @@
         else if ($(this).hasClass('addwish')) {
             e.preventDefault();
             $(this).find('i').css('color', 'green');
+            let url = $(this).attr('href');
+            fetch(url)
+                .then(res => {
+                    return res.text()
+                })
+            
+        }
+        else if ($(this).hasClass('addcompare')) {
+            e.preventDefault();
+            //$(this).find('i').css('color', 'green');
             let url = $(this).attr('href');
             fetch(url)
                 .then(res => {

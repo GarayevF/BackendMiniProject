@@ -47,57 +47,41 @@
                                 </tr>
                                 <tr>
                                     <td class="first-column">Stock</td>
-                                    <td class="pro-stock">In Stock</td>
-                                    <td class="pro-stock">In Stock</td>
-                                    <td class="pro-stock">In Stock</td>
+                                    @foreach (CompareVM compareVM in Model)
+                                    {
+                                        <td class="pro-stock">@(compareVM.IsAvailable ? "In Stock" : "Not in Stock")</td>
+                                    }
                                 </tr>
                                 <tr>
                                     <td class="first-column">Add to cart</td>
-                                    <td class="pro-addtocart">
-                                        <a href="#" class="add-to-cart" tabindex="0">
-                                            <i class="fas fa-shopping-cart"></i><span>ADD TO CART</span>
-                                        </a>
-                                    </td>
-                                    <td class="pro-addtocart">
-                                        <a href="#" class="add-to-cart" tabindex="0">
-                                            <i class="fas fa-shopping-cart"></i><span>ADD TO CART</span>
-                                        </a>
-                                    </td>
-                                    <td class="pro-addtocart">
-                                        <a href="#" class="add-to-cart" tabindex="0">
-                                            <i class="fas fa-shopping-cart"></i><span>ADD TO CART</span>
-                                        </a>
-                                    </td>
+                                    @foreach (CompareVM compareVM in Model)
+                                    {
+                                        <td class="pro-addtocart">
+                                            <a asp-controller="basket" asp-action="addbasket" asp-route-id="@compareVM.Id" class="add-to-cart" tabindex="0">
+                                                <i class="fas fa-shopping-cart"></i><span>ADD TO CART</span>
+                                            </a>
+                                        </td>
+                                    }
                                 </tr>
                                 <tr>
                                     <td class="first-column">Delete</td>
-                                    <td class="pro-remove"><button><i class="fas fa-trash"></i></button></td>
-                                    <td class="pro-remove"><button><i class="fas fa-trash"></i></button></td>
-                                    <td class="pro-remove"><button><i class="fas fa-trash"></i></button></td>
+                                    @foreach (CompareVM compareVM in Model)
+                                    {
+                                        <td class="pro-remove"><a asp-controller="compare" asp-action="deletecompare" asp-route-id="@compareVM.Id"><i class="fas fa-trash"></i></a></td>
+                                    }
                                 </tr>
                                 <tr>
                                     <td class="first-column">Rating</td>
-                                    <td class="pro-ratting">
+                                    @foreach (CompareVM compareVM in Model)
+                                    {
+                                        <td class="pro-ratting">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star-o"></i>
                                     </td>
-                                    <td class="pro-ratting">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </td>
-                                    <td class="pro-ratting">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-o"></i>
-                                    </td>
+                                    }
                                 </tr>
                             </tbody>
                         </table>

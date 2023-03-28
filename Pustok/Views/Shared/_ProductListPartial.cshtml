@@ -5,6 +5,7 @@
 @{
     string authors = "";
     List<WishlistVM> wishlistVMs = await layoutService.GetWishLists();
+    List<CompareVM> compareVMs = await layoutService.GetCompares();
 }
 
 <div class="product-slider multiple-row  slider-border-multiple-row  sb-slick-slider"
@@ -52,9 +53,12 @@
                                 class="single-btn addwish" style="@(wishlistVMs != null && wishlistVMs.Count() > 0 && wishlistVMs.Any(w => w.Id == product.Id) ? "color: green" : "") ">
                                     <i class="fas fa-heart"></i>
                                 </a>
-                                <a href="compare.html" class="single-btn">
-                                    <i class="fas fa-random"></i>
-                                </a>
+                                @if(!(compareVMs != null && compareVMs.Count() > 0 && compareVMs.Any(c => c.Id == product.Id)))
+                                {
+                                    <a asp-controller="Compare" asp-action="AddCompare" asp-route-id="@product.Id" class="single-btn addcompare">
+                                        <i class="fas fa-random"></i>
+                                    </a>
+                                }
                                 <a href="#" data-toggle="modal" data-target="#quickModal"
                                class="single-btn">
                                     <i class="fas fa-eye"></i>
