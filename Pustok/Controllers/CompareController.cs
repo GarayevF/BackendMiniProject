@@ -30,7 +30,11 @@ namespace Pustok.Controllers
 
                 foreach (CompareVM compareVM in compareVMs)
                 {
-                    Product product = await _context.Products.FirstOrDefaultAsync(p => p.IsDeleted == false && p.Id == compareVM.Id);
+                    Product product = await _context.Products
+                        .Include(p => p.ProductAuthors.Where(a => a.IsDeleted == false))
+                        .ThenInclude(pa => pa.Author).Where(a => a.IsDeleted == false)
+                        .Include(p => p.Category).Where(a => a.IsDeleted == false)
+                        .FirstOrDefaultAsync(p => p.IsDeleted == false && p.Id == compareVM.Id);
 
                     if (product != null)
                     {
@@ -38,6 +42,27 @@ namespace Pustok.Controllers
                         compareVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
                         compareVM.Image = product.MainImage;
                         compareVM.ExTax = product.ExTax;
+                        //foreach (int AuthorId in product.AuthorIds)
+                        //{
+                        //    Author author = await _context.Authors.FirstOrDefaultAsync(a => a.IsDeleted == false && a.Id == AuthorId);
+                        //    string fullName = "";
+                        //    if(author.Name != null)
+                        //    {
+                        //        fullName += author.Name;
+                        //    }
+                        //    if (author.MiddleName != null)
+                        //    {
+                        //        fullName += " " + author.MiddleName;
+                        //    }
+                        //    if (author.Surname != null)
+                        //    {
+                        //        fullName += " " + author.Surname;
+                        //    }
+
+                        //    compareVM.Authors.Add(fullName);
+                        //}
+                        compareVM.ProductAuthors = product.ProductAuthors;
+                        compareVM.Category = product.Category;
                     }
                 }
             }
@@ -50,7 +75,6 @@ namespace Pustok.Controllers
             if (id == null) return BadRequest();
 
             if (!await _context.Products.AnyAsync(p => p.IsDeleted == false && p.Id == id)) return NotFound();
-
 
             string cookie = HttpContext.Request.Cookies["compare"];
 
@@ -73,7 +97,7 @@ namespace Pustok.Controllers
                 if(!(compareVMs.Count() < 3))
                 {
                     //toastr error mesaji elave ele ki 3 dene mehsul var uje comparede
-                    return PartialView();
+                    return Ok();
                 }
 
                 if (!compareVMs.Exists(p => p.Id == id))
@@ -86,22 +110,22 @@ namespace Pustok.Controllers
             cookie = JsonConvert.SerializeObject(compareVMs);
             HttpContext.Response.Cookies.Append("compare", cookie);
 
-            foreach (CompareVM compareVM in compareVMs)
-            {
-                Product product = await _context.Products.FirstOrDefaultAsync(p => p.IsDeleted == false && p.Id == compareVM.Id);
+            //foreach (CompareVM compareVM in compareVMs)
+            //{
+            //    Product product = await _context.Products.FirstOrDefaultAsync(p => p.IsDeleted == false && p.Id == compareVM.Id);
 
-                if (product != null)
-                {
-                    compareVM.Title = product.Title;
-                    compareVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
-                    compareVM.Image = product.MainImage;
-                    compareVM.ExTax = product.ExTax;
-                    compareVM.IsAvailable = (product.Count > 0);
-                }
-            }
+            //    if (product != null)
+            //    {
+            //        compareVM.Title = product.Title;
+            //        compareVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
+            //        compareVM.Image = product.MainImage;
+            //        compareVM.ExTax = product.ExTax;
+            //        compareVM.IsAvailable = (product.Count > 0);
+            //    }
+            //}
 
             //succes toastr mesaji elave et
-            return PartialView();
+            return Ok();
         }
 
         public async Task<IActionResult> DeleteCompare(int? id)

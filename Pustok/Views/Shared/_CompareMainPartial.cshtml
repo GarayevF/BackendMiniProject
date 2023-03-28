@@ -19,8 +19,8 @@
                                                 <img src="~/assets/image/products/@compareVM.Image"
                                              alt="Compare Product">
                                             </a>
-                                            <a href="#" class="category">Glasses</a>
-                                            <a href="#" class="title">Rinosin Glasses</a>
+                                            <a href="#" class="category">@compareVM.Category.Name</a>
+                                            <a href="#" class="title">@string.Join(", ",compareVM.ProductAuthors?.Select(x=>($"{x.Author.Name} {x.Author.MiddleName} {x.Author.Surname}").Trim()) )</a>
                                         </td>
                                     }
                                 </tr>

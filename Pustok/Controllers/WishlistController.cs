@@ -24,20 +24,23 @@ namespace Pustok.Controllers
 			string cookie = HttpContext.Request.Cookies["wishlist"];
 			List<WishlistVM> wishlistVMs = null;
 
-			wishlistVMs = JsonConvert.DeserializeObject<List<WishlistVM>>(cookie);
+            if (!string.IsNullOrWhiteSpace(cookie))
+            {
+                wishlistVMs = JsonConvert.DeserializeObject<List<WishlistVM>>(cookie);
 
-			foreach (WishlistVM wishlistVM in wishlistVMs)
-			{
-				Product product = await _context.Products.FirstOrDefaultAsync(p => p.IsDeleted == false && p.Id == wishlistVM.Id);
+                foreach (WishlistVM wishlistVM in wishlistVMs)
+                {
+                    Product product = await _context.Products.FirstOrDefaultAsync(p => p.IsDeleted == false && p.Id == wishlistVM.Id);
 
-				if (product != null)
-				{
-					wishlistVM.Title = product.Title;
-					wishlistVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
-					wishlistVM.Image = product.MainImage;
-					wishlistVM.ExTax = product.ExTax;
-				}
-			}
+                    if (product != null)
+                    {
+                        wishlistVM.Title = product.Title;
+                        wishlistVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
+                        wishlistVM.Image = product.MainImage;
+                        wishlistVM.ExTax = product.ExTax;
+                    }
+                }
+            }
 
 			return View(wishlistVMs);
 		}
@@ -151,20 +154,20 @@ namespace Pustok.Controllers
             cookie = JsonConvert.SerializeObject(wishlistVMs);
             HttpContext.Response.Cookies.Append("wishlist", cookie);
 
-            foreach (WishlistVM wishlistVM in wishlistVMs)
-            {
-                Product product = await _context.Products.FirstOrDefaultAsync(p => p.IsDeleted == false && p.Id == wishlistVM.Id);
+            //foreach (WishlistVM wishlistVM in wishlistVMs)
+            //{
+            //    Product product = await _context.Products.FirstOrDefaultAsync(p => p.IsDeleted == false && p.Id == wishlistVM.Id);
 
-                if (product != null)
-                {
-                    wishlistVM.Title = product.Title;
-                    wishlistVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
-                    wishlistVM.Image = product.MainImage;
-                    wishlistVM.ExTax = product.ExTax;
-                }
-            }
+            //    if (product != null)
+            //    {
+            //        wishlistVM.Title = product.Title;
+            //        wishlistVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
+            //        wishlistVM.Image = product.MainImage;
+            //        wishlistVM.ExTax = product.ExTax;
+            //    }
+            //}
 
-            return PartialView();
+            return Ok();
         }
 	}
 }

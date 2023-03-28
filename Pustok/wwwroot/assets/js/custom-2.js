@@ -88,7 +88,7 @@
             let url = $(this).attr('href');
             fetch(url)
                 .then(res => {
-                    return res.text()
+                    return;
                 })
             
         }
@@ -98,7 +98,7 @@
             let url = $(this).attr('href');
             fetch(url)
                 .then(res => {
-                    return res.text()
+                    return;
                 })
             
         }

@@ -20,7 +20,7 @@
 <main class="compare_area inner-page-sec-padding-bottom">
     @if(Model != null && Model.Count() > 0)
     {
-        await Html.PartialAsync("_CompareMainPartial", Model);
+        @await Html.PartialAsync("_CompareMainPartial", Model);
     }
 </main>
 <!-- Compare Page End -->
