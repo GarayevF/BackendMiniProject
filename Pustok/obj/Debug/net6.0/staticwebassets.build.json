@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2iQhyZAvVQ4bS7/V8zcD+KQ/x/piL6IvY5OcyEGoi9I=",
+  "Hash": "JA9NUFxCrZSkoQtkhhNutddOO4uDq9xw30bWh1J2Bb8=",
   "Source": "Pustok",
   "BasePath": "_content/Pustok",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Pustok\\wwwroot",
       "Source": "Pustok",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\css\\main.css",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\css\\main.css",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/css/main.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\main.css"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\css\\plugins.css",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\css\\plugins.css",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/css/plugins.css",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\plugins.css"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-brands-400.eot",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-brands-400.eot",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/fa-brands-400.eot",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-brands-400.eot"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-brands-400.svg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-brands-400.svg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/fa-brands-400.svg",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-brands-400.svg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-brands-400.ttf",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-brands-400.ttf",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/fa-brands-400.ttf",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-brands-400.ttf"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-brands-400.woff",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-brands-400.woff",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/fa-brands-400.woff",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-brands-400.woff"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-brands-400.woff2",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-brands-400.woff2",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/fa-brands-400.woff2",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-brands-400.woff2"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-brands-400d41d.eot",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-brands-400d41d.eot",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/fa-brands-400d41d.eot",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-brands-400d41d.eot"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-regular-400.eot",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-regular-400.eot",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/fa-regular-400.eot",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-regular-400.eot"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-regular-400.svg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-regular-400.svg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/fa-regular-400.svg",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-regular-400.svg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-regular-400.ttf",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-regular-400.ttf",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/fa-regular-400.ttf",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-regular-400.ttf"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-regular-400.woff",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-regular-400.woff",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/fa-regular-400.woff",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-regular-400.woff"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-regular-400.woff2",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-regular-400.woff2",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/fa-regular-400.woff2",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-regular-400.woff2"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-regular-400d41d.eot",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-regular-400d41d.eot",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/fa-regular-400d41d.eot",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-regular-400d41d.eot"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-solid-900.eot",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-solid-900.eot",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/fa-solid-900.eot",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-solid-900.eot"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-solid-900.svg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-solid-900.svg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/fa-solid-900.svg",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-solid-900.svg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-solid-900.ttf",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-solid-900.ttf",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/fa-solid-900.ttf",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-solid-900.ttf"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-solid-900.woff",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-solid-900.woff",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/fa-solid-900.woff",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-solid-900.woff"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-solid-900.woff2",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-solid-900.woff2",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/fa-solid-900.woff2",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-solid-900.woff2"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-solid-900d41d.eot",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\fa-solid-900d41d.eot",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/fa-solid-900d41d.eot",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-solid-900d41d.eot"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\Ionicons28b5.eot",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\Ionicons28b5.eot",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/Ionicons28b5.eot",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\Ionicons28b5.eot"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\Ionicons28b5.svg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\Ionicons28b5.svg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/Ionicons28b5.svg",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\Ionicons28b5.svg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\Ionicons28b5.ttf",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\Ionicons28b5.ttf",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/Ionicons28b5.ttf",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\Ionicons28b5.ttf"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\Ionicons28b5.woff",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\Ionicons28b5.woff",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/Ionicons28b5.woff",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\Ionicons28b5.woff"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\Material-Design-Iconic-Fontd1f1.ttf",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\Material-Design-Iconic-Fontd1f1.ttf",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/Material-Design-Iconic-Fontd1f1.ttf",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\Material-Design-Iconic-Fontd1f1.ttf"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\Material-Design-Iconic-Fontd1f1.woff",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\Material-Design-Iconic-Fontd1f1.woff",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/Material-Design-Iconic-Fontd1f1.woff",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\Material-Design-Iconic-Fontd1f1.woff"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\Material-Design-Iconic-Fontd1f1.woff2",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\fonts\\Material-Design-Iconic-Fontd1f1.woff2",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/fonts/Material-Design-Iconic-Fontd1f1.woff2",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\Material-Design-Iconic-Fontd1f1.woff2"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\best-seller-bg.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\best-seller-bg.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/bg-images/best-seller-bg.jpg",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\bg-images\\best-seller-bg.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\home-2-slider-1.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\home-2-slider-1.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/bg-images/home-2-slider-1.jpg",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\bg-images\\home-2-slider-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\home-2-slider-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\home-2-slider-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/bg-images/home-2-slider-2.jpg",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\bg-images\\home-2-slider-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\home-3-slider-1.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\home-3-slider-1.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/bg-images/home-3-slider-1.jpg",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\bg-images\\home-3-slider-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\home-3-slider-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\home-3-slider-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/bg-images/home-3-slider-2.jpg",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\bg-images\\home-3-slider-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\home-4-slider-1.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\home-4-slider-1.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/bg-images/home-4-slider-1.jpg",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\bg-images\\home-4-slider-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\home-4-slider-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\home-4-slider-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/bg-images/home-4-slider-2.jpg",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\bg-images\\home-4-slider-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\home-slider-1-ai.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\home-slider-1-ai.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/bg-images/home-slider-1-ai.png",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\bg-images\\home-slider-1-ai.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\home-slider-2-ai.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\home-slider-2-ai.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/bg-images/home-slider-2-ai.png",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\bg-images\\home-slider-2-ai.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\promo-banner-contained.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\promo-banner-contained.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/bg-images/promo-banner-contained.jpg",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\bg-images\\promo-banner-contained.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\promo-banner-full.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\promo-banner-full.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/bg-images/promo-banner-full.jpg",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\bg-images\\promo-banner-full.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\promo-banner-mid.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\promo-banner-mid.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/bg-images/promo-banner-mid.jpg",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\bg-images\\promo-banner-mid.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\promo-banner-small.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\promo-banner-small.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/bg-images/promo-banner-small.jpg",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\bg-images\\promo-banner-small.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\promo-banner-small-with-text.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\promo-banner-small-with-text.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/bg-images/promo-banner-small-with-text.jpg",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\bg-images\\promo-banner-small-with-text.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\promo-banner-with-text.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\promo-banner-with-text.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/bg-images/promo-banner-with-text.jpg",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\bg-images\\promo-banner-with-text.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\promo-banner-with-text-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\promo-banner-with-text-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/bg-images/promo-banner-with-text-2.jpg",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\bg-images\\promo-banner-with-text-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\promo-banner-with-text-2--small.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\promo-banner-with-text-2--small.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/bg-images/promo-banner-with-text-2--small.jpg",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\bg-images\\promo-banner-with-text-2--small.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\promo-banner-with-text-big.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\bg-images\\promo-banner-with-text-big.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/bg-images/promo-banner-with-text-big.jpg",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\bg-images\\promo-banner-with-text-big.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\favicon.ico",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\favicon.ico",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/favicon.ico",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\icon\\author-logo.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\icon\\author-logo.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/icon/author-logo.png",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\icon\\author-logo.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\icon\\eng-flag.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\icon\\eng-flag.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/icon/eng-flag.png",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\icon\\eng-flag.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\icon\\germany-flag.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\icon\\germany-flag.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/icon/germany-flag.png",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\icon\\germany-flag.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\icon\\payment.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\icon\\payment.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/icon/payment.png",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\icon\\payment.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\icon\\quotation.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\icon\\quotation.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/icon/quotation.png",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\icon\\quotation.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\logo.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\logo.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/logo.png",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\logo--footer.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\logo--footer.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/logo--footer.png",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\logo--footer.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\best-seller-author.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\best-seller-author.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/best-seller-author.jpg",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\best-seller-author.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\blog-grid-1.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\blog-grid-1.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/blog-grid-1.jpg",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\blog-grid-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\blog-grid-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\blog-grid-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/blog-grid-2.jpg",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\blog-grid-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\blog-grid-3.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\blog-grid-3.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/blog-grid-3.jpg",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\blog-grid-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\blog-grid-4.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\blog-grid-4.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/blog-grid-4.jpg",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\blog-grid-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\blog-img-big-1.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\blog-img-big-1.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/blog-img-big-1.jpg",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\blog-img-big-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\blog-img-big-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\blog-img-big-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/blog-img-big-2.jpg",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\blog-img-big-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\blog-img-big-3.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\blog-img-big-3.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/blog-img-big-3.jpg",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\blog-img-big-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\brand-1.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\brand-1.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/brand-1.jpg",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\brand-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\brand-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\brand-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/brand-2.jpg",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\brand-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\brand-3.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\brand-3.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/brand-3.jpg",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\brand-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\brand-4.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\brand-4.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/brand-4.jpg",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\brand-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\brand-5.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\brand-5.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/brand-5.jpg",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\brand-5.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\brand-6.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\brand-6.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/brand-6.jpg",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\brand-6.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\cat-gal-large.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\cat-gal-large.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/cat-gal-large.png",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\cat-gal-large.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\cat-gal-mid.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\cat-gal-mid.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/cat-gal-mid.png",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\cat-gal-mid.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\cat-gal-mid-2.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\cat-gal-mid-2.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/cat-gal-mid-2.png",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\cat-gal-mid-2.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\cat-gal-small.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\cat-gal-small.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/cat-gal-small.png",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\cat-gal-small.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\cat-gal-small-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\cat-gal-small-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/cat-gal-small-2.jpg",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\cat-gal-small-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\client-1.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\client-1.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/client-1.png",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\client-1.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\client-2.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\client-2.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/client-2.png",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\client-2.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\client-3.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\client-3.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/client-3.png",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\client-3.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\client-4.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\client-4.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/client-4.png",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\client-4.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\client-5.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\client-5.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/client-5.png",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\client-5.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\home-blog-1.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\home-blog-1.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/home-blog-1.jpg",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\home-blog-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\home-blog-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\home-blog-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/home-blog-2.jpg",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\home-blog-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\home-side-promo.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\others\\home-side-promo.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/others/home-side-promo.jpg",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\others\\home-side-promo.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\cart-product-1.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\cart-product-1.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/products/cart-product-1.jpg",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\cart-product-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-1.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-1.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/products/product-1.jpg",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\product-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-10.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-10.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/products/product-10.jpg",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\product-10.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-11.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-11.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/products/product-11.jpg",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\product-11.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-12.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-12.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/products/product-12.jpg",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\product-12.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-13.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-13.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/products/product-13.jpg",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\product-13.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/products/product-2.jpg",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\product-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-3.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-3.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/products/product-3.jpg",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\product-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-4.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-4.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/products/product-4.jpg",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\product-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-5.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-5.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/products/product-5.jpg",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\product-5.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-6.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-6.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/products/product-6.jpg",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\product-6.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-7.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-7.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/products/product-7.jpg",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\product-7.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-8.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-8.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/products/product-8.jpg",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\product-8.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-9.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-9.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/products/product-9.jpg",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\product-9.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-details-1.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-details-1.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/products/product-details-1.jpg",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\product-details-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-details-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-details-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/products/product-details-2.jpg",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\product-details-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-details-3.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-details-3.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/products/product-details-3.jpg",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\product-details-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-details-4.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-details-4.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/products/product-details-4.jpg",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\product-details-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-details-5.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\image\\products\\product-details-5.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/image/products/product-details-5.jpg",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\products\\product-details-5.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\js\\ajax-mail.js",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\js\\ajax-mail.js",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/js/ajax-mail.js",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\ajax-mail.js"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\js\\custom.js",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\js\\custom.js",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/js/custom.js",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\custom.js"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\js\\custom-2.js",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\js\\custom-2.js",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/js/custom-2.js",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\custom-2.js"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\js\\plugins.js",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\assets\\js\\plugins.js",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "assets/js/plugins.js",
       "AssetKind": "All",
@@ -1768,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\plugins.js"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\css\\main.css",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\css\\main.css",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/css/main.css",
       "AssetKind": "All",
@@ -1785,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\css\\main.css"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\css\\plugins.css",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\css\\plugins.css",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/css/plugins.css",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\css\\plugins.css"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-brands-400.eot",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-brands-400.eot",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/fa-brands-400.eot",
       "AssetKind": "All",
@@ -1819,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\fa-brands-400.eot"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-brands-400.svg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-brands-400.svg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/fa-brands-400.svg",
       "AssetKind": "All",
@@ -1836,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\fa-brands-400.svg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-brands-400.ttf",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-brands-400.ttf",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/fa-brands-400.ttf",
       "AssetKind": "All",
@@ -1853,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\fa-brands-400.ttf"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-brands-400.woff",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-brands-400.woff",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/fa-brands-400.woff",
       "AssetKind": "All",
@@ -1870,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\fa-brands-400.woff"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-brands-400.woff2",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-brands-400.woff2",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/fa-brands-400.woff2",
       "AssetKind": "All",
@@ -1887,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\fa-brands-400.woff2"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-brands-400d41d.eot",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-brands-400d41d.eot",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/fa-brands-400d41d.eot",
       "AssetKind": "All",
@@ -1904,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\fa-brands-400d41d.eot"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-regular-400.eot",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-regular-400.eot",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/fa-regular-400.eot",
       "AssetKind": "All",
@@ -1921,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\fa-regular-400.eot"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-regular-400.svg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-regular-400.svg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/fa-regular-400.svg",
       "AssetKind": "All",
@@ -1938,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\fa-regular-400.svg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-regular-400.ttf",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-regular-400.ttf",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/fa-regular-400.ttf",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\fa-regular-400.ttf"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-regular-400.woff",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-regular-400.woff",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/fa-regular-400.woff",
       "AssetKind": "All",
@@ -1972,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\fa-regular-400.woff"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-regular-400.woff2",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-regular-400.woff2",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/fa-regular-400.woff2",
       "AssetKind": "All",
@@ -1989,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\fa-regular-400.woff2"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-regular-400d41d.eot",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-regular-400d41d.eot",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/fa-regular-400d41d.eot",
       "AssetKind": "All",
@@ -2006,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\fa-regular-400d41d.eot"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-solid-900.eot",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-solid-900.eot",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/fa-solid-900.eot",
       "AssetKind": "All",
@@ -2023,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\fa-solid-900.eot"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-solid-900.svg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-solid-900.svg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/fa-solid-900.svg",
       "AssetKind": "All",
@@ -2040,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\fa-solid-900.svg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-solid-900.ttf",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-solid-900.ttf",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/fa-solid-900.ttf",
       "AssetKind": "All",
@@ -2057,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\fa-solid-900.ttf"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-solid-900.woff",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-solid-900.woff",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/fa-solid-900.woff",
       "AssetKind": "All",
@@ -2074,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\fa-solid-900.woff"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-solid-900.woff2",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-solid-900.woff2",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/fa-solid-900.woff2",
       "AssetKind": "All",
@@ -2091,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\fa-solid-900.woff2"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-solid-900d41d.eot",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\fa-solid-900d41d.eot",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/fa-solid-900d41d.eot",
       "AssetKind": "All",
@@ -2108,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\fa-solid-900d41d.eot"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\Ionicons28b5.eot",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\Ionicons28b5.eot",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/Ionicons28b5.eot",
       "AssetKind": "All",
@@ -2125,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\Ionicons28b5.eot"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\Ionicons28b5.svg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\Ionicons28b5.svg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/Ionicons28b5.svg",
       "AssetKind": "All",
@@ -2142,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\Ionicons28b5.svg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\Ionicons28b5.ttf",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\Ionicons28b5.ttf",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/Ionicons28b5.ttf",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\Ionicons28b5.ttf"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\Ionicons28b5.woff",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\Ionicons28b5.woff",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/Ionicons28b5.woff",
       "AssetKind": "All",
@@ -2176,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\Ionicons28b5.woff"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\Material-Design-Iconic-Fontd1f1.ttf",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\Material-Design-Iconic-Fontd1f1.ttf",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/Material-Design-Iconic-Fontd1f1.ttf",
       "AssetKind": "All",
@@ -2193,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\Material-Design-Iconic-Fontd1f1.ttf"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\Material-Design-Iconic-Fontd1f1.woff",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\Material-Design-Iconic-Fontd1f1.woff",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/Material-Design-Iconic-Fontd1f1.woff",
       "AssetKind": "All",
@@ -2210,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\Material-Design-Iconic-Fontd1f1.woff"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\Material-Design-Iconic-Fontd1f1.woff2",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\fonts\\Material-Design-Iconic-Fontd1f1.woff2",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/fonts/Material-Design-Iconic-Fontd1f1.woff2",
       "AssetKind": "All",
@@ -2227,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\fonts\\Material-Design-Iconic-Fontd1f1.woff2"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\best-seller-bg.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\best-seller-bg.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/bg-images/best-seller-bg.jpg",
       "AssetKind": "All",
@@ -2244,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\bg-images\\best-seller-bg.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\home-2-slider-1.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\home-2-slider-1.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/bg-images/home-2-slider-1.jpg",
       "AssetKind": "All",
@@ -2261,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\bg-images\\home-2-slider-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\home-2-slider-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\home-2-slider-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/bg-images/home-2-slider-2.jpg",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\bg-images\\home-2-slider-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\home-3-slider-1.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\home-3-slider-1.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/bg-images/home-3-slider-1.jpg",
       "AssetKind": "All",
@@ -2295,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\bg-images\\home-3-slider-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\home-3-slider-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\home-3-slider-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/bg-images/home-3-slider-2.jpg",
       "AssetKind": "All",
@@ -2312,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\bg-images\\home-3-slider-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\home-4-slider-1.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\home-4-slider-1.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/bg-images/home-4-slider-1.jpg",
       "AssetKind": "All",
@@ -2329,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\bg-images\\home-4-slider-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\home-4-slider-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\home-4-slider-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/bg-images/home-4-slider-2.jpg",
       "AssetKind": "All",
@@ -2346,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\bg-images\\home-4-slider-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\home-slider-1-ai.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\home-slider-1-ai.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/bg-images/home-slider-1-ai.png",
       "AssetKind": "All",
@@ -2363,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\bg-images\\home-slider-1-ai.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\home-slider-2-ai.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\home-slider-2-ai.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/bg-images/home-slider-2-ai.png",
       "AssetKind": "All",
@@ -2380,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\bg-images\\home-slider-2-ai.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\promo-banner-contained.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\promo-banner-contained.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/bg-images/promo-banner-contained.jpg",
       "AssetKind": "All",
@@ -2397,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\bg-images\\promo-banner-contained.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\promo-banner-full.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\promo-banner-full.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/bg-images/promo-banner-full.jpg",
       "AssetKind": "All",
@@ -2414,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\bg-images\\promo-banner-full.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\promo-banner-mid.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\promo-banner-mid.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/bg-images/promo-banner-mid.jpg",
       "AssetKind": "All",
@@ -2431,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\bg-images\\promo-banner-mid.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\promo-banner-small.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\promo-banner-small.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/bg-images/promo-banner-small.jpg",
       "AssetKind": "All",
@@ -2448,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\bg-images\\promo-banner-small.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\promo-banner-small-with-text.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\promo-banner-small-with-text.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/bg-images/promo-banner-small-with-text.jpg",
       "AssetKind": "All",
@@ -2465,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\bg-images\\promo-banner-small-with-text.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\promo-banner-with-text.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\promo-banner-with-text.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/bg-images/promo-banner-with-text.jpg",
       "AssetKind": "All",
@@ -2482,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\bg-images\\promo-banner-with-text.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\promo-banner-with-text-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\promo-banner-with-text-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/bg-images/promo-banner-with-text-2.jpg",
       "AssetKind": "All",
@@ -2499,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\bg-images\\promo-banner-with-text-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\promo-banner-with-text-2--small.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\promo-banner-with-text-2--small.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/bg-images/promo-banner-with-text-2--small.jpg",
       "AssetKind": "All",
@@ -2516,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\bg-images\\promo-banner-with-text-2--small.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\promo-banner-with-text-big.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\bg-images\\promo-banner-with-text-big.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/bg-images/promo-banner-with-text-big.jpg",
       "AssetKind": "All",
@@ -2533,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\bg-images\\promo-banner-with-text-big.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\favicon.ico",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\favicon.ico",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/favicon.ico",
       "AssetKind": "All",
@@ -2550,10 +2550,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\icon\\author-logo.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\icon\\author-logo.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/icon/author-logo.png",
       "AssetKind": "All",
@@ -2567,10 +2567,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\icon\\author-logo.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\icon\\eng-flag.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\icon\\eng-flag.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/icon/eng-flag.png",
       "AssetKind": "All",
@@ -2584,10 +2584,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\icon\\eng-flag.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\icon\\germany-flag.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\icon\\germany-flag.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/icon/germany-flag.png",
       "AssetKind": "All",
@@ -2601,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\icon\\germany-flag.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\icon\\payment.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\icon\\payment.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/icon/payment.png",
       "AssetKind": "All",
@@ -2618,10 +2618,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\icon\\payment.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\icon\\quotation.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\icon\\quotation.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/icon/quotation.png",
       "AssetKind": "All",
@@ -2635,10 +2635,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\icon\\quotation.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\logo.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\logo.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/logo.png",
       "AssetKind": "All",
@@ -2652,10 +2652,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\logo--footer.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\logo--footer.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/logo--footer.png",
       "AssetKind": "All",
@@ -2669,10 +2669,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\logo--footer.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\best-seller-author.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\best-seller-author.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/best-seller-author.jpg",
       "AssetKind": "All",
@@ -2686,10 +2686,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\best-seller-author.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\blog-grid-1.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\blog-grid-1.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/blog-grid-1.jpg",
       "AssetKind": "All",
@@ -2703,10 +2703,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\blog-grid-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\blog-grid-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\blog-grid-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/blog-grid-2.jpg",
       "AssetKind": "All",
@@ -2720,10 +2720,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\blog-grid-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\blog-grid-3.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\blog-grid-3.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/blog-grid-3.jpg",
       "AssetKind": "All",
@@ -2737,10 +2737,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\blog-grid-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\blog-grid-4.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\blog-grid-4.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/blog-grid-4.jpg",
       "AssetKind": "All",
@@ -2754,10 +2754,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\blog-grid-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\blog-img-big-1.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\blog-img-big-1.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/blog-img-big-1.jpg",
       "AssetKind": "All",
@@ -2771,10 +2771,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\blog-img-big-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\blog-img-big-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\blog-img-big-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/blog-img-big-2.jpg",
       "AssetKind": "All",
@@ -2788,10 +2788,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\blog-img-big-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\blog-img-big-3.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\blog-img-big-3.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/blog-img-big-3.jpg",
       "AssetKind": "All",
@@ -2805,10 +2805,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\blog-img-big-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\brand-1.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\brand-1.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/brand-1.jpg",
       "AssetKind": "All",
@@ -2822,10 +2822,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\brand-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\brand-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\brand-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/brand-2.jpg",
       "AssetKind": "All",
@@ -2839,10 +2839,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\brand-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\brand-3.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\brand-3.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/brand-3.jpg",
       "AssetKind": "All",
@@ -2856,10 +2856,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\brand-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\brand-4.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\brand-4.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/brand-4.jpg",
       "AssetKind": "All",
@@ -2873,10 +2873,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\brand-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\brand-5.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\brand-5.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/brand-5.jpg",
       "AssetKind": "All",
@@ -2890,10 +2890,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\brand-5.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\brand-6.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\brand-6.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/brand-6.jpg",
       "AssetKind": "All",
@@ -2907,10 +2907,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\brand-6.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\cat-gal-large.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\cat-gal-large.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/cat-gal-large.png",
       "AssetKind": "All",
@@ -2924,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\cat-gal-large.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\cat-gal-mid.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\cat-gal-mid.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/cat-gal-mid.png",
       "AssetKind": "All",
@@ -2941,10 +2941,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\cat-gal-mid.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\cat-gal-mid-2.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\cat-gal-mid-2.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/cat-gal-mid-2.png",
       "AssetKind": "All",
@@ -2958,10 +2958,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\cat-gal-mid-2.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\cat-gal-small.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\cat-gal-small.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/cat-gal-small.png",
       "AssetKind": "All",
@@ -2975,10 +2975,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\cat-gal-small.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\cat-gal-small-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\cat-gal-small-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/cat-gal-small-2.jpg",
       "AssetKind": "All",
@@ -2992,10 +2992,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\cat-gal-small-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\client-1.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\client-1.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/client-1.png",
       "AssetKind": "All",
@@ -3009,10 +3009,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\client-1.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\client-2.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\client-2.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/client-2.png",
       "AssetKind": "All",
@@ -3026,10 +3026,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\client-2.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\client-3.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\client-3.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/client-3.png",
       "AssetKind": "All",
@@ -3043,10 +3043,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\client-3.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\client-4.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\client-4.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/client-4.png",
       "AssetKind": "All",
@@ -3060,10 +3060,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\client-4.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\client-5.png",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\client-5.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/client-5.png",
       "AssetKind": "All",
@@ -3077,10 +3077,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\client-5.png"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\home-blog-1.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\home-blog-1.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/home-blog-1.jpg",
       "AssetKind": "All",
@@ -3094,10 +3094,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\home-blog-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\home-blog-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\home-blog-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/home-blog-2.jpg",
       "AssetKind": "All",
@@ -3111,10 +3111,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\home-blog-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\home-side-promo.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\others\\home-side-promo.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/others/home-side-promo.jpg",
       "AssetKind": "All",
@@ -3128,10 +3128,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\others\\home-side-promo.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\cart-product-1.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\cart-product-1.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/products/cart-product-1.jpg",
       "AssetKind": "All",
@@ -3145,10 +3145,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\products\\cart-product-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-1.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-1.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/products/product-1.jpg",
       "AssetKind": "All",
@@ -3162,10 +3162,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\products\\product-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-10.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-10.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/products/product-10.jpg",
       "AssetKind": "All",
@@ -3179,10 +3179,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\products\\product-10.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-11.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-11.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/products/product-11.jpg",
       "AssetKind": "All",
@@ -3196,10 +3196,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\products\\product-11.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-12.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-12.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/products/product-12.jpg",
       "AssetKind": "All",
@@ -3213,10 +3213,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\products\\product-12.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-13.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-13.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/products/product-13.jpg",
       "AssetKind": "All",
@@ -3230,10 +3230,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\products\\product-13.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/products/product-2.jpg",
       "AssetKind": "All",
@@ -3247,10 +3247,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\products\\product-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-3.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-3.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/products/product-3.jpg",
       "AssetKind": "All",
@@ -3264,10 +3264,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\products\\product-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-4.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-4.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/products/product-4.jpg",
       "AssetKind": "All",
@@ -3281,10 +3281,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\products\\product-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-5.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-5.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/products/product-5.jpg",
       "AssetKind": "All",
@@ -3298,10 +3298,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\products\\product-5.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-6.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-6.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/products/product-6.jpg",
       "AssetKind": "All",
@@ -3315,10 +3315,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\products\\product-6.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-7.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-7.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/products/product-7.jpg",
       "AssetKind": "All",
@@ -3332,10 +3332,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\products\\product-7.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-8.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-8.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/products/product-8.jpg",
       "AssetKind": "All",
@@ -3349,10 +3349,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\products\\product-8.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-9.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-9.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/products/product-9.jpg",
       "AssetKind": "All",
@@ -3366,10 +3366,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\products\\product-9.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-details-1.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-details-1.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/products/product-details-1.jpg",
       "AssetKind": "All",
@@ -3383,10 +3383,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\products\\product-details-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-details-2.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-details-2.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/products/product-details-2.jpg",
       "AssetKind": "All",
@@ -3400,10 +3400,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\products\\product-details-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-details-3.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-details-3.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/products/product-details-3.jpg",
       "AssetKind": "All",
@@ -3417,10 +3417,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\products\\product-details-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-details-4.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-details-4.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/products/product-details-4.jpg",
       "AssetKind": "All",
@@ -3434,10 +3434,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\products\\product-details-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-details-5.jpg",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\image\\products\\product-details-5.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/image/products/product-details-5.jpg",
       "AssetKind": "All",
@@ -3451,10 +3451,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\image\\products\\product-details-5.jpg"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\js\\ajax-mail.js",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\js\\ajax-mail.js",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/js/ajax-mail.js",
       "AssetKind": "All",
@@ -3468,10 +3468,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\js\\ajax-mail.js"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\js\\custom.js",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\js\\custom.js",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/js/custom.js",
       "AssetKind": "All",
@@ -3485,10 +3485,10 @@
       "OriginalItemSpec": "wwwroot\\manage\\js\\custom.js"
     },
     {
-      "Identity": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\js\\plugins.js",
+      "Identity": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\manage\\js\\plugins.js",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Farid\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\faridjg\\Desktop\\BackendMiniProject\\Pustok\\wwwroot\\",
       "BasePath": "_content/Pustok",
       "RelativePath": "manage/js/plugins.js",
       "AssetKind": "All",

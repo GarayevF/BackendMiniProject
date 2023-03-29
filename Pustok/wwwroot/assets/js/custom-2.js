@@ -1,6 +1,12 @@
 ﻿$(document).ready(function () {
+
+    let categoryIds = [];
+    let authorIds = [];
+    let min;
+    let max;
+
     console.log(window.location.pathname)
-    $(document).on('click', '.basketRemover, .addbasket, .subbasket, .deletewish, .addwish, .addcompare, .paginated-btn', function (e) {
+    $(document).on('click', '.basketRemover, .addbasket, .subbasket, .deletewish, .addwish, .addcompare, .paginated-btn, .categorybtn', function (e) {
         if ($(this).hasClass('basketRemover')) {
             e.preventDefault();
 
@@ -90,7 +96,7 @@
                 .then(res => {
                     return;
                 })
-            
+
         }
         else if ($(this).hasClass('addcompare')) {
             e.preventDefault();
@@ -100,13 +106,33 @@
                 .then(res => {
                     return;
                 })
-            
+
         }
         else if ($(this).hasClass('paginated-btn')) {
             e.preventDefault();
 
             let url = $(this).attr('href');
-            fetch(url)
+            
+
+            let path = [];
+
+            if (categoryIds.length > 0) {
+                path.push(`categoriesText=${categoryIds.join(",")}`);
+            }
+
+            if (authorIds.length > 0) {
+                path.push(`authorsText=${authorIds.join(",")}`);
+            }
+
+            if (min > -1) {
+                path.push(`min=${min}`)
+            }
+
+            if (max > -1) {
+                path.push(`max=${max}`)
+            }
+            alert(`${url}&${path.join('&')}`)
+            fetch(`${url}&${path.join('&')}`)
                 .then(res => {
                     return res.text();
                 })
@@ -114,6 +140,25 @@
                     $('.shopProductList').html(data)
                 })
 
+        }
+        else if ($(this).hasClass('categorybtn')) {
+            e.preventDefault();
+            let url = $(this).attr('href');
+            let ctId = url.split('/')[url.split('/').length - 1];
+            if (categoryIds.indexOf(ctId) > -1) {
+                categoryIds.splice(categoryIds.indexOf(ctId), 1);
+            } else {
+                categoryIds.push(ctId);
+            }
+            console.log(`/product/filter${"?categoriesText=" + categoryIds.join(",")}`)
+            fetch(`/product/filter${"?categoriesText="+categoryIds.join(",")}`)
+                .then(res => {
+                    return res.text()
+                })
+                .then(data => {
+                    $('.shopProductList').html(data)
+                    console.log("done")
+                })
         }
     })
     .on('keyup', '.ProductCountInp', function (e) {

@@ -40,7 +40,12 @@
 						</div>
 						<div class="col-xl-4 col-md-4 col-sm-6  mt--10 mt-sm--0">
 							<span class="toolbar-status">
-								Showing 1 to 9 of 14 (2 Pages)
+								@{
+									int start = (Model.Products.PageIndex * (Model.Products.TotalCount - 1)) - Model.Products.TotalCount + 2;
+									int end = start + Model.Products.Count() - 1;
+									int total = (int)Math.Ceiling((decimal)Model.AllProducts.Count() / (decimal)(Model.Products.TotalCount - 1));
+								}
+								Showing @(start) to @(end) of @(Model.AllProducts.Count()) (@(total) Pages)
 							</span>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-6 mt--10 mt-md--0 ">
@@ -105,7 +110,7 @@
 						</div>
 						<div class="col-xl-5 col-md-4 col-sm-6  mt--10 mt-sm--0">
 							<span class="toolbar-status">
-								Showing 1 to 9 of 14 (2 Pages)
+								Showing @(start) to @(end) of @(Model.AllProducts.Count()) (@(total) Pages)
 							</span>
 						</div>
 						<div class="col-xl-5 col-lg-6 col-md-4 col-sm-6 mt--10 mt-md--0 ">
@@ -206,19 +211,19 @@
 								@if (Model.Products.HasPrev)
 								{
 									<li>
-										<a asp-controller="product" asp-action="ChangePage" asp-route-pageIndex="@(Model.Products.PageIndex - 1)" class="single-btn prev-btn paginated-btn">
+										<a asp-controller="product" asp-action="filter" asp-route-pageIndex="@(Model.Products.PageIndex - 1)" class="single-btn prev-btn paginated-btn">
 											<i class="zmdi zmdi-chevron-left"></i>
 										</a>
 									</li>
 								}
 								@for (int i = Model.Products.StartPage; i <= Model.Products.EndPage; i++)
 								{
-									<li class="@(i == Model.Products.PageIndex ? "active" : "")"><a asp-controller="product" asp-action="ChangePage" asp-route-pageIndex="@i" class="single-btn middle-btn paginated-btn">@i</a></li>
+									<li class="@(i == Model.Products.PageIndex ? "active" : "")"><a asp-controller="product" asp-action="filter" asp-route-pageIndex="@i" class="single-btn middle-btn paginated-btn">@i</a></li>
 								}
 								@if (Model.Products.HasNext)
 								{
 									<li>
-										<a aasp-controller="product" asp-action="ChangePage" asp-route-pageIndex="@(Model.Products.PageIndex + 1)" class="single-btn next-btn paginated-btn">
+										<a aasp-controller="product" asp-action="filter" asp-route-pageIndex="@(Model.Products.PageIndex + 1)" class="single-btn next-btn paginated-btn">
 											<i class="zmdi zmdi-chevron-right"></i>
 										</a>
 									</li>

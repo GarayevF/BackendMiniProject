@@ -45,7 +45,7 @@
         public int EndPage { get; }
         public static PageNatedList<T> Create(IQueryable<T> query, int pageIndex, int itemCount, int pageItemCount)
         {
-            int totalCount = (int)Math.Ceiling((decimal)query.Count() / itemCount);
+            int totalCount = (int)Math.Ceiling((decimal)query.Count() / (decimal)itemCount);
             query = query.Skip((pageIndex - 1) * itemCount).Take(itemCount);
 
             return new PageNatedList<T>(query, pageIndex, totalCount, pageItemCount);

@@ -18091,7 +18091,13 @@ input[type="number"] {
 .sidebar-menu--shop {
   margin: 0;
   padding-left: 20px;
-  padding-right: 20px; }
+  padding-right: 20px;
+}
+
+    .sidebar-menu--shop li a.active {
+        font-weight: 900;
+        color: #62ab00;
+    }
   @media (min-width: 992px) {
     .sidebar-menu--shop {
       padding-left: 15px;
