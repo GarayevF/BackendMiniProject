@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     console.log(window.location.pathname)
-    $(document).on('click', '.basketRemover, .addbasket, .subbasket, .deletewish, .addwish, .addcompare', function (e) {
+    $(document).on('click', '.basketRemover, .addbasket, .subbasket, .deletewish, .addwish, .addcompare, .paginated-btn', function (e) {
         if ($(this).hasClass('basketRemover')) {
             e.preventDefault();
 
@@ -101,6 +101,19 @@
                     return;
                 })
             
+        }
+        else if ($(this).hasClass('paginated-btn')) {
+            e.preventDefault();
+
+            let url = $(this).attr('href');
+            fetch(url)
+                .then(res => {
+                    return res.text();
+                })
+                .then(data => {
+                    $('.shopProductList').html(data)
+                })
+
         }
     })
     .on('keyup', '.ProductCountInp', function (e) {
