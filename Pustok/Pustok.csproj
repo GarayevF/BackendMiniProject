@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Manage\" />
+    <Folder Include="Areas\Manage\Views\" />
     <Folder Include="Helpers\" />
     <Folder Include="Migrations\" />
   </ItemGroup>

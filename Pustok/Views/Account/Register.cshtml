@@ -1,0 +1,79 @@
+﻿@model RegisterVM
+@{
+    ViewData["Title"] = "Register";
+}
+
+<section class="breadcrumb-section">
+	<h2 class="sr-only">Site Breadcrumb</h2>
+	<div class="container">
+		<div class="breadcrumb-contents">
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+					<li class="breadcrumb-item active">Login</li>
+				</ol>
+			</nav>
+		</div>
+	</div>
+</section>
+<!--=============================================
+=            Register page content         =
+=============================================-->
+<main class="page-section inner-page-sec-padding-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 mb--30 mb-lg--0">
+				<!-- Login Form s-->
+				<form method="post">
+					<div class="login-form">
+						<h4 class="login-title">New Customer</h4>
+						<p><span class="font-weight-bold">I am a new customer</span></p>
+						<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+						<div class="row">
+							<div class="col-md-6 col-6 mb--15">
+								<label asp-for="Name">Name</label>
+								<input class="mb-0 form-control" asp-for="Name"
+									   placeholder="Enter your name">
+								<span asp-validation-for="Name" class="text-danger"></span>
+							</div>
+							<div class="col-md-6 col-6 mb--15">
+								<label asp-for="SurName">Surname</label>
+								<input class="mb-0 form-control" asp-for="SurName"
+									   placeholder="Enter your surname">
+								<span asp-validation-for="SurName" class="text-danger"></span>
+							</div>
+							<div class="col-12 mb--20">
+								<label asp-for="Email">Email</label>
+								<input class="mb-0 form-control" asp-for="Email" placeholder="Enter Your Email Address Here..">
+								<span asp-validation-for="Email" class="text-danger"></span>
+							</div>
+							<div class="col-12 mb--20">
+								<label asp-for="UserName">Username</label>
+								<input class="mb-0 form-control" asp-for="UserName" placeholder="Enter Your Username Here..">
+								<span asp-validation-for="UserName" class="text-danger"></span>
+							</div>
+							<div class="col-lg-6 mb--20">
+								<label asp-for="Password">Password</label>
+								<input class="mb-0 form-control" asp-for="Password" placeholder="Enter your password">
+								<span asp-validation-for="Password" class="text-danger"></span>
+							</div>
+							<div class="col-lg-6 mb--20">
+								<label asp-for="ConfirmPassword">Repeat Password</label>
+								<input class="mb-0 form-control" asp-for="ConfirmPassword" placeholder="Repeat your password">
+								<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+							</div>
+							<div class="col-md-12">
+								<button type="submit" class="btn btn-outlined">Register</button>
+							</div>
+							<p class="mt-10">Has account? <a asp-controller="account" asp-action="login">Log in.</a></p>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</main>
+
+@section Scripts{
+	@await Html.PartialAsync("_ValidationPartial")
+}

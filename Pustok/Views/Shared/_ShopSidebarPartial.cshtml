@@ -43,3 +43,248 @@
         </ul>
     </div>
 </div>
+
+<link  rel="stylesheet" href = "//code.jquery.com/ui/1.11.4/themes/base/jquery-ui.css" />
+<script src="//code.jquery.com/jquery-1.10.2.js" ></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript">
+    
+    $(document).ready(function(e){
+
+        let categoryIds = [];
+            let authorIds = [];
+            let min = -1;
+            let max = -1;
+            let sortby = -1;
+
+
+        $(".sb-range-slider").slider({
+            range: true,
+            min: @Model.MinimumPrice,
+            max: @Model.MaximumPrice,
+            values: [@Model.MinimumPrice, @Model.MaximumPrice],
+            slide: function (event, ui) {
+                $("#amount").val("£" + ui.values[0] + " - £" + ui.values[1]);
+                min = ui.values[0];
+                max = ui.values[1];
+
+                let path = [];
+
+                if (categoryIds.length > 0) {
+                    path.push(`categoriesText=${categoryIds.join(",")}`);
+                }
+
+                if (authorIds.length > 0) {
+                    path.push(`authorsText=${authorIds.join(",")}`);
+                }
+
+                if (min > -1) {
+                    path.push(`min=${min}`)
+                }
+
+                if (max > -1) {
+                    path.push(`max=${max}`)
+                }
+
+                sortby = $('.nice-select.sort-select option:selected').val();
+
+                if (sortby > -1) {
+                    path.push(`sortby=${sortby}`)
+                }
+
+                fetch(`product/filter?${path.join('&')}`)
+                .then(res => {
+                        return res.text()
+                    })
+                .then(data => {
+                    $('.shopProductList').html(data)
+                })
+            }
+
+        });
+        $("#amount").val("£" + $(".sb-range-slider").slider("values", 0) +
+            " - £" + $(".sb-range-slider").slider("values", 1));
+
+        
+
+        $(document).on('click', '.paginated-btn, .categorybtn, .authorbtn', function (e) {
+            if ($(this).hasClass('paginated-btn')) {
+                e.preventDefault();
+
+                let url = $(this).attr('href');
+
+
+                let path = [];
+
+                if (categoryIds.length > 0) {
+                    path.push(`categoriesText=${categoryIds.join(",")}`);
+                }
+
+                if (authorIds.length > 0) {
+                    path.push(`authorsText=${authorIds.join(",")}`);
+                }
+
+                if (min > -1) {
+                    path.push(`min=${min}`)
+                }
+
+                if (max > -1) {
+                    path.push(`max=${max}`)
+                }
+
+                sortby = $('.nice-select.sort-select option:selected').val();
+
+                if (sortby > -1) {
+                    path.push(`sortby=${sortby}`)
+                }
+
+                fetch(`${url}&${path.join('&')}`)
+                    .then(res => {
+                        return res.text();
+                    })
+                    .then(data => {
+                        $('.shopProductList').html(data)
+                    })
+
+            }
+            else if ($(this).hasClass('categorybtn')) {
+                e.preventDefault();
+
+                let url = $(this).attr('href');
+                let ctId = url.split('/')[url.split('/').length - 1];
+
+                if (categoryIds.indexOf(ctId) > -1) {
+                    categoryIds.splice(categoryIds.indexOf(ctId), 1);
+                    $(this).css('color', '#555555');
+                    $(this).css('font-weight', '400');
+                } else {
+                    categoryIds.push(ctId);
+                    $(this).css('color', 'green');
+                    $(this).css('font-weight', 'bold');
+                }
+
+                let path = [];
+
+                if (categoryIds.length > 0) {
+                    path.push(`categoriesText=${categoryIds.join(",")}`);
+                }
+
+                if (authorIds.length > 0) {
+                    path.push(`authorsText=${authorIds.join(",")}`);
+                }
+
+                if (min > -1) {
+                    path.push(`min=${min}`)
+                }
+
+                if (max > -1) {
+                    path.push(`max=${max}`)
+                }
+
+                sortby = $('.nice-select.sort-select option:selected').val();
+
+                if (sortby > -1) {
+                    path.push(`sortby=${sortby}`)
+                }
+
+                fetch(`${url}?${path.join('&')}`)
+                    .then(res => {
+                        return res.text()
+                    })
+                    .then(data => {
+                        $('.shopProductList').html(data)
+                    })
+            }
+            else if ($(this).hasClass('authorbtn')) {
+                e.preventDefault();
+
+                let url = $(this).attr('href');
+                let authId = url.split('/')[url.split('/').length - 1];
+
+                if (authorIds.indexOf(authId) > -1) {
+                    authorIds.splice(authorIds.indexOf(authId), 1);
+                    $(this).css('color', '#555555');
+                    $(this).css('font-weight', '400');
+                } else {
+                    authorIds.push(authId);
+                    $(this).css('color', 'green');
+                    $(this).css('font-weight', 'bold');
+                }
+
+                let path = [];
+
+                if (categoryIds.length > 0) {
+                    path.push(`categoriesText=${categoryIds.join(",")}`);
+                }
+
+                if (authorIds.length > 0) {
+                    path.push(`authorsText=${authorIds.join(",")}`);
+                }
+
+                if (min > -1) {
+                    path.push(`min=${min}`)
+                }
+
+                if (max > -1) {
+                    path.push(`max=${max}`)
+                }
+
+                sortby = $('.nice-select.sort-select option:selected').val();
+
+                if (sortby > -1) {
+                    path.push(`sortby=${sortby}`)
+                }
+
+                fetch(`${url}?${path.join('&')}`)
+                    .then(res => {
+                        return res.text()
+                    })
+                    .then(data => {
+                        $('.shopProductList').html(data)
+                    })
+            }
+        })
+            .on('change', '.nice-select', function (e) {
+                e.preventDefault();
+
+                let path = [];
+
+                if (categoryIds.length > 0) {
+                    path.push(`categoriesText=${categoryIds.join(",")}`);
+                }
+
+                if (authorIds.length > 0) {
+                    path.push(`authorsText=${authorIds.join(",")}`);
+                }
+
+                if (min > -1) {
+                    //if min is numric
+                    path.push(`min=${min}`)
+                }
+
+                if (max > -1) {
+                    path.push(`max=${max}`)
+                }
+
+                sortby = $('.nice-select.sort-select option:selected').val();
+
+
+                if (sortby > -1) {
+                    path.push(`sortby=${sortby}`)
+                }
+                fetch(`product/filter?${path.join('&')}`)
+                    .then(res => {
+                        return res.text();
+                    })
+                    .then(data => {
+                        $('.shopProductList').html(data)
+                    })
+
+
+            })
+
+    })
+    
+
+</script>
+
