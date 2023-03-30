@@ -2,11 +2,12 @@
 
     let categoryIds = [];
     let authorIds = [];
-    let min;
-    let max;
+    let min = -1;
+    let max = -1;
+    let sortby = -1;
 
     console.log(window.location.pathname)
-    $(document).on('click', '.basketRemover, .addbasket, .subbasket, .deletewish, .addwish, .addcompare, .paginated-btn, .categorybtn', function (e) {
+    $(document).on('click', '.basketRemover, .addbasket, .subbasket, .deletewish, .addwish, .addcompare, .paginated-btn, .categorybtn, .authorbtn', function (e) {
         if ($(this).hasClass('basketRemover')) {
             e.preventDefault();
 
@@ -112,7 +113,7 @@
             e.preventDefault();
 
             let url = $(this).attr('href');
-            
+
 
             let path = [];
 
@@ -131,7 +132,13 @@
             if (max > -1) {
                 path.push(`max=${max}`)
             }
-            alert(`${url}&${path.join('&')}`)
+
+            sortby = $('.nice-select.sort-select option:selected').val();
+
+            if (sortby > -1) {
+                path.push(`sortby=${sortby}`)
+            }
+
             fetch(`${url}&${path.join('&')}`)
                 .then(res => {
                     return res.text();
@@ -143,50 +150,166 @@
         }
         else if ($(this).hasClass('categorybtn')) {
             e.preventDefault();
+
             let url = $(this).attr('href');
             let ctId = url.split('/')[url.split('/').length - 1];
+
             if (categoryIds.indexOf(ctId) > -1) {
                 categoryIds.splice(categoryIds.indexOf(ctId), 1);
+                $(this).css('color', '#555555');
+                $(this).css('font-weight', '400');
             } else {
                 categoryIds.push(ctId);
+                $(this).css('color', 'green');
+                $(this).css('font-weight', 'bold');
             }
-            console.log(`/product/filter${"?categoriesText=" + categoryIds.join(",")}`)
-            fetch(`/product/filter${"?categoriesText="+categoryIds.join(",")}`)
+
+            let path = [];
+
+            if (categoryIds.length > 0) {
+                path.push(`categoriesText=${categoryIds.join(",")}`);
+            }
+
+            if (authorIds.length > 0) {
+                path.push(`authorsText=${authorIds.join(",")}`);
+            }
+
+            if (min > -1) {
+                path.push(`min=${min}`)
+            }
+
+            if (max > -1) {
+                path.push(`max=${max}`)
+            }
+
+            sortby = $('.nice-select.sort-select option:selected').val();
+
+            if (sortby > -1) {
+                path.push(`sortby=${sortby}`)
+            }
+
+            fetch(`${url}?${path.join('&')}`)
                 .then(res => {
                     return res.text()
                 })
                 .then(data => {
                     $('.shopProductList').html(data)
-                    console.log("done")
                 })
         }
-    })
-    .on('keyup', '.ProductCountInp', function (e) {
-        e.preventDefault();
-        let inpVal = $(this).val()
-        let code = e.keyCode || e.which
-        if ($.isNumeric(inpVal) && inpVal % 1 === 0 && inpVal > 0 && parseInt(inpVal) != NaN && inpVal.indexOf('.') === -1 && code != 190) {
-            fetch("/basket/BasketCartRefresh/" + $(this).attr("data-id") + "?count=" + inpVal)
+        else if ($(this).hasClass('authorbtn')) {
+            e.preventDefault();
+
+            let url = $(this).attr('href');
+            let authId = url.split('/')[url.split('/').length - 1];
+
+            if (authorIds.indexOf(authId) > -1) {
+                authorIds.splice(authorIds.indexOf(authId), 1);
+                $(this).css('color', '#555555');
+                $(this).css('font-weight', '400');
+            } else {
+                authorIds.push(authId);
+                $(this).css('color', 'green');
+                $(this).css('font-weight', 'bold');
+            }
+
+            let path = [];
+
+            if (categoryIds.length > 0) {
+                path.push(`categoriesText=${categoryIds.join(",")}`);
+            }
+
+            if (authorIds.length > 0) {
+                path.push(`authorsText=${authorIds.join(",")}`);
+            }
+
+            if (min > -1) {
+                path.push(`min=${min}`)
+            }
+
+            if (max > -1) {
+                path.push(`max=${max}`)
+            }
+
+            sortby = $('.nice-select.sort-select option:selected').val();
+
+            if (sortby > -1) {
+                path.push(`sortby=${sortby}`)
+            }
+
+            fetch(`${url}?${path.join('&')}`)
                 .then(res => {
                     return res.text()
                 })
                 .then(data => {
-                    $('.cart-dropdown-block').html(data)
-                    if (window.location.pathname.split('/')[1].toLowerCase() === 'basket') {
-                        fetch("/basket/mainbasket/" + $(this).attr("data-id"))
-                            .then(res2 => {
-                                return res2.text()
-                            })
-                            .then(data2 => {
-                                $('.cart-page-main-block').html(data2)
-                                refreshSlick();
-                            })
-                    }
-                    
+                    $('.shopProductList').html(data)
                 })
         }
-        
     })
+        .on('keyup', '.ProductCountInp', function (e) {
+            e.preventDefault();
+            let inpVal = $(this).val()
+            let code = e.keyCode || e.which
+            if ($.isNumeric(inpVal) && inpVal % 1 === 0 && inpVal > 0 && parseInt(inpVal) != NaN && inpVal.indexOf('.') === -1 && code != 190) {
+                fetch("/basket/BasketCartRefresh/" + $(this).attr("data-id") + "?count=" + inpVal)
+                    .then(res => {
+                        return res.text()
+                    })
+                    .then(data => {
+                        $('.cart-dropdown-block').html(data)
+                        if (window.location.pathname.split('/')[1].toLowerCase() === 'basket') {
+                            fetch("/basket/mainbasket/" + $(this).attr("data-id"))
+                                .then(res2 => {
+                                    return res2.text()
+                                })
+                                .then(data2 => {
+                                    $('.cart-page-main-block').html(data2)
+                                    refreshSlick();
+                                })
+                        }
+
+                    })
+            }
+
+        })
+        .on('change', '.nice-select', function (e) {
+            e.preventDefault();
+
+            let path = [];
+
+            if (categoryIds.length > 0) {
+                path.push(`categoriesText=${categoryIds.join(",")}`);
+            }
+
+            if (authorIds.length > 0) {
+                path.push(`authorsText=${authorIds.join(",")}`);
+            }
+
+            if (min > -1) {
+                //if min is numric
+                path.push(`min=${min}`)
+            }
+
+            if (max > -1) {
+                path.push(`max=${max}`)
+            }
+
+            sortby = $('.nice-select.sort-select option:selected').val();
+            
+
+            if (sortby > -1) {
+                path.push(`sortby=${sortby}`)
+            }
+            alert(`product/filter?${path.join('&')}`)
+            fetch(`product/filter?${path.join('&')}`)
+                .then(res => {
+                    return res.text();
+                })
+                .then(data => {
+                    $('.shopProductList').html(data)
+                })
+
+            
+        })
 
 })
 

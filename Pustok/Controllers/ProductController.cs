@@ -36,12 +36,21 @@ namespace Pustok.Controllers
 
             IEnumerable<Author> authors = await _context.Authors.Where(c => c.IsDeleted == false).ToListAsync();
 
+            Product product = _context.Products.OrderBy(p => (p.DiscountedPrice > 0 ? p.DiscountedPrice : p.Price)).First();
+            double minValue = (product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price);
+
+            product = _context.Products.OrderByDescending(p => (p.DiscountedPrice > 0 ? p.DiscountedPrice : p.Price)).First();
+            double maxValue = (product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price);
+
             ProductVM productVM = new ProductVM
             {
                 Products = PageNatedList<Product>.Create(products, pageIndex, 12, 7),
                 Categories = categories,
                 Authors = authors,
-                AllProducts = products/*.ToList()*/
+                AllProducts = products/*.ToList()*/,
+				SortSelect = 0,
+				MinimumPrice = minValue,
+				MaximumPrice = maxValue
             };
 
             return View(productVM);
@@ -52,7 +61,7 @@ namespace Pustok.Controllers
 			IQueryable<Product> products = _context.Products
 						.Include(p => p.ProductAuthors.Where(a => a.IsDeleted == false))
 						.ThenInclude(pa => pa.Author).Where(a => a.IsDeleted == false)
-						.Include(p => p.Category).Where(a => a.IsDeleted == false);
+                        .Include(p => p.Category).Where(a => a.IsDeleted == false);
 
 			IEnumerable<Category> categories = await _context.Categories.Where(c => c.IsDeleted == false && c.IsMain)
 				.Include(c => c.Children.Where(ct => ct.IsDeleted == false && ct.IsMain == false))
@@ -71,9 +80,12 @@ namespace Pustok.Controllers
 			return PartialView("_ShopPaginationPartial", productVM);
 		}
 
-		public async Task<IActionResult> Filter(string? categoriesText, string? authorsText, double? min, double? max, int pageIndex = 1)
+		public async Task<IActionResult> Filter(string? categoriesText, string? authorsText, double? min, double? max, int? sortby, int pageIndex = 1)
         {
 			List<Product>? newProducts = new List<Product>();
+			double minValue = -1;
+			double maxValue = -1;
+			int sortSelect = -1;
 
 			List<int> categoryIds = new List<int>();
 
@@ -109,6 +121,7 @@ namespace Pustok.Controllers
             List<Product> products = await _context.Products
 						.Include(p => p.ProductAuthors.Where(a => a.IsDeleted == false))
 						.ThenInclude(pa => pa.Author).Where(a => a.IsDeleted == false)
+						.Include(p => p.Reviews.Where(r => r.IsDeleted == false))
 						.Include(p => p.Category).Where(a => a.IsDeleted == false).ToListAsync();
 
 
@@ -148,17 +161,55 @@ namespace Pustok.Controllers
 			else
 			{
 				Product product = _context.Products.OrderBy(p => (p.DiscountedPrice > 0 ? p.DiscountedPrice : p.Price)).First();
-				min = (product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price);
+				minValue = (product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price);
 			}
 
-			if (max != null && min > -1)
+			if (max != null && max > -1)
 			{
                 newProducts.AddRange(products.Where(p => (p.DiscountedPrice > 0 ? p.DiscountedPrice : p.Price) < max));
 			}
 			else
 			{
 				Product product = _context.Products.OrderByDescending(p => (p.DiscountedPrice > 0 ? p.DiscountedPrice : p.Price)).First();
-				max = (product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price);
+				maxValue = (product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price);
+			}
+
+			if ((categoriesText == null) && (authorsText == null) &&
+				!(min != null && min > -1) && !(max != null && max > -1))
+			{
+				newProducts = products;
+			}
+
+			if (sortby != null && sortby > 0)
+			{
+				
+				switch (sortby)
+				{
+					case 1:
+						newProducts = newProducts.OrderBy(p => p.Title).ToList();
+						sortSelect = 1;
+						break;
+					case 2:
+						newProducts = newProducts.OrderByDescending(p => p.Title).ToList();
+						sortSelect = 2;
+						break;
+					case 3:
+						newProducts = newProducts.OrderBy(p => (p.DiscountedPrice > 0 ? p.DiscountedPrice : p.Price)).ToList();
+						sortSelect = 3;
+						break;
+					case 4:
+						newProducts = newProducts.OrderByDescending(p => (p.DiscountedPrice > 0 ? p.DiscountedPrice : p.Price)).ToList();
+						sortSelect = 4;
+						break;
+					case 5:
+						newProducts = newProducts.OrderBy(p => p.Reviews?.Average(r => r.Star)).ToList();
+						sortSelect = 5;
+						break;
+					case 6:
+						newProducts = newProducts.OrderByDescending(p => p.Reviews?.Average(r => r.Star)).ToList();
+						sortSelect = 6;
+						break;
+				}
 			}
 
 
@@ -173,7 +224,10 @@ namespace Pustok.Controllers
 				Products = PageNatedList<Product>.Create(newProducts.AsQueryable(), pageIndex, 12, 7),
 				Categories = categories,
 				Authors = authors,
-				AllProducts = products/*.ToList()*/
+				AllProducts = products/*.ToList()*/,
+				SortSelect = (sortSelect == -1 ? 0 : sortSelect),
+				MinimumPrice = min,
+				MaximumPrice = max
 			};
 
 			return PartialView("_ShopPaginationPartial", productVM);

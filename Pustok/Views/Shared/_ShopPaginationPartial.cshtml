@@ -30,40 +30,32 @@
 		</div>
 		<div class="col-lg-6 col-md-4 col-sm-6 mt--10 mt-md--0 ">
 			<div class="sorting-selection">
-				<span>Sort By:</span>
-				<select class="form-control nice-select sort-select mr-0">
-					<option value="" selected="selected">Default Sorting</option>
-					<option value="">
+				<span style="padding: 6px 0px 6px 0; font-size: 14px;">Sort By:</span>
+				<select class="form-control nice-select sort-select mr-0" style="padding: 6px 0px 6px 0; font-size: 14px;">
+					<option value="0" selected="selected">Default Sorting</option>
+					<option value="1">
 						Sort
 						By:Name (A - Z)
 					</option>
-					<option value="">
+					<option value="2">
 						Sort
 						By:Name (Z - A)
 					</option>
-					<option value="">
+					<option value="3">
 						Sort
 						By:Price (Low &gt; High)
 					</option>
-					<option value="">
+					<option value="4">
 						Sort
 						By:Price (High &gt; Low)
 					</option>
-					<option value="">
+					<option value="5">
 						Sort
 						By:Rating (Highest)
 					</option>
-					<option value="">
+					<option value="6">
 						Sort
 						By:Rating (Lowest)
-					</option>
-					<option value="">
-						Sort
-						By:Model (A - Z)
-					</option>
-					<option value="">
-						Sort
-						By:Model (Z - A)
 					</option>
 				</select>
 			</div>
@@ -97,38 +89,30 @@
 			<div class="sorting-selection">
 				<span>Sort By:</span>
 				<select class="form-control nice-select sort-select mr-0">
-					<option value="" selected="selected">Default Sorting</option>
-					<option value="">
+					<option value="0" selected="selected">Default Sorting</option>
+					<option value="1">
 						Sort
 						By:Name (A - Z)
 					</option>
-					<option value="">
+					<option value="2">
 						Sort
 						By:Name (Z - A)
 					</option>
-					<option value="">
+					<option value="3">
 						Sort
 						By:Price (Low &gt; High)
 					</option>
-					<option value="">
+					<option value="4">
 						Sort
 						By:Price (High &gt; Low)
 					</option>
-					<option value="">
+					<option value="5">
 						Sort
 						By:Rating (Highest)
 					</option>
-					<option value="">
+					<option value="6">
 						Sort
 						By:Rating (Lowest)
-					</option>
-					<option value="">
-						Sort
-						By:Model (A - Z)
-					</option>
-					<option value="">
-						Sort
-						By:Model (Z - A)
 					</option>
 				</select>
 			</div>
@@ -142,7 +126,7 @@
 			<div class="product-card">
 				<div class="product-grid-content">
 					<div class="product-header">
-						<a href="#" class="author">@string.Join(", ",product.ProductAuthors?.Select(x=>($"{x.Author.Name} {x.Author.MiddleName} {x.Author.Surname}").Trim()) )</a>
+						<a href="#" class="author">@string.Join(", ",product.ProductAuthors?.Select(x=>($"{x.Author.Name} {x.Author.MiddleName} {x.Author.Surname}").Trim()))</a>
 						<h3><a href="product-details.html">@product.Title</a></h3>
 					</div>
 					<div class="product-card--body">
@@ -363,3 +347,10 @@
 		</div>
 	</div>
 </div>
+
+<script>
+	$(document).ready(function(){
+		$(`.nice-select.sort-select option[value="${@Model.SortSelect}"]`).prop('selected', true);
+	})
+
+</script>
