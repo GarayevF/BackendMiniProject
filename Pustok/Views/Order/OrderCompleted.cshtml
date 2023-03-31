@@ -1,4 +1,4 @@
-﻿@model OrderVM
+﻿@model Order
 @{
     ViewData["Title"] = "OrderCompleted";
 }
@@ -27,9 +27,9 @@
 							<p>Your order has been received.</p>
 						</div>
 						<ul class="order-details-list">
-							<li>Order Number: <strong>@Model.Order.No</strong></li>
-							<li>Date: <strong>@Model.Order.CreatedAt</strong></li>
-					<li>Total: <strong>$@(Model.Baskets.Sum(a => (a.Product.DiscountedPrice > 0 ? a.Product.DiscountedPrice : a.Product.Price) * a.Count) + Model.Baskets.Sum(a => a.Product.ExTax * a.Count))</strong></li>
+							<li>Order Number: <strong>@Model.No</strong></li>
+							<li>Date: <strong>@Model.CreatedAt</strong></li>
+						<li>Total: <strong>$@(Model.OrderItems.Sum(a => (a.Product.DiscountedPrice > 0 ? a.Product.DiscountedPrice : a.Product.Price) * a.Count) + Model.OrderItems.Sum(a => a.Product.ExTax * a.Count))</strong></li>
 						</ul>
 						<p>Pay with cash upon delivery.</p>
 						<h3 class="order-table-title">Order Details</h3>
@@ -42,17 +42,17 @@
 									</tr>
 								</thead>
 								<tbody>
-									@foreach(Basket basket in Model.Baskets){
+									@foreach(OrderItem item in Model.OrderItems){
 										<tr>
-											<td><a href="#">@basket.Title</a> <strong>× 1</strong></td>
-											<td><span>$@basket.Price</span></td>
+											<td><a href="#">@item.Product.Title</a> <strong>× @item.Count</strong></td>
+									<td><span>$@item.Product.Price</span></td>
 										</tr>
 									}
 								</tbody>
 								<tfoot>
 									<tr>
 										<th>Total:</th>
-										<td><span>$@(Model.Baskets.Sum(a => (a.Product.DiscountedPrice > 0 ? a.Product.DiscountedPrice : a.Product.Price) * a.Count) + Model.Baskets.Sum(a => a.Product.ExTax * a.Count))</span></td>
+										<td><span>$@(Model.OrderItems.Sum(a => (a.Product.DiscountedPrice > 0 ? a.Product.DiscountedPrice : a.Product.Price) * a.Count) + Model.OrderItems.Sum(a => a.Product.ExTax * a.Count))</span></td>
 									</tr>
 								</tfoot>
 							</table>

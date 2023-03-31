@@ -54,7 +54,7 @@ namespace Pustok.Services
                             BasketVM basketVM = new BasketVM();
 
                             basketVM.Id = product.Id;
-                            basketVM.Count = product.Count;
+                            basketVM.Count = basket.Count;
                             basketVM.Title = product.Title;
                             basketVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
                             basketVM.Image = product.MainImage;

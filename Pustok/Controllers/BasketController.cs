@@ -23,6 +23,7 @@ namespace Pustok.Controllers
             string cookie = HttpContext.Request.Cookies["basket"];
             List<BasketVM> basketVMs = null;
 
+
             if (!string.IsNullOrWhiteSpace(cookie))
             {
                 basketVMs = JsonConvert.DeserializeObject<List<BasketVM>>(cookie);
@@ -37,9 +38,11 @@ namespace Pustok.Controllers
                         basketVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
                         basketVM.Image = product.MainImage;
                         basketVM.ExTax = product.ExTax;
+
                     }
                 }
             }
+
 
             return View(basketVMs);
         }

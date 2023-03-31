@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
@@ -242,5 +243,26 @@ namespace Pustok.Controllers
 
 			return PartialView("_ShopPaginationPartial", productVM);
 		}
-	}
+
+        
+        public async Task<IActionResult> Modal(int? id)
+        {
+            if (id == null)
+            {
+                return BadRequest();
+            }
+
+            Product product = await _context.Products.Include(p => p.ProductImages)
+                .FirstOrDefaultAsync(p => p.IsDeleted == false && p.Id == id);
+
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            return PartialView("_ProductModalPartial", product);
+        }
+
+
+    }
 }

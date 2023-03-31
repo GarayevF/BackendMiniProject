@@ -21345,7 +21345,6 @@ p.form-messege {
     transition: all 0.4s linear;
     background-color: #e52e06;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
 }
 
     .main-btn:hover {
@@ -21556,3 +21555,401 @@ p.form-messege {
           transform: rotate(90deg); }
   .accordion .card .card-body {
     padding: 0 30px 30px; }
+
+
+.modal.fade {
+  display: block !important;
+  opacity: 0;
+  visibility: hidden; }
+  .modal.fade.show {
+    display: block !important;
+    opacity: 1;
+    visibility: visible; }
+.modal .modal-dialog {
+  max-width: 1240px; }
+  @media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    .modal .modal-dialog {
+      max-width: 1024px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .modal .modal-dialog {
+      max-width: 960px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .modal .modal-dialog {
+      max-width: 720px; } }
+  @media (max-width: 767px) {
+    .modal .modal-dialog {
+      max-width: 90%;
+      margin: 30px auto; } }
+  @media (max-width: 767px) {
+    .modal .modal-dialog {
+      max-width: 85%; } }
+  .modal .modal-dialog .modal-content {
+    border-radius: 0;
+    border: 0;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2); }
+    .modal .modal-dialog .modal-content .modal-header {
+      padding: 10px 20px 0;
+      margin: 0;
+      border-bottom: 0; }
+    .modal .modal-dialog .modal-content .modal-body {
+      padding: 20px 50px 50px; }
+      @media only screen and (min-width: 1200px) and (max-width: 1599px) {
+        .modal .modal-dialog .modal-content .modal-body {
+          padding: 10px 40px 40px; } }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .modal .modal-dialog .modal-content .modal-body {
+          padding: 10px 40px 40px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .modal .modal-dialog .modal-content .modal-body {
+          padding: 1px 30px 30px; } }
+      @media (max-width: 767px) {
+        .modal .modal-dialog .modal-content .modal-body {
+          padding: 1px 20px 20px; } }
+      .modal .modal-dialog .modal-content .modal-body .product-quick-view-image .quick-view-image .single-view-image img {
+        width: 100%;
+        display: block; }
+      .modal .modal-dialog .modal-content .modal-body .product-quick-view-image .quick-view-thumb li {
+        border: 1px solid #e5e5e5;
+        margin: 0 10px;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+        cursor: pointer; }
+        @media (max-width: 767px) {
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-image .quick-view-thumb li {
+            margin: 0 5px; } }
+        .modal .modal-dialog .modal-content .modal-body .product-quick-view-image .quick-view-thumb li .single-thumb img {
+          width: 100%;
+          display: block;
+          cursor: pointer; }
+        .modal .modal-dialog .modal-content .modal-body .product-quick-view-image .quick-view-thumb li.slick-current {
+          border-color: rgba(51, 51, 51, 0.3); }
+      .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-title {
+        font-size: 28px;
+        text-transform: capitalize;
+        color: #333;
+        font-weight: 500; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-title {
+            font-size: 24px; } }
+        @media (max-width: 767px) {
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-title {
+            font-size: 20px; } }
+      .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .reference {
+        font-size: 13px;
+        color: #a9a9a9;
+        padding-top: 25px; }
+        @media only screen and (min-width: 1200px) and (max-width: 1599px) {
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .reference {
+            padding-top: 15px; } }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .reference {
+            padding-top: 15px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .reference {
+            padding-top: 15px; } }
+        @media (max-width: 767px) {
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .reference {
+            padding-top: 15px; } }
+      .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .rating {
+        padding-top: 10px; }
+        .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .rating li {
+          display: inline-block;
+          font-size: 13px;
+          color: #666; }
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .rating li.rating-on {
+            color: #f3cd1e; }
+      .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-prices {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 25px; }
+        @media only screen and (min-width: 1200px) and (max-width: 1599px) {
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-prices {
+            padding-top: 15px; } }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-prices {
+            padding-top: 15px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-prices {
+            padding-top: 15px; } }
+        @media (max-width: 767px) {
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-prices {
+            padding-top: 15px; } }
+        .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-prices .sale-price {
+          color: #666;
+          font-size: 25px;
+          font-weight: 400;
+          margin-right: 15px; }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-prices .sale-price {
+              font-size: 22px; } }
+          @media (max-width: 767px) {
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-prices .sale-price {
+              font-size: 18px; } }
+        .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-prices .regular-price {
+          color: #e52e06;
+          font-size: 28px;
+          font-weight: 500;
+          margin-right: 15px; }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-prices .regular-price {
+              font-size: 26px; } }
+          @media (max-width: 767px) {
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-prices .regular-price {
+              font-size: 22px; } }
+        .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-prices .save {
+          font-weight: 400;
+          font-size: 13px;
+          background-color: #333;
+          height: 25px;
+          line-height: 25px;
+          padding: 0 10px;
+          border-radius: 4px;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          -o-border-radius: 4px;
+          color: #fff; }
+      .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-description {
+        padding-top: 25px; }
+        @media only screen and (min-width: 1200px) and (max-width: 1599px) {
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-description {
+            padding-top: 15px; } }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-description {
+            padding-top: 15px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-description {
+            padding-top: 15px;
+            font-size: 14px; } }
+        @media (max-width: 767px) {
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-description {
+            padding-top: 15px;
+            font-size: 14px; } }
+      .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex; }
+        .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color .title {
+          font-size: 14px;
+          color: #333;
+          font-weight: 500;
+          color: #333; }
+        .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color .product-size {
+          position: relative;
+          display: inline-block;
+          margin-top: 25px;
+          margin-right: 30px; }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color .product-size {
+              margin-right: 15px; } }
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color .product-size select {
+            width: 61px;
+            padding: 0 10px;
+            border: 1px solid #e5e5e5;
+            height: 40px;
+            margin-top: 10px; }
+        .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color .product-color {
+          margin-top: 25px;
+          margin-right: 30px; }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color .product-color {
+              margin-right: 15px; } }
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color .product-color .color-input {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            margin-top: 10px; }
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color .product-color .color-input .single-color input[type="radio"] {
+              display: none; }
+              .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color .product-color .color-input .single-color input[type="radio"] + label {
+                width: 20px;
+                height: 20px;
+                border: 0;
+                cursor: pointer;
+                position: relative;
+                display: inline-block;
+                margin: 0 10px -4px 0;
+                -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+                -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+                box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2); }
+                .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color .product-color .color-input .single-color input[type="radio"] + label::before {
+                  position: absolute;
+                  content: '';
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  -webkit-transition: all 0.4s linear;
+                  -moz-transition: all 0.4s linear;
+                  -ms-transition: all 0.4s linear;
+                  -o-transition: all 0.4s linear;
+                  transition: all 0.4s linear;
+                  border: 2px solid transparent; }
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color .product-color .color-input .single-color.color-1 input[type="radio"] + label {
+              background-color: #fff; }
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color .product-color .color-input .single-color.color-1 input[type="radio"]:checked + label::before {
+              border-color: #333; }
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color .product-color .color-input .single-color.color-2 input[type="radio"] + label {
+              background-color: #434A54; }
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color .product-color .color-input .single-color.color-2 input[type="radio"]:checked + label::before {
+              border-color: #fff; }
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color .product-color .color-input .single-color.color-3 input[type="radio"] + label {
+              background-color: #333; }
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color .product-color .color-input .single-color.color-3 input[type="radio"]:checked + label::before {
+              border-color: #fff; }
+        .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color .product-quantity {
+          margin-top: 25px; }
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color .product-quantity .quantity {
+            margin-top: 10px; }
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color .product-quantity .quantity input {
+              width: 60px;
+              height: 40px;
+              border: 1px solid #e5e5e5;
+              padding: 0 10px;
+              text-align: center; }
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-size-color .product-quantity .quantity button {
+              width: 40px;
+              height: 40px;
+              background-color: transparent;
+              border: 1px solid #e5e5e5; }
+      .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-add-cart {
+        margin-top: 30px; }
+        .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-add-cart button {
+          position: relative;
+          padding: 0;
+          color: #fff;
+          line-height: 60px;
+          height: 60px;
+          font-size: 16px;
+          font-weight: 500;
+          border: 0;
+          width: 100%;
+          border-radius: 0;
+          box-shadow: none;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+          background: -webkit-linear-gradient(left, #bc6eff 0%, #65e2ff 50%, #bc6eff 100%);
+          background: -o-linear-gradient(left, #bc6eff 0%, #65e2ff 50%, #bc6eff 100%);
+          background: linear-gradient(to right, #bc6eff 0%, #65e2ff 50%, #bc6eff 100%);
+          background-size: 200%;
+          background-position: left center;
+          -webkit-transition: all 0.3s linear;
+          -moz-transition: all 0.3s linear;
+          -ms-transition: all 0.3s linear;
+          -o-transition: all 0.3s linear;
+          transition: all 0.3s linear; }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-add-cart button {
+              height: 50px;
+              line-height: 50px; } }
+          @media (max-width: 767px) {
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-add-cart button {
+              height: 50px;
+              line-height: 50px; } }
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-add-cart button i {
+            font-size: 28px;
+            line-height: 60px; }
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+              .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-add-cart button i {
+                line-height: 50px;
+                font-size: 24px; } }
+            @media (max-width: 767px) {
+              .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-add-cart button i {
+                line-height: 50px;
+                font-size: 24px; } }
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-add-cart button:hover {
+            background-position: right center; }
+      .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-wishlist-compare {
+        padding-top: 15px; }
+        .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-wishlist-compare ul li {
+          width: 50%;
+          margin-top: 15px; }
+          @media (max-width: 767px) {
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-wishlist-compare ul li {
+              width: 100%; } }
+          @media only screen and (min-width: 576px) and (max-width: 767px) {
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-wishlist-compare ul li {
+              width: 50%; } }
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-wishlist-compare ul li a {
+            line-height: 0;
+            border: none;
+            color: #333;
+            display: inline-block;
+            font-size: 14px;
+            background: transparent;
+            cursor: pointer;
+            font-weight: 500;
+            text-transform: uppercase; }
+            @media only screen and (min-width: 1600px) {
+              .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-wishlist-compare ul li a {
+                letter-spacing: 2px; } }
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+              .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-wishlist-compare ul li a {
+                font-size: 13px; } }
+            @media (max-width: 767px) {
+              .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-wishlist-compare ul li a {
+                font-size: 13px; } }
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-wishlist-compare ul li a i {
+              margin-right: 5px;
+              font-size: 22px;
+              color: #666; }
+              @media only screen and (min-width: 768px) and (max-width: 991px) {
+                .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-wishlist-compare ul li a i {
+                  font-size: 18px; } }
+              @media (max-width: 767px) {
+                .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-wishlist-compare ul li a i {
+                  font-size: 18px; } }
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-wishlist-compare ul li + li {
+            border-left: 1px solid #e5e5e5; }
+            @media (max-width: 767px) {
+              .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-wishlist-compare ul li + li {
+                border-left: 0; } }
+            @media only screen and (min-width: 576px) and (max-width: 767px) {
+              .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-wishlist-compare ul li + li {
+                border-left: 1px solid #e5e5e5; } }
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-wishlist-compare ul li + li a {
+              padding-left: 30px; }
+              @media only screen and (min-width: 768px) and (max-width: 991px) {
+                .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-wishlist-compare ul li + li a {
+                  padding-left: 15px; } }
+              @media (max-width: 767px) {
+                .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-wishlist-compare ul li + li a {
+                  padding-left: 0; } }
+              @media only screen and (min-width: 576px) and (max-width: 767px) {
+                .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-wishlist-compare ul li + li a {
+                  padding-left: 15px; } }
+      .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-share {
+        padding-top: 20px; }
+        .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-share p {
+          font-size: 14px;
+          color: #333;
+          font-weight: 500; }
+        .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-share .social li {
+          display: inline-block;
+          margin-left: 10px; }
+          .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-share .social li a {
+            color: #b4b4b4;
+            font-size: 14px;
+            padding: 0;
+            -webkit-transition: all 0.3s linear;
+            -moz-transition: all 0.3s linear;
+            -ms-transition: all 0.3s linear;
+            -o-transition: all 0.3s linear;
+            transition: all 0.3s linear; }
+            .modal .modal-dialog .modal-content .modal-body .product-quick-view-content .product-share .social li a:hover {
+              color: #666; }

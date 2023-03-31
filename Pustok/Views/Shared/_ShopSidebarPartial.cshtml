@@ -268,10 +268,10 @@
 
                 sortby = $('.nice-select.sort-select option:selected').val();
 
-
                 if (sortby > -1) {
                     path.push(`sortby=${sortby}`)
                 }
+
                 fetch(`product/filter?${path.join('&')}`)
                     .then(res => {
                         return res.text();

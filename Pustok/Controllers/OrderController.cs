@@ -106,24 +106,18 @@ namespace Pustok.Controllers
 
 			TempData["Error"] = $"{order.No} Sifarisiniz ugurla gonderildi";
 
-			return RedirectToAction("OrderCompleted", "order", new {order});
+			return RedirectToAction("OrderCompleted", "order", new {id = order.Id});
 		}
 
-		public async Task<IActionResult> OrderCompleted(Order order)
+		public async Task<IActionResult> OrderCompleted(int? id)
 		{
-			AppUser appUser = await _userManager.Users
-				.Include(u => u.Baskets.Where(b => b.IsDeleted == false)).ThenInclude(b => b.Product)
-				.Include(u => u.Addresses.Where(a => a.IsMain && a.IsDeleted == false))
-				.Include(u => u.Orders)
-				.FirstOrDefaultAsync(u => u.UserName == User.Identity.Name);
+			Order order = await _context.Orders.Where(a => a.IsDeleted == false)
+				.Include(o => o.OrderItems).ThenInclude(o => o.Product)
+                .FirstOrDefaultAsync(o => o.IsDeleted == false && o.Id == id);
 
-			OrderVM orderVM = new OrderVM
-			{
-				Order = order,
-				Baskets = appUser.Baskets
-			};
+            
 
-			return View(orderVM);
+            return View(order);
 		}
 	}
 }
