@@ -23,6 +23,17 @@
 </head>
 
 <body>
+
+    @if (TempData["Success"] != null)
+    {
+        <input type="hidden" name="success" value="@TempData["Success"]" />
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <input type="hidden" name="error" value="@TempData["Error"]" />
+    }
+
     <div class="site-wrapper" id="top">
         <div class="site-header d-none d-lg-block">
             <div class="header-middle pt--10 pb--10">

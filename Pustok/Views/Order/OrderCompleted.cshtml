@@ -1,0 +1,64 @@
+﻿@model OrderVM
+@{
+    ViewData["Title"] = "OrderCompleted";
+}
+
+<section class="breadcrumb-section">
+			<h2 class="sr-only">Site Breadcrumb</h2>
+			<div class="container">
+				<div class="breadcrumb-contents">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+							<li class="breadcrumb-item active">Order Complete</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</section>
+
+		<!-- order complete Page Start -->
+		<section class="order-complete inner-page-sec-padding-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="order-complete-message text-center">
+							<h1>Thank you !</h1>
+							<p>Your order has been received.</p>
+						</div>
+						<ul class="order-details-list">
+							<li>Order Number: <strong>@Model.Order.No</strong></li>
+							<li>Date: <strong>@Model.Order.CreatedAt</strong></li>
+					<li>Total: <strong>$@(Model.Baskets.Sum(a => (a.Product.DiscountedPrice > 0 ? a.Product.DiscountedPrice : a.Product.Price) * a.Count) + Model.Baskets.Sum(a => a.Product.ExTax * a.Count))</strong></li>
+						</ul>
+						<p>Pay with cash upon delivery.</p>
+						<h3 class="order-table-title">Order Details</h3>
+						<div class="table-responsive">
+							<table class="table order-details-table">
+								<thead>
+									<tr>
+										<th>Product</th>
+										<th>Total</th>
+									</tr>
+								</thead>
+								<tbody>
+									@foreach(Basket basket in Model.Baskets){
+										<tr>
+											<td><a href="#">@basket.Title</a> <strong>× 1</strong></td>
+											<td><span>$@basket.Price</span></td>
+										</tr>
+									}
+								</tbody>
+								<tfoot>
+									<tr>
+										<th>Total:</th>
+										<td><span>$@(Model.Baskets.Sum(a => (a.Product.DiscountedPrice > 0 ? a.Product.DiscountedPrice : a.Product.Price) * a.Count) + Model.Baskets.Sum(a => a.Product.ExTax * a.Count))</span></td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+

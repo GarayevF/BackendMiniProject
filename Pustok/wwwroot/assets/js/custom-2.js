@@ -137,6 +137,12 @@
 
         })
         
+    $(document).on('click', '.addAddress', function (e) {
+        e.preventDefault();
+
+        $('.addressForm').removeClass('d-none');
+        $('.addressesContainer').addClass('d-none');
+    })
 
 })
 

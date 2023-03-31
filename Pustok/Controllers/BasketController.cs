@@ -20,7 +20,7 @@ namespace Pustok.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            string cookie = HttpContext.Request.Cookies["compare"];
+            string cookie = HttpContext.Request.Cookies["basket"];
             List<BasketVM> basketVMs = null;
 
             if (!string.IsNullOrWhiteSpace(cookie))

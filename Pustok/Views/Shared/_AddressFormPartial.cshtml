@@ -1,0 +1,83 @@
+﻿@model Address
+<style>
+    .main-btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 0;
+    padding: 0 20px;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff !important;
+    cursor: pointer;
+    z-index: 5;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    background-color: #e52e06;
+    text-transform: uppercase;
+}
+
+    .main-btn:hover {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .main-btn.main-btn-2 {
+        background-color: #333;
+        color: #fff;
+    }
+</style>
+<form method="post" asp-controller="account" asp-action="AddAddress">
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+            <div class="custom-checkbox" style="display:flex; align-items:baseline !important;">
+                <input asp-for="IsMain" id="account">
+                <label for="account"></label>
+                <p>IsMain? </p>
+            </div>
+        </div>
+        <div class="col-lg-6 col-lg-6">
+            <div class="single-form d-flex justify-content-between align-items-center">
+                <label asp-for="Country" style="flex: 0.2"></label>
+                <input asp-for="Country" style="flex: 1" placeholder="Country">
+                <span asp-validation-for="Country" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+            <div class="single-form d-flex justify-content-between align-items-center">
+                <label asp-for="City" style="flex: 0.2"></label>
+                <input asp-for="City" style="flex: 1" placeholder="Town/City">
+                <span asp-validation-for="City" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+            <div class="single-form d-flex justify-content-between align-items-center">
+                <label asp-for="State" style="flex: 0.2"></label>
+                <input asp-for="State" style="flex: 1" placeholder="State">
+                <span asp-validation-for="State" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+            <div class="single-form d-flex justify-content-between align-items-center">
+                <label asp-for="PostalCode" style="flex: 0.2"></label>
+                <input asp-for="PostalCode" style="flex: 1" placeholder="Zip Code">
+                <span asp-validation-for="PostalCode" class="text-danger"></span>
+            </div>
+        </div> 
+        <div class="col-md-6 col-lg-6">
+            <button class="main-btn main-btn-2" type="submit">Add Address</button>
+        </div>
+
+    </div>
+
+</form>

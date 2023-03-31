@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿   using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -11,7 +11,6 @@ using Pustok.ViewModels;
 using Pustok.ViewModels.AccountViewModels;
 using Pustok.ViewModels.BasketViewModels;
 using System.Data;
-using MimeKit;
 using MailKit.Net.Smtp;
 
 namespace Pustok.Controllers
