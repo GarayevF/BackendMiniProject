@@ -239,7 +239,7 @@ namespace Pustok.Controllers
                 address.IsMain = true;
             }
 
-            if (address.IsMain && (appUser.Addresses == null || appUser.Addresses.Count() <= 0) && appUser.Addresses.Any(a => a.IsMain))
+            if (address.IsMain && appUser.Addresses != null && appUser.Addresses.Count() > 0 && appUser.Addresses.Any(a => a.IsMain && a.IsDeleted == false))
             {
                 appUser.Addresses.FirstOrDefault(a => a.IsMain && a.IsDeleted == false).IsMain = false;
             }
@@ -373,6 +373,65 @@ namespace Pustok.Controllers
             TempData["Success"] = $"{appUser.Email} tesdiqlendi";
 
             return RedirectToAction(nameof(Login));
+        }
+
+        [HttpGet]
+        [Authorize(Roles = "Member")]
+        public async Task<IActionResult> EditAddress(int? id)
+        {
+            if (id == null) return BadRequest();
+
+            Address address = await _context.Addresses.FirstOrDefaultAsync(a => a.IsDeleted == false && a.Id == id);
+
+            if (address == null) return NotFound();
+
+            return PartialView("_AddressEditPartial", address);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Member")]
+        public async Task<IActionResult> EditAddress(Address address, int? id)
+        {
+            if (id == null) return BadRequest();
+
+            if (address == null) return NotFound();
+
+            Address mainAddress = await _context.Addresses.FirstOrDefaultAsync(address => address.Id == id && address.IsDeleted == false);
+
+            if (mainAddress == null) return NotFound();
+
+            mainAddress.Country = address.Country;
+            mainAddress.City = address.City;
+            mainAddress.State = address.State;
+            mainAddress.PostalCode = address.PostalCode;
+
+            AppUser appUser = await _userManager.Users
+                .Include(u => u.Addresses.Where(a => a.IsDeleted == false))
+                .FirstOrDefaultAsync(u => u.UserName == User.Identity.Name);
+
+            if (address.IsMain)
+            {
+                if(appUser.Addresses != null && appUser.Addresses.Count() > 0
+                    && appUser.Addresses.Exists(a => a.IsMain && a.IsDeleted == false))
+                {
+                    appUser.Addresses.FirstOrDefault(a => a.IsMain && a.IsDeleted == false).IsMain = false;
+                }
+            }
+
+            if (address.IsMain) mainAddress.IsMain = true;
+
+            await _context.SaveChangesAsync();
+
+            ProfileVM profileVM = new ProfileVM
+            {
+                Address = mainAddress,
+                Addresses = appUser.Addresses
+            };
+
+            TempData["Tab"] = "Address";
+
+            return RedirectToAction("Profile", profileVM);
         }
     }
 }

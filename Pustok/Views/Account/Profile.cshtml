@@ -115,14 +115,14 @@
 										</div>
 										@if (Model.Addresses != null && Model.Addresses.Count() > 0)
 										{
-											<div class="row" style="margin-top: 10px; margin-bottom: 10px">
+											<div class="row" style="margin-top: 10px; margin-bottom: 10px; gap: 10px;">
 												@foreach (Address address in Model.Addresses.OrderByDescending(a => a.IsMain))
 												{
-													<div class="account-address mt-30 col-lg-3" style="border: 1px solid gray">
+													<div class="account-address mt-30 col-lg-3" style="@(address.IsMain ? "border: 5px solid green" : "border: 1px solid gray") ">
 														<h6 class="name">@address.Country</h6>
 														<p>@address.City<br>@address.State</p>
 														<p>@address.PostalCode</p>
-														<a class="main-btn main-btn-2" asp-controller="Account" asp-action="EditAccount" asp-route-id="@address.Id"><i class="far fa-edit"></i> Edit Address</a>
+														<a class="main-btn main-btn-2 addresseditbtn" asp-controller="Account" asp-action="EditAddress" asp-route-id="@address.Id"><i class="far fa-edit"></i> Edit Address</a>
 													</div>
 												}
 											</div>
@@ -130,6 +130,9 @@
 									</div>
 									<div class="addressForm @(TempData["ModelError"]?.ToString() != null ? "" : "d-none")">
 										@await Html.PartialAsync("_AddressFormPartial", new Address())
+									</div>
+									<div class="editAdress d-none">
+										
 									</div>
 								</div>
 							</div>

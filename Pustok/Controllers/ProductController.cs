@@ -264,5 +264,63 @@ namespace Pustok.Controllers
         }
 
 
-    }
+		public async Task<IActionResult> Detail(int? id)
+		{
+			if (id == null) return BadRequest();
+
+			Product product = await _context.Products
+				.Include(p => p.Reviews.Where(p => p.IsDeleted == false)).ThenInclude(r => r.User)
+				.FirstOrDefaultAsync(p => p.IsDeleted == false && p.Id == id);
+
+			if (product == null) return NotFound();
+
+			DetailVM detailVM = new DetailVM
+			{
+				Product = product,
+			};
+
+			return View(detailVM);
+		}
+
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+		[Authorize(Roles = "Member")]
+		public async Task<IActionResult> AddReview(Review review)
+		{
+			if (review.ProductId == null) return BadRequest();
+
+			Product product = await _context.Products
+				.Include(p => p.Reviews.Where(p => p.IsDeleted == false)).ThenInclude(r => r.User)
+				.FirstOrDefaultAsync(p => p.IsDeleted == false && p.Id == review.ProductId);
+
+			if (product == null) return NotFound();
+
+			if (product.Reviews.Any(r => r.User.UserName == User.Identity.Name)) return BadRequest();
+
+			if (!ModelState.IsValid)
+			{
+				DetailVM detailVM = new DetailVM
+				{
+					Product = product,
+				};
+
+				return View("Detail", detailVM);
+			}
+
+			AppUser appUser = await _userManager.FindByNameAsync(User.Identity.Name);
+
+			review.CreatedAt = DateTime.UtcNow.AddHours(4);
+			review.CreatedBy = $"{appUser.Name} {appUser.SurName}";
+			review.UserId = appUser.Id;
+
+			await _context.Reviews.AddAsync(review);
+			await _context.SaveChangesAsync();
+
+			return RedirectToAction("Detail", new { id = review.ProductId });
+
+
+		}
+
+
+	}
 }

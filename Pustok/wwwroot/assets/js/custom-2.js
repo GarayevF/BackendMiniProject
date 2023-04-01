@@ -7,7 +7,7 @@
     let sortby = -1;
 
     console.log(window.location.pathname)
-    $(document).on('click', '.basketRemover, .addbasket, .subbasket, .deletewish, .addwish, .addcompare', function (e) {
+    $(document).on('click', '.basketRemover, .addbasket, .subbasket, .deletewish, .addwish, .addcompare, .addresseditbtn', function (e) {
         if ($(this).hasClass('basketRemover')) {
             e.preventDefault();
 
@@ -108,6 +108,23 @@
                     return;
                 })
 
+        }
+        else if ($(this).hasClass('addresseditbtn')) {
+            e.preventDefault();
+
+            if (!$('.addressesContainer').hasClass('d-none')) $('.addressesContainer').addClass('d-none')
+            if (!$('.addressForm').hasClass('d-none')) $('.addressesContainer').addClass('d-none')
+
+            $('.editAdress').removeClass('d-none')
+
+            let url = $(this).attr('href');
+            fetch(url)
+                .then(res => {
+                    return res.text()
+                })
+                .then(data => {
+                    $('.editAdress').html(data)
+                })
         }
     })
         .on('keyup', '.ProductCountInp', function (e) {
