@@ -82,7 +82,8 @@ namespace Pustok.Areas.Manage.Controllers
 		[ValidateAntiForgeryToken]
 		public async Task<IActionResult> Login(LoginVM loginVM)
 		{
-			if (!ModelState.IsValid) return View(loginVM);
+
+            if (!ModelState.IsValid) return View(loginVM);
 
 			AppUser appUser = await _userManager.FindByEmailAsync(loginVM.Email);
 
@@ -119,8 +120,8 @@ namespace Pustok.Areas.Manage.Controllers
 				return View(loginVM);
 			}
 
-			return RedirectToAction("Index", "Dashboard", new { area = "manage" });
-		}
+            return RedirectToAction("Index", "Dashboard", new { areas = "Manage" });
+        }
 
 
 		[HttpGet]
@@ -245,18 +246,18 @@ namespace Pustok.Areas.Manage.Controllers
 
 		//public async Task<IActionResult> CreateSuperAdmin()
 		//{
-		//    AppUser appUser = new AppUser
-		//    {
-		//        Name = "Super",
-		//        SurName = "Admin",
-		//        UserName = "SuperAdmin",
-		//        Email = "superadmin@gmail.com"
-		//    };
+		//	AppUser appUser = new AppUser
+		//	{
+		//		Name = "Super",
+		//		SurName = "Admin",
+		//		UserName = "SuperAdmin",
+		//		Email = "superadmin@gmail.com"
+		//	};
 
-		//    await _userManager.CreateAsync(appUser, "SuperAdmin229");
-		//    await _userManager.AddToRoleAsync(appUser, "SuperAdmin");
+		//	await _userManager.CreateAsync(appUser, "SuperAdmin229");
+		//	await _userManager.AddToRoleAsync(appUser, "SuperAdmin");
 
-		//    return Ok("super admin yaradildi");
+		//	return Ok("super admin yaradildi");
 		//}
 		#endregion
 	}

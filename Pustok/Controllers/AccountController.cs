@@ -53,6 +53,7 @@ namespace Pustok.Controllers
                 Email = registerVM.Email,
                 Name = registerVM.Name,
                 SurName = registerVM.SurName,
+                IsActive = true
             };
 
             IdentityResult identityResult = await _userManager.CreateAsync(appUser, registerVM.Password);

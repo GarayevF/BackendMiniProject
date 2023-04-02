@@ -19649,7 +19649,7 @@ input[type="number"] {
 
 .site-form label {
   color: #333;
-  display: block;
+  /*display: block;*/
   margin: 0 0 5px; }
 
 .site-form .submit-btn {

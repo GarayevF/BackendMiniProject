@@ -269,7 +269,9 @@ namespace Pustok.Controllers
 			if (id == null) return BadRequest();
 
 			Product product = await _context.Products
-				.Include(p => p.Reviews.Where(p => p.IsDeleted == false)).ThenInclude(r => r.User)
+                .Include(p => p.ProductAuthors.Where(a => a.IsDeleted == false))
+                 .ThenInclude(pa => pa.Author).Where(a => a.IsDeleted == false)
+                .Include(p => p.Reviews.Where(p => p.IsDeleted == false)).ThenInclude(r => r.User)
 				.FirstOrDefaultAsync(p => p.IsDeleted == false && p.Id == id);
 
 			if (product == null) return NotFound();
@@ -282,8 +284,6 @@ namespace Pustok.Controllers
 			return View(detailVM);
 		}
 
-		[HttpPost]
-		[ValidateAntiForgeryToken]
 		[Authorize(Roles = "Member")]
 		public async Task<IActionResult> AddReview(Review review)
 		{
