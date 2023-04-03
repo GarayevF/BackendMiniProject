@@ -22,7 +22,7 @@
                         {
                             @if (deal.Product.ProductAuthors != null && deal.Product.ProductAuthors.Count() > 0)
                             {
-                                <a href="#" class="author">@string.Join(", ", deal.Product?.ProductAuthors?.Select(x=>x.Author.Name))</a>
+                                <a asp-controller="product" asp-action="detail" asp-route-id="@deal.Product.Id" class="author">@string.Join(", ", deal.Product?.ProductAuthors?.Select(x=>x.Author.Name))</a>
                             }
                         }
                     </a>
@@ -34,22 +34,22 @@
                 </div>
                 <div class="product-card--body">
                     <div class="card-image">
-                        <img src="~/assets/image/products/product-2.jpg" alt="">
+                        <img src="~/assets/image/products/@deal.Product.MainImage" alt="">
                         <div class="hover-contents">
                             <a href="product-details.html" class="hover-image">
-                                <img src="~/assets/image/products/product-1.jpg" alt="">
+                                <img src="~/assets/image/products/@deal.Product.HoverImage" alt="">
                             </a>
                             <div class="hover-btns">
-                                <a href="cart.html" class="single-btn">
+                                <a asp-controller="basket" asp-action="addbasket" asp-route-id="@deal.Product.Id" class="single-btn">
                                     <i class="fas fa-shopping-basket"></i>
                                 </a>
-                                <a href="wishlist.html" class="single-btn">
+                                <a asp-controller="wishlist" asp-action="addwishlist" asp-route-id="@deal.Product.Id" class="single-btn">
                                     <i class="fas fa-heart"></i>
                                 </a>
-                                <a href="compare.html" class="single-btn">
+                                <a asp-controller="compare" asp-action="addcompare" asp-route-id="@deal.Product.Id" class="single-btn">
                                     <i class="fas fa-random"></i>
                                 </a>
-                                <a href="#" data-toggle="modal" data-target="#quickModal"
+                                <a asp-controller="Product" asp-action="Modal" asp-route-id="@deal.Product.Id" data-toggle="modal" data-target="#quickModal"
                                class="single-btn">
                                     <i class="fas fa-eye"></i>
                                 </a>
@@ -57,9 +57,12 @@
                         </div>
                     </div>
                     <div class="price-block">
-                        <span class="price">£51.20</span>
-                        <del class="price-old">£51.20</del>
-                        <span class="price-discount">20%</span>
+                        <span class="price">£@(deal.Product.DiscountedPrice > 0 ? deal.Product.DiscountedPrice : deal.Product.Price)</span>
+                        @if (deal.Product.DiscountedPrice > 0)
+                        {
+                            <del class="price-old">£@deal.Product.Price</del>
+                            <span class="price-discount">@((100 - 100 * (deal.Product.DiscountedPrice / deal.Product.Price)).ToString("N2"))%</span>
+                        }
                     </div>
                     <div class="count-down-block">
                         <div class="product-countdown" data-countdown="@deal.EndDate"></div>

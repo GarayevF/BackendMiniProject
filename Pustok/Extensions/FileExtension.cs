@@ -14,11 +14,11 @@
 
         public static async Task<string> CreateFileAsync(this IFormFile file, IWebHostEnvironment env, params string[] folders)
         {
-            int lastIndex = file.FileName.LastIndexOf('.');
+            int lastIndex = file.FileName.LastIndexOf(".");
 
             string name = file.FileName.Substring(lastIndex);
 
-            string fileName = $"{DateTime.UtcNow.ToString("yyyyMMddHHmmssfff")}_{Guid.NewGuid()}{name}";
+            string fileName = $"{DateTime.UtcNow:yyyyMMddHHmmssfff}_{Guid.NewGuid()}{name}";
 
             string fullPath = Path.Combine(env.WebRootPath);
 

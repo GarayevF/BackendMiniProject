@@ -2,11 +2,13 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Pustok.DataAccessLayer;
+using Pustok.Extensions;
 using Pustok.Models;
 using Pustok.ViewModels;
 
 namespace Pustok.Areas.Manage.Controllers
 {
+    [Area("Manage")]
     public class SettingController : Controller
     {
         private readonly AppDbContext _context;
@@ -26,56 +28,94 @@ namespace Pustok.Areas.Manage.Controllers
             return View(PageNatedList<Setting>.Create(query, pageIndex, 3, 8));
         }
 
+        [HttpGet]
+        [Authorize(Roles = "SuperAdmin, Admin")]
+        public async Task<IActionResult> Create()
+        {
+            
+            return View();
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> Create(Setting setting)
         {
             if (!ModelState.IsValid) return View();
 
-            if (await _context.Categories.AnyAsync(c => c.IsDeleted == false && c.Name.ToLower() == category.Name.Trim().ToLower()))
+            if (await _context.Settings.AnyAsync(c => c.Key.ToLower() == setting.Key.Trim().ToLower()))
             {
-                ModelState.AddModelError("Name", $"Bu adda {category.Name} category movcuddu");
-                return View(category);
+                ModelState.AddModelError("Name", $"Bu {setting.Key} key movcuddur");
+                return View(setting);
             }
 
-            if (category.IsMain)
+            
+
+            setting.Key = setting.Key.Trim();
+            setting.Value = setting.Value.Trim();
+
+            await _context.Settings.AddAsync(setting);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        [Authorize(Roles = "SuperAdmin, Admin")]
+        public async Task<IActionResult> Update(int? id)
+        {
+
+            if (id == null) return BadRequest();
+
+            Setting setting = await _context.Settings.FirstOrDefaultAsync(c => c.Id == id);
+
+            if (setting == null) return NotFound();
+
+            return View(setting);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin, Admin")]
+        public async Task<IActionResult> Update(int? id, Setting setting)
+        {
+            if (!ModelState.IsValid) return View(setting);
+
+            if (id == null) return BadRequest();
+
+            if (id != setting.Id) return BadRequest();
+
+            Setting dbSetting = await _context.Settings.FirstOrDefaultAsync(c => c.Id == id);
+
+            if (dbSetting == null) return NotFound();
+
+            if (await _context.Settings.AnyAsync(c => c.Key.ToLower() == setting.Key.Trim().ToLower() && c.Id != setting.Id))
             {
-                if (category.File?.ContentType != "image/jpeg")
-                {
-                    ModelState.AddModelError("File", "Uygun type deyil");
-                    return View();
-                }
-                if ((category.File?.Length / 1024) > 300)
-                {
-                    ModelState.AddModelError("File", "Size uygun deyil");
-                    return View();
-                }
-
-                category.Image = await category.File.CreateFileAsync(_env, "assets", "images");
-                category.ParentId = null;
-            }
-            else
-            {
-                if (category.ParentId == null)
-                {
-                    ModelState.AddModelError("ParentId", "Parent mutleq secilmelidir");
-                    return View(category);
-                }
-
-                if (!await _context.Categories.AnyAsync(c => c.IsDeleted == false && c.Id == category.ParentId && c.IsMain))
-                {
-                    ModelState.AddModelError("ParentId", "Parent mutleq secilmelidir");
-                    return View(category);
-                }
-
-                category.Image = null;
+                ModelState.AddModelError("Name", $"Bu adda {setting.Key} key movcuddur");
+                return View(setting);
             }
 
-            category.Name = category.Name.Trim();
-            category.CreatedAt = DateTime.UtcNow.AddHours(4);
-            category.CreatedBy = "System";
 
-            await _context.Categories.AddAsync(category);
+            dbSetting.Key = setting.Key.Trim();
+            dbSetting.Value = setting.Value.Trim();
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        [Authorize(Roles = "SuperAdmin, Admin")]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null) return BadRequest();
+
+            Setting setting = await _context.Settings
+                .FirstOrDefaultAsync(c => c.Id == id);
+
+            if (setting == null) return NotFound();
+
+            _context.Settings.Remove(setting);
             await _context.SaveChangesAsync();
 
             return RedirectToAction(nameof(Index));

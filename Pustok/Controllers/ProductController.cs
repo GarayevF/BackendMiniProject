@@ -321,6 +321,21 @@ namespace Pustok.Controllers
 
 		}
 
+        public async Task<IActionResult> Search(string search)
+        {
+            IEnumerable<Product> products = await _context.Products
+                .Where(p => p.IsDeleted == false &&
+                (p.ProductAuthors.Any(a => a.Author.Name.ToLower().Contains(search.Trim().ToLower())) ||
+                p.ProductAuthors.Any(a => a.Author.Surname.ToLower().Contains(search.Trim().ToLower())) ||
+                p.ProductAuthors.Any(a => a.Author.MiddleName.ToLower().Contains(search.Trim().ToLower())) ||
+				p.Title.ToLower().Contains(search.Trim().ToLower())
+                )).OrderByDescending(p => p.Id).Take(5).ToListAsync();
 
-	}
+
+            return PartialView("_SearchPartial", products);
+
+
+        }
+
+    }
 }

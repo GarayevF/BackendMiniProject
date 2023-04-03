@@ -1,13 +1,37 @@
 ﻿$(document).ready(function () {
 
-    let categoryIds = [];
-    let authorIds = [];
-    let min = -1;
-    let max = -1;
-    let sortby = -1;
 
-    console.log(window.location.pathname)
-    $(document).on('click', '.basketRemover, .addbasket, .subbasket, .deletewish, .addwish, .addcompare, .addresseditbtn', function (e) {
+    toastr.options = {
+        "closeButton": false,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": true,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    }
+
+    let successInput = $("input[name='success']");
+    if (successInput.val()?.length > 0) {
+        toastr["success"](successInput.val())
+    }
+
+    let errorInput = $("input[name='error']");
+    if (errorInput.val().length > 0) {
+        toastr["error"](errorInput.val())
+    }
+
+    let tagId = -1;
+
+    $(document).on('click', '.basketRemover, .addbasket, .subbasket, .deletewish, .addwish, .addcompare, .addresseditbtn, .blogTagFilter', function (e) {
         if ($(this).hasClass('basketRemover')) {
             e.preventDefault();
 
@@ -18,7 +42,7 @@
                     return res.text()
                 })
                 .then(data => {
-                    $('.cart-dropdown-block').html(data)
+                    $('.cart-block').html(data)
                     if (window.location.pathname.split('/')[1].toLowerCase() == 'basket') {
                         fetch(url.replace("deletebasket/" + url.split('/')[url.split('/').length - 1], 'mainbasket'))
                             .then(res2 => {
@@ -40,7 +64,7 @@
                     return res.text()
                 })
                 .then(data => {
-                    $('.cart-dropdown-block').html(data)
+                    $('.cart-block').html(data)
                     if (window.location.pathname.split('/')[1].toLowerCase() == 'basket') {
                         fetch(url.replace("addbasket/" + url.split('/')[url.split('/').length - 1], 'mainbasket'))
                             .then(res2 => {
@@ -63,7 +87,7 @@
                     return res.text()
                 })
                 .then(data => {
-                    $('.cart-dropdown-block').html(data)
+                    $('.cart-block').html(data)
                     if (window.location.pathname.split('/')[1].toLowerCase() == 'basket') {
                         fetch(url.replace("removebasket/" + url.split('/')[url.split('/').length - 1], 'mainbasket'))
                             .then(res2 => {
@@ -125,6 +149,34 @@
                 .then(data => {
                     $('.editAdress').html(data)
                 })
+        }
+        else if ($(this).hasClass('blogTagFilter')) {
+            e.preventDefault();
+            let url = $(this).attr('href');
+            let tempTagId = url.split('/')[url.split('/').length - 1];
+            console.log(tempTagId + " = " + tagId)
+            if (tagId == tempTagId * 1) {
+                tagId = -1
+                $('.blogTagFilter').css('background', '#f1f1f1');
+                $('.blogTagFilter').css('color', '#333');
+            } else {
+                tagId = tempTagId
+                
+                $('.blogTagFilter').css('background', '#f1f1f1');
+                $('.blogTagFilter').css('color', '#333');
+                $(this).css('background', '#62ab00');
+                $(this).css('color', '#fff');
+            }
+            
+            console.log(`/blog/filter?tagId=${tagId}`)
+            fetch(`/blog/filter?tagId=${tagId}`)
+                .then(res => {
+                    return res.text()
+                })
+                .then(data => {
+                    $('.bloglistgrid').html(data)
+                })
+
         }
     })
         .on('keyup', '.ProductCountInp', function (e) {
@@ -192,6 +244,22 @@
                     speed: 400,
                 });
             })
+    })
+
+    $('#search').keyup(function () {
+        let search = $(this).val();
+
+        if (search.length >= 3) {
+            fetch('/product/search?search=' + search)
+                .then(res => {
+                    return res.json()
+                })
+                .then(data => {
+                    $('.searchBody').html(data)
+                })
+        } else {
+            $('.searchBody').html('')
+        }
     })
 
 })

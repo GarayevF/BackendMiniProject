@@ -1,0 +1,116 @@
+﻿@model BlogDetailVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<section class="breadcrumb-section">
+	<h2 class="sr-only">Site Breadcrumb</h2>
+	<div class="container">
+		<div class="breadcrumb-contents">
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+					<li class="breadcrumb-item active">Blog Details</li>
+				</ol>
+			</nav>
+		</div>
+	</div>
+</section>
+<section class="inner-page-sec-padding-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9 mb--60 mb-lg--0">
+				<div class="blog-post post-details mb--50">
+					<div class="sb-slick-slider blog-gallery-slider arrow-type-two" data-slick-setting='{
+                                            "autoplay": true,
+                                            "autoplaySpeed": 8000,
+                                            "slidesToShow": 1,
+                                            "arrows": true,
+                                            "prevArrow":{"buttonClass": "slick-prev","iconClass":"fa fa-chevron-left"},
+                                            "nextArrow":{"buttonClass": "slick-next","iconClass":"fa fa-chevron-right"}
+                                            }'>
+
+						@if (Model.Blog.BlogImages != null && Model.Blog.BlogImages.Count() > 0)
+						{
+							@foreach (BlogImage blogImage in Model.Blog.BlogImages)
+							{
+								<div class="single-image">
+									<img src="~/assets/image/others/@blogImage.Image" alt="product">
+									</div>
+							}
+						}
+					</div>
+					<div class="blog-content mt--30">
+						<header>
+							<h3 class="blog-title">@Model.Blog.Title</h3>
+							<div class="post-meta">
+								<span class="post-author">
+									<i class="fas fa-user"></i>
+									<span class="text-gray">Posted by : </span>
+									@Model.Blog.CreatedBy
+								</span>
+								<span class="post-separator">|</span>
+								<span class="post-date">
+									<i class="far fa-calendar-alt"></i>
+									<span class="text-gray">On : </span>
+									@Model.Blog.CreatedAt
+								</span>
+							</div>
+						</header>
+						<article>
+							@Html.Raw(Model.Blog.Desc)
+						</article>
+						<footer class="blog-meta">
+							<div>
+								<a href="#">@Model.Blog.BlogReviews?.Count() comments </a> / TAGS: 
+								@if (Model.Blog.BlogTags != null && Model.Blog.BlogTags.Count() > 0)
+								{
+									@foreach (BlogTag tag in Model.Blog.BlogTags)
+									{
+										<a href="#">@tag.Tag.Name</a>
+									}
+								}
+							</div>
+						</footer>
+					</div>
+				</div>
+				<div class="share-block mb--50">
+					<h3>Share Now</h3>
+					<div class="social-links  justify-content-center  mt--10">
+						<a href="#" class="single-social social-rounded"><i class="fab fa-facebook-f"></i></a>
+						<a href="#" class="single-social social-rounded"><i class="fab fa-twitter"></i></a>
+						<a href="#" class="single-social social-rounded"><i class="fab fa-pinterest-p"></i></a>
+						<a href="#" class="single-social social-rounded">
+							<i class="fab fa-google-plus-g"></i>
+						</a>
+						<a href="#" class="single-social social-rounded"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+				</div>
+				<div class="comment-block-wrapper mb--50">
+					<h3>@Model.Blog.BlogReviews?.Count() Comments</h3>
+					@foreach (BlogReview blogReview in Model.Blog.BlogReviews)
+					{
+						<div class="single-comment">
+							<div class="comment-avatar">
+								<img src="image/icon/author-logo.png" alt="">
+							</div>
+							<div class="comment-text">
+								<h5 class="author"> <a href="#">@blogReview.CreatedBy</a></h5>
+								<span class="time">@blogReview.CreatedAt</span>
+								<p>@blogReview.Comment</p>
+							</div>
+							<a href="#" class="btn btn-outlined--primary btn-rounded reply-btn">Reply</a>
+						</div>
+					}
+					
+				</div>
+				<div class="replay-form-wrapper">
+					<h3 class="mt-0">LEAVE A REPLY</h3>
+					<p>Your email address will not be published. Required fields are marked *</p>
+					@await Html.PartialAsync("_BlogAddReview", new BlogReview{BlogId = Model.Blog.Id})
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+

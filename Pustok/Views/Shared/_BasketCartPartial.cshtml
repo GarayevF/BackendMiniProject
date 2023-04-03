@@ -1,31 +1,48 @@
 ﻿@model List<BasketVM>
 
-<div class=" single-cart-block ">
-    @foreach (BasketVM basketVM in Model)
-    {
-        <div class="cart-product">
-            <a href="product-details.html" class="image">
-                <img src="~/assets/image/products/@basketVM.Image" alt="">
-            </a>
-            <div class="content">
-                <h3 class="title">
-                    <a href="product-details.html">
-                        @basketVM.Title
-                    </a>
-                </h3>
-                <p class="price"><span class="qty">@basketVM.Count ×</span> £@basketVM.Price</p>
-                <a asp-action="deletebasket" asp-controller="basket" asp-route-id="@basketVM.Id" class="cross-btn basketRemover"><i class="fas fa-times"></i></a>
-            </div>
-        </div>
-    }
+<div class="cart-total">
+    <span class="text-number">
+        @Model.Count()
+    </span>
+    <span class="text-item">
+        Shopping Cart
+    </span>
+    <span class="price">
+        £@(Model.Sum(b => b.Price * b.Count) + Model.Sum(b => b.ExTax * b.Count))
+        <i class="fas fa-chevron-down"></i>
+    </span>
 </div>
-<div class=" single-cart-block ">
-    <div class="btn-block">
-        <a asp-controller="Order" asp-action="checkout" class="btn">
-            View Cart <i class="fas fa-chevron-right"></i>
-        </a>
-        <a asp-controller="basket" asp-action="index" class="btn btn--primary">
-            Check Out <i class="fas fa-chevron-right"></i>
-        </a>
+<div class="cart-dropdown-block">
+    <div class=" single-cart-block ">
+        @foreach (BasketVM basketVM in Model)
+        {
+
+            <div class="cart-product">
+                <a href="product-details.html" class="image">
+                    <img src="~/assets/image/products/@basketVM.Image" alt="">
+                </a>
+                <div class="content">
+                    <h3 class="title">
+                        <a href="product-details.html">
+                            @basketVM.Title
+                        </a>
+                    </h3>
+                    <p class="price"><span class="qty">@basketVM.Count ×</span> £@basketVM.Price</p>
+                    <a asp-action="deletebasket" asp-controller="basket" asp-route-id="@basketVM.Id" class="cross-btn basketRemover"><i class="fas fa-times"></i></a>
+                </div>
+            </div>
+
+        }
+    </div>
+
+    <div class=" single-cart-block ">
+        <div class="btn-block">
+            <a asp-controller="basket" asp-action="index" class="btn">
+                View Cart <i class="fas fa-chevron-right"></i>
+            </a>
+            <a asp-controller="Order" asp-action="checkout" class="btn btn--primary">
+                Check Out <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
     </div>
 </div>

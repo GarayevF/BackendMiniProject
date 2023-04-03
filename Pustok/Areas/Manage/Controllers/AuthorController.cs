@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Pustok.Areas.Manage.ViewModels.AuthorViewModels;
 using Pustok.DataAccessLayer;
@@ -16,15 +17,17 @@ namespace Pustok.Areas.Manage.Controllers
         {
             _context = context;
         }
+        [Authorize(Roles = "SuperAdmin,Admin")]
         public async Task<IActionResult> Index(int pageIndex = 1)
         {
-            IQueryable<Author> query = _context.Authors
+            IQueryable<Author> query = _context.Authors.Where(a => a.IsDeleted == false)
                 .OrderByDescending(c => c.Id);
 
             return View(PageNatedList<Author>.Create(query, pageIndex, 3, 8));
         }
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin,Admin")]
         public async Task<IActionResult> Detail(int? id)
         {
             if (id == null) return BadRequest();
@@ -49,8 +52,16 @@ namespace Pustok.Areas.Manage.Controllers
             return View(authorVM);
         }
 
+        [HttpGet]
+        [Authorize(Roles = "SuperAdmin,Admin")]
+        public async Task<IActionResult> Create()
+        {
+            return View();
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin,Admin")]
         public async Task<IActionResult> Create(Author author)
         {
             if (!ModelState.IsValid) return View();
@@ -79,6 +90,7 @@ namespace Pustok.Areas.Manage.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin,Admin")]
         public async Task<IActionResult> Update(int? id)
         {
 
@@ -93,6 +105,7 @@ namespace Pustok.Areas.Manage.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin,Admin")]
         public async Task<IActionResult> Update(int? id, Author author)
         {
             if (!ModelState.IsValid) return View(author);
@@ -112,7 +125,7 @@ namespace Pustok.Areas.Manage.Controllers
 
             ))
             {
-                ModelState.AddModelError("Name", $"Bu adda {author.Name} {author.MiddleName} {author.Surname} category movcuddu");
+                ModelState.AddModelError("Name", $"Bu adda {author.Name} {author.MiddleName} {author.Surname} author movcuddu");
                 return View(author);
             }
 
@@ -121,6 +134,25 @@ namespace Pustok.Areas.Manage.Controllers
             dbAuthor.Surname = author.Surname.Trim();
             dbAuthor.UpdatedAt = DateTime.UtcNow.AddHours(4);
             dbAuthor.UpdatedBy = "System";
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        [Authorize(Roles = "SuperAdmin,Admin")]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null) return BadRequest();
+
+            Author author = await _context.Authors.FirstOrDefaultAsync(c => c.Id == id && c.IsDeleted == false);
+
+            if (author == null) return NotFound();
+
+            author.IsDeleted = true;
+            author.DeletedBy = "System";
+            author.DeletedAt = DateTime.UtcNow.AddHours(4);
 
             await _context.SaveChangesAsync();
 

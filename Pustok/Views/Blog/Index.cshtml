@@ -1,0 +1,53 @@
+﻿@model BlogVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<section class="breadcrumb-section">
+    <h2 class="sr-only">Site Breadcrumb</h2>
+    <div class="container">
+        <div class="breadcrumb-contents">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Blog</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</section>
+<section class="inner-page-sec-padding-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 order-lg-2 mb--40 mb-lg--0">
+                <div class="row space-db-lg--60 space-db--30 bloglistgrid">
+                    @await Html.PartialAsync("_BlogListPartial", Model.Blogs)
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="inner-page-sidebar">
+                    <div class="single-block ">
+                        <h2 class="sidebar-title mb--30">RECENT POSTS</h2>
+                        <ul class="sidebar-list">
+                            @foreach (Blog blog in Model.Blogs.OrderByDescending(b => b.CreatedAt).Take(5))
+                            {
+                                <li><a asp-controller="blog" asp-action="detail" asp-route-id="@blog.Id">@blog.Title</a></li>
+                            }
+                        </ul>
+                    </div>
+                    <div class="single-block ">
+                        <h2 class="sidebar-title mb--30">Tags</h2>
+                        <ul class="sidebar-tag-list">
+                            @foreach (Tag tag in Model.Tags)
+                            {
+                                <li><a class="blogTagFilter" asp-controller="blog" asp-action="filter" asp-route-id="@tag.Id">@tag.Name</a></li>
+                            }
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

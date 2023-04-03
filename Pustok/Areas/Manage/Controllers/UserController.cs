@@ -136,5 +136,26 @@ namespace Pustok.Areas.Manage.Controllers
             return RedirectToAction(nameof(Index));
 
         }
+
+        [HttpGet]
+        public async Task<IActionResult> ChangeStatus(string? id)
+        {
+            if (string.IsNullOrWhiteSpace(id)) return BadRequest();
+
+            AppUser appUser = await _userManager.FindByIdAsync(id);
+
+            if (appUser.IsActive)
+            {
+                appUser.IsActive = false;
+                await _userManager.UpdateAsync(appUser);
+            }
+            else
+            {
+                appUser.IsActive = true;
+                await _userManager.UpdateAsync(appUser);
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

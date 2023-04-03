@@ -18,6 +18,8 @@ namespace Pustok.Models
         public int TotalSold { get; set; }
         [StringLength(1000)]
         public string? Description { get; set; }
+        [StringLength(1000)]
+        public string? BasicInfo { get; set; }
         [StringLength(4)]
         public string? Seria { get; set; }
         public int? Code { get; set; }

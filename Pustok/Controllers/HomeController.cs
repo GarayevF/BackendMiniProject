@@ -34,6 +34,8 @@ namespace Pustok.Controllers
                 .ThenInclude(pa => pa.Author).Where(a => a.IsDeleted == false).ToListAsync(),
                 Deals = await _context.Deals.Where(c => c.IsDeleted == false).ToListAsync(),
                 BestSellers = await _context.Products.Where(c => c.IsDeleted == false).OrderByDescending(a => a.TotalSold).ToListAsync(),
+                ChildrensBook = await _context.Products.Where(c => c.IsDeleted == false && c.Category.ParentId == 7).ToListAsync(),
+                ArtPhotography = await _context.Products.Where(c => c.IsDeleted == false && c.Category.ParentId == 10).ToListAsync(),
             };
 
             return View(homeVM);

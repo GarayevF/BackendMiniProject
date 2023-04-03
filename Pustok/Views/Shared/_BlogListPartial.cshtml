@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Blog>
+
+@foreach(Blog blog in Model){
+    <div class="col-lg-4 col-md-6 mb-lg--60 mb--30">
+        <div class="blog-card card-style-grid">
+            <a asp-controller="blog" asp-action="detail" asp-route-id="@blog.Id" class="image d-block">
+                <img src="~/assets/image/others/@blog.BlogImages?.First().Image" style="height: 200px" alt="">
+            </a>
+            <div class="card-content">
+                <h3 class="title">
+                    <a asp-controller="blog" asp-action="detail" asp-route-id="@blog.Id">
+                        @blog.Title
+                    </a>
+                </h3>
+                <p class="post-meta"><span>@blog.CreatedAt </span> | <span>@blog.CreatedBy</span></p>
+                <article>
+                    <p style="margin-bottom: 10px; max-height: 80px; overflow: hidden;">
+                        @Html.Raw(blog.Desc)
+                    </p>
+                    <a asp-controller="blog" asp-action="detail" asp-route-id="@blog.Id" class="blog-link">Read More</a>
+                </article>
+            </div>
+        </div>
+    </div>
+}

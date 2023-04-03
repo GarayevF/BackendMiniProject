@@ -5,6 +5,7 @@ using Pustok.Models;
 using Pustok.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Pustok.Areas.Manage.Controllers
 {
@@ -20,8 +21,11 @@ namespace Pustok.Areas.Manage.Controllers
             _env = env;
         }
 
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> Index(int pageIndex = 1)
         {
+            
+
             IQueryable<Product> queries = _context.Products
                 .Include(p => p.Category)
                 .Include(p => p.ProductAuthors.Where(pt => pt.IsDeleted == false))
@@ -32,19 +36,21 @@ namespace Pustok.Areas.Manage.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> Create()
         {
             ViewBag.Authors = await _context.Authors.Where(c => c.IsDeleted == false).ToListAsync();
-            ViewBag.Categories = await _context.Categories.Where(c => c.IsDeleted == false).ToListAsync();
+            ViewBag.MainCategories = await _context.Categories.Where(c => c.IsDeleted == false).ToListAsync();
 
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> Create(Product product)
         {
-            ViewBag.Categories = await _context.Categories.Where(c => c.IsDeleted == false).ToListAsync();
+            ViewBag.MainCategories = await _context.Categories.Where(c => c.IsDeleted == false).ToListAsync();
             ViewBag.Authors = await _context.Authors.Where(c => c.IsDeleted == false).ToListAsync();
 
             if (!ModelState.IsValid)
@@ -66,7 +72,7 @@ namespace Pustok.Areas.Manage.Controllers
 
             if (product.MainFile != null)
             {
-                if (product.MainFile.CheckFileContenttype("image.jpeg"))
+                if (product.MainFile.CheckFileContenttype("image/jpeg"))
                 {
                     ModelState.AddModelError("MainFile", $"{product.MainFile.FileName} adli fayl novu duzgun deyil");
                     return View(product);
@@ -78,7 +84,7 @@ namespace Pustok.Areas.Manage.Controllers
                     return View(product);
                 }
 
-                product.MainImage = await product.MainFile.CreateFileAsync(_env, "assets", "images", "product");
+                product.MainImage = await product.MainFile.CreateFileAsync(_env, "assets", "image", "products");
             }
             else
             {
@@ -88,7 +94,7 @@ namespace Pustok.Areas.Manage.Controllers
 
             if (product.HoverFile != null)
             {
-                if (product.HoverFile.CheckFileContenttype("image.jpeg"))
+                if (product.HoverFile.CheckFileContenttype("image/jpeg"))
                 {
                     ModelState.AddModelError("HoverFile", $"{product.HoverFile.FileName} adli fayl novu duzgun deyil");
                     return View(product);
@@ -100,7 +106,7 @@ namespace Pustok.Areas.Manage.Controllers
                     return View(product);
                 }
 
-                product.HoverImage = await product.HoverFile.CreateFileAsync(_env, "assets", "images", "product");
+                product.HoverImage = await product.HoverFile.CreateFileAsync(_env, "assets", "image", "products");
             }
             else
             {
@@ -136,7 +142,7 @@ namespace Pustok.Areas.Manage.Controllers
 
             }
 
-            if (product.Files != null && product.Files.Count() > 0)
+            if (product.Files != null && product.Files.Count() > 6)
             {
                 ModelState.AddModelError("Files", "maksimum 6 sekil yukleye bilersiniz");
                 return View(product);
@@ -149,7 +155,7 @@ namespace Pustok.Areas.Manage.Controllers
 
                 foreach (IFormFile file in product.Files)
                 {
-                    if (file.CheckFileContenttype("image.jpeg"))
+                    if (file.CheckFileContenttype("image/jpeg"))
                     {
                         ModelState.AddModelError("Files", $"{file.FileName} adli fayl novu duzgun deyil");
                         return View(product);
@@ -163,7 +169,7 @@ namespace Pustok.Areas.Manage.Controllers
 
                     ProductImage productImage = new ProductImage
                     {
-                        Image = await file.CreateFileAsync(_env, "assets", "images", "products"),
+                        Image = await file.CreateFileAsync(_env, "assets", "image", "products"),
                         CreatedAt = DateTime.UtcNow.AddHours(4),
                         CreatedBy = "System"
                     };
@@ -199,8 +205,12 @@ namespace Pustok.Areas.Manage.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> Update(int? id)
         {
+            ViewBag.MainCategories = await _context.Categories.Where(c => c.IsDeleted == false && c.IsMain == false).ToListAsync();
+            ViewBag.Authors = await _context.Authors.Where(c => c.IsDeleted == false).ToListAsync();
+
             if (id == null) return BadRequest();
 
             Product product = await _context.Products
@@ -210,7 +220,7 @@ namespace Pustok.Areas.Manage.Controllers
 
             if (product == null) return NotFound();
 
-            ViewBag.Categories = await _context.Categories.Where(c => c.IsDeleted == false && c.IsMain == false).ToListAsync();
+            ViewBag.MainCategories = await _context.Categories.Where(c => c.IsDeleted == false && c.IsMain == false).ToListAsync();
             ViewBag.Authors = await _context.Authors.Where(c => c.IsDeleted == false).ToListAsync();
 
             product.AuthorIds = product.ProductAuthors?.Select(x => x.AuthorId);
@@ -220,9 +230,10 @@ namespace Pustok.Areas.Manage.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> Update(int? id, Product product)
         {
-            ViewBag.Categories = await _context.Categories.Where(c => c.IsDeleted == false && c.IsMain == false).ToListAsync();
+            ViewBag.MainCategories = await _context.Categories.Where(c => c.IsDeleted == false && c.IsMain == false).ToListAsync();
             ViewBag.Authors = await _context.Authors.Where(c => c.IsDeleted == false).ToListAsync();
 
             if (!ModelState.IsValid)
@@ -255,7 +266,7 @@ namespace Pustok.Areas.Manage.Controllers
 
             if (product.MainFile != null)
             {
-                if (product.MainFile.CheckFileContenttype("image.jpeg"))
+                if (product.MainFile.CheckFileContenttype("image/jpeg"))
                 {
                     ModelState.AddModelError("MainFile", $"{product.MainFile.FileName} adli fayl novu duzgun deyil");
                     return View(product);
@@ -267,14 +278,14 @@ namespace Pustok.Areas.Manage.Controllers
                     return View(product);
                 }
 
-                FileHelper.DeleteFile(dbproduct.MainImage, _env, "assets", "images", "products");
+                FileHelper.DeleteFile(dbproduct.MainImage, _env, "assets", "image", "products");
 
-                dbproduct.MainImage = await product.MainFile.CreateFileAsync(_env, "assets", "images", "product");
+                dbproduct.MainImage = await product.MainFile.CreateFileAsync(_env, "assets", "image", "product");
             }
 
             if (product.HoverFile != null)
             {
-                if (product.HoverFile.CheckFileContenttype("image.jpeg"))
+                if (product.HoverFile.CheckFileContenttype("image/jpeg"))
                 {
                     ModelState.AddModelError("HoverFile", $"{product.HoverFile.FileName} adli fayl novu duzgun deyil");
                     return View(product);
@@ -286,9 +297,9 @@ namespace Pustok.Areas.Manage.Controllers
                     return View(product);
                 }
 
-                FileHelper.DeleteFile(dbproduct.HoverImage, _env, "assets", "images", "products");
+                FileHelper.DeleteFile(dbproduct.HoverImage, _env, "assets", "image", "products");
 
-                dbproduct.HoverImage = await product.HoverFile.CreateFileAsync(_env, "assets", "images", "product");
+                dbproduct.HoverImage = await product.HoverFile.CreateFileAsync(_env, "assets", "image", "product");
             }
 
             if (product.AuthorIds != null && product.AuthorIds.Count() > 0)
@@ -336,7 +347,7 @@ namespace Pustok.Areas.Manage.Controllers
 
                 foreach (IFormFile file in product.Files)
                 {
-                    if (file.CheckFileContenttype("image.jpeg"))
+                    if (file.CheckFileContenttype("image/jpeg"))
                     {
                         ModelState.AddModelError("Files", $"{file.FileName} adli fayl novu duzgun deyil");
                         return View(product);
@@ -350,7 +361,7 @@ namespace Pustok.Areas.Manage.Controllers
 
                     ProductImage productImage = new ProductImage
                     {
-                        Image = await file.CreateFileAsync(_env, "assets", "images", "products"),
+                        Image = await file.CreateFileAsync(_env, "assets", "image", "products"),
                         CreatedAt = DateTime.UtcNow.AddHours(4),
                         CreatedBy = "System"
                     };
@@ -381,6 +392,30 @@ namespace Pustok.Areas.Manage.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin,Admin")]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null) return BadRequest();
+
+            if (!await _context.Products.AnyAsync(p => p.Id == id)) return BadRequest();
+
+            Product dbproduct = await _context.Products
+                .FirstOrDefaultAsync(p => p.Id == id && p.IsDeleted == false);
+
+            if (dbproduct == null)
+            {
+                return NotFound();
+            }
+
+            dbproduct.IsDeleted = true;
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> DeleteImage(int? id, int? imageId)
         {
             if (id == null) return BadRequest();
@@ -406,7 +441,7 @@ namespace Pustok.Areas.Manage.Controllers
 
             await _context.SaveChangesAsync();
 
-            FileHelper.DeleteFile(product.ProductImages?.FirstOrDefault(p => p.Id == imageId).Image, _env, "assets", "images", "products");
+            FileHelper.DeleteFile(product.ProductImages?.FirstOrDefault(p => p.Id == imageId).Image, _env, "assets", "image", "products");
 
             return PartialView("_ProductImagePartial", product.ProductImages.Where(pi => pi.IsDeleted == false).ToList());
         }

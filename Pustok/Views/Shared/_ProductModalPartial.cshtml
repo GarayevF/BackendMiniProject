@@ -711,28 +711,23 @@
                     <li class="rating-on"><i class="fas fa-star"></i></li>
                 </ul>
                 <div class="product-prices">
-                    <span class="sale-price"> €23.90</span>
-                    <span class="regular-price">€21.03</span>
-                    <span class="save">Save 12%</span>
+                    <span class="sale-price"> €@(Model.DiscountedPrice > 0 ? Model.DiscountedPrice : Model.Price)</span>
+                    @if (Model.DiscountedPrice > 0)
+                        {
+                        <span class="regular-price">€@Model.Price</span>
+                        <span class="save">Save @((100 - 100 * (Model.DiscountedPrice / Model.Price)).ToString("N2"))%</span>
+                        }
+                    
                 </div>
-                <p class="product-description">Block out the haters with the fresh adidas® Originals Kaval Windbreaker Jacket. <br> Part of the Kaval Collection. <br> Regular fit is eased, but not sloppy, and perfect for any activity. <br> Plain-woven jacket specifically constructed for freedom of movement.</p>
-                <div class="product-size-color flex-wrap">
-                    <div class="product-quantity">
-                        <h5 class="title">Quantity</h5>
-                        <div class="quantity d-flex">
-                            <button type="button" id="sub" class="sub"><i class="fa-solid fa-minus"></i></button>
-                            <input type="text" value="1" />
-                            <button type="button" id="add" class="add"><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                    </div>
-                </div>
+                <p class="product-description">@Model.BasicInfo</p>
+                
                 <div class="product-add-cart">
                     <button><i class="icon ion-bag"></i> Add to cart</button>
                 </div>
                 <div class="product-wishlist-compare">
                     <ul class="d-flex flex-wrap">
-                        <li><a href="#"><i class="fa-solid fa-heart"></i> Add to wishlist</a></li>
-                        <li><a href="#"><i class="fa-solid fa-repeat"></i> Add to compare</a></li>
+                        <li><a asp-controller="wishlist" asp-action="AddWishlist" asp-route-id="@Model.Id"><i class="fa-solid fa-heart"></i> Add to wishlist</a></li>
+                        <li><a asp-controller="Compare" asp-action="AddCompare" asp-route-id="@Model.Id"><i class="fa-solid fa-repeat"></i> Add to compare</a></li>
                     </ul>
                 </div>
             </div> <!-- Modal Quick View Content -->

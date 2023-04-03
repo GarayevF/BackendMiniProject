@@ -1,0 +1,30 @@
+﻿@model BlogReview
+
+<form method="post" asp-controller="blog" asp-action="addreview" asp-route-blogId="@Model.BlogId" class="blog-form">
+	<div class="row">
+		<div class="col-12">
+			<div class="form-group">
+				<label asp-for=Comment>Comment</label>
+				<textarea asp-for=Comment id="message" cols="30" rows="10"
+						  class="form-control"></textarea>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<div class="form-group">
+				<label asp-for=Name>Name *</label>
+				<input asp-for=Name id="name" class="form-control">
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<div class="form-group">
+				<label asp-for=Email>Email *</label>
+				<input asp-for=Email id="email" class="form-control">
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<div class="submit-btn">
+				<button type="submit" class="btn btn-black">Post Comment</button>
+			</div>
+		</div>
+	</div>
+</form>

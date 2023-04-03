@@ -104,7 +104,7 @@ namespace Pustok.Controllers
 
 			await _context.SaveChangesAsync();
 
-			TempData["Error"] = $"{order.No} Sifarisiniz ugurla gonderildi";
+			TempData["Success"] = $"{order.No} Sifarisiniz ugurla gonderildi";
 
 			return RedirectToAction("OrderCompleted", "order", new {id = order.Id});
 		}

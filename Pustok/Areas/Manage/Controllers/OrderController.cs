@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Allup.Areas.Manage.Controllers
 {
     [Area("Manage")]
-    [Authorize(Roles = "SuperAdmin, Admin")]
+    
     public class OrderController : Controller
     {
         private readonly AppDbContext _context;
@@ -18,6 +18,7 @@ namespace Allup.Areas.Manage.Controllers
             _context = context;
         }
 
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public IActionResult Index(int pageIndex = 1)
         {
             IQueryable<Order> orders = _context.Orders
@@ -27,6 +28,7 @@ namespace Allup.Areas.Manage.Controllers
             return View(PageNatedList<Order>.Create(orders, pageIndex, 5, 5));
         }
 
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> Detail(int? id)
         {
             if (id == null) return BadRequest();
@@ -42,6 +44,7 @@ namespace Allup.Areas.Manage.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> ChangeOrder(int? id, Order order)
         {
             if (id == null) return BadRequest();

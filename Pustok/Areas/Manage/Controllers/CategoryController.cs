@@ -5,6 +5,7 @@ using Pustok.Models;
 using Pustok.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Pustok.Areas.Manage.Controllers
 {
@@ -20,6 +21,7 @@ namespace Pustok.Areas.Manage.Controllers
             _env = env;
         }
 
+        [Authorize(Roles = "SuperAdmin,Admin")]
         public async Task<IActionResult> Index(int pageIndex = 1)
         {
             IQueryable<Category> query = _context.Categories
@@ -34,6 +36,7 @@ namespace Pustok.Areas.Manage.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin,Admin")]
         public async Task<IActionResult> Detail(int? id)
         {
             if (id == null) return BadRequest();
@@ -49,6 +52,7 @@ namespace Pustok.Areas.Manage.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin,Admin")]
         public async Task<IActionResult> Create()
         {
             ViewBag.MainCategories = await _context.Categories.Where(c => c.IsDeleted == false && c.IsMain).ToListAsync();
@@ -58,6 +62,7 @@ namespace Pustok.Areas.Manage.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin,Admin")]
         public async Task<IActionResult> Create(Category category)
         {
             ViewBag.MainCategories = await _context.Categories.Where(c => c.IsDeleted == false && c.IsMain).ToListAsync();
@@ -100,6 +105,7 @@ namespace Pustok.Areas.Manage.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin,Admin")]
         public async Task<IActionResult> Update(int? id)
         {
 
@@ -116,6 +122,7 @@ namespace Pustok.Areas.Manage.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin,Admin")]
         public async Task<IActionResult> Update(int? id, Category category)
         {
             if (!ModelState.IsValid) return View(category);
@@ -170,6 +177,7 @@ namespace Pustok.Areas.Manage.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin,Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null) return BadRequest();
@@ -185,6 +193,7 @@ namespace Pustok.Areas.Manage.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin,Admin")]
         public async Task<IActionResult> DeleteCategory(int? id)
         {
             if (id == null) return BadRequest();

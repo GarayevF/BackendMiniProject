@@ -10,8 +10,5 @@ namespace Pustok.Models
         public string Key { get; set; }
         [StringLength(1000)]
         public string Value { get; set; }
-        public string? Image { get; set; }
-        [NotMapped]
-        public IFormFile? File { get; set; }
     }
 }
