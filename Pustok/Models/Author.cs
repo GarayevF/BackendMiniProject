@@ -29,7 +29,7 @@ namespace Pustok.Models
                 {
                     nameParts.Add(Surname);
                 }
-                return string.Join(" ", nameParts);
+                return string.Join(" ", nameParts).Trim();
             }
         }
     }

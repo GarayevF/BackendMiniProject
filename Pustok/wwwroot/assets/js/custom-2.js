@@ -1,11 +1,26 @@
 ﻿$(document).ready(function () {
 
+    $(document).on('keyup', '#search', function () {
+        let search = $(this).val();
+
+        if (search.length >= 3) {
+            fetch('/product/search?search=' + search)
+                .then(res => {
+                    return res.text()
+                })
+                .then(data => {
+                    $('.searchBody').html(data)
+                })
+        } else {
+            $('.searchBody').html('')
+        }
+    })
 
     toastr.options = {
         "closeButton": false,
         "debug": false,
         "newestOnTop": false,
-        "progressBar": true,
+        "progressBar": false,
         "positionClass": "toast-top-right",
         "preventDuplicates": false,
         "onclick": null,
@@ -22,10 +37,11 @@
     let successInput = $("input[name='success']");
     if (successInput.val()?.length > 0) {
         toastr["success"](successInput.val())
+        console.log(successInput.val())
     }
 
     let errorInput = $("input[name='error']");
-    if (errorInput.val().length > 0) {
+    if (errorInput.val()?.length > 0) {
         toastr["error"](errorInput.val())
     }
 
@@ -245,22 +261,8 @@
                 });
             })
     })
-
-    $('#search').keyup(function () {
-        let search = $(this).val();
-
-        if (search.length >= 3) {
-            fetch('/product/search?search=' + search)
-                .then(res => {
-                    return res.json()
-                })
-                .then(data => {
-                    $('.searchBody').html(data)
-                })
-        } else {
-            $('.searchBody').html('')
-        }
-    })
+    
+    
 
 })
 

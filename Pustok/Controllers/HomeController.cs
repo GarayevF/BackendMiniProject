@@ -33,9 +33,16 @@ namespace Pustok.Controllers
                 .Include(p => p.ProductAuthors.Where(a => a.IsDeleted == false))
                 .ThenInclude(pa => pa.Author).Where(a => a.IsDeleted == false).ToListAsync(),
                 Deals = await _context.Deals.Where(c => c.IsDeleted == false).ToListAsync(),
-                BestSellers = await _context.Products.Where(c => c.IsDeleted == false).OrderByDescending(a => a.TotalSold).ToListAsync(),
-                ChildrensBook = await _context.Products.Where(c => c.IsDeleted == false && c.Category.ParentId == 7).ToListAsync(),
-                ArtPhotography = await _context.Products.Where(c => c.IsDeleted == false && c.Category.ParentId == 10).ToListAsync(),
+                BestSellers = await _context.Products.Where(c => c.IsDeleted == false)
+                .Include(p => p.ProductAuthors.Where(a => a.IsDeleted == false))
+                .ThenInclude(pa => pa.Author).Where(a => a.IsDeleted == false)
+                .OrderByDescending(a => a.TotalSold).ToListAsync(),
+                ChildrensBook = await _context.Products.Where(c => c.IsDeleted == false && c.Category.ParentId == 7)
+                .Include(p => p.ProductAuthors.Where(a => a.IsDeleted == false))
+                .ThenInclude(pa => pa.Author).Where(a => a.IsDeleted == false).ToListAsync(),
+                ArtPhotography = await _context.Products.Where(c => c.IsDeleted == false && c.Category.ParentId == 10)
+                .Include(p => p.ProductAuthors.Where(a => a.IsDeleted == false))
+                .ThenInclude(pa => pa.Author).Where(a => a.IsDeleted == false).ToListAsync(),
             };
 
             return View(homeVM);

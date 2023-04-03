@@ -18,7 +18,7 @@
     let action = path[3];
     let controller = path[2];
 
-    if (action.toLowerCase() == 'create' && controller.toLowerCase() == 'category') {
+    if (action?.toLowerCase() == 'create' && controller.toLowerCase() == 'category') {
         let isMain = $("#IsMain").is(':checked');
 
         if (isMain) {

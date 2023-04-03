@@ -39,9 +39,12 @@ namespace Pustok.Controllers
                     if (product != null)
                     {
                         compareVM.Title = product.Title;
+                        compareVM.BasicInfo = product.BasicInfo;
                         compareVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
                         compareVM.Image = product.MainImage;
                         compareVM.ExTax = product.ExTax;
+                        compareVM.Star = (double)product.Reviews.Sum(r => r.Star) / (double)product.Reviews.Count;
+                        compareVM.IsAvailable = product.Count > 0;
                         //foreach (int AuthorId in product.AuthorIds)
                         //{
                         //    Author author = await _context.Authors.FirstOrDefaultAsync(a => a.IsDeleted == false && a.Id == AuthorId);

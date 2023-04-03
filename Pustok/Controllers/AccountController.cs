@@ -96,6 +96,8 @@ namespace Pustok.Controllers
                 smtpClient.Dispose();
             }
 
+            TempData["Success"] = "Tesdiq maili gonderildi. emailinizi tesdiqleyin";
+
             return RedirectToAction("Login");
         }
 

@@ -702,13 +702,32 @@
         <div class="col-md-6">
             <div class="product-quick-view-content mt-30">
                 <h3 class="product-title">@Model.Title</h3>
-                <p class="reference">Reference: demo_12</p>
                 <ul class="rating">
-                    <li class="rating-on"><i class="fas fa-star"></i></li>
-                    <li class="rating-on"><i class="fas fa-star"></i></li>
-                    <li class="rating-on"><i class="fas fa-star"></i></li>
-                    <li class="rating-on"><i class="fas fa-star"></i></li>
-                    <li class="rating-on"><i class="fas fa-star"></i></li>
+                    @{
+                        double overall = (Model.Reviews != null ? (double)Model.Reviews.Sum(r => r.Star) / (double)Model.Reviews.Count : 0);
+                        double modul = 0;
+
+                        if (overall % 1 != 0)
+                        {
+                            modul = overall % 10;
+                        }
+                    }
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        if (i <= overall)
+                        {
+                            <span class="fas fa-star star_on"></span>
+                        }
+                        else if (modul > 0)
+                        {
+                            modul = 0;
+                            <span class="fas fa-star-half star_on"></span>
+                        }
+                        else
+                        {
+                            <span class="fas fa-star "></span>
+                        }
+                    }
                 </ul>
                 <div class="product-prices">
                     <span class="sale-price"> €@(Model.DiscountedPrice > 0 ? Model.DiscountedPrice : Model.Price)</span>

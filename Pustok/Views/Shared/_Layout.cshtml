@@ -16,9 +16,10 @@
     <title>Pustok - Book Store HTML Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Use Minified Plugins Version For Fast Page Load -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" media="screen" href="~/assets/css/plugins.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="~/assets/css/main.css" />
     <link rel="shortcut icon" type="image/x-icon" href="~/assets/image/favicon.ico">
 </head>
@@ -52,7 +53,7 @@
                                 </div>
                                 <div class="text">
                                     <p>Free Support 24/7</p>
-                                    <p class="font-weight-bold number">+@Html.Raw(settings.FirstOrDefault(s=>s.Key == "SupportPhone").Value)</p>
+                                    <p class="font-weight-bold number">@Html.Raw(settings.FirstOrDefault(s=>s.Key == "SupportPhone").Value)</p>
                                 </div>
                             </div>
                         </div>
@@ -692,11 +693,11 @@
                             <div class="footer-contact">
                                 <p>
                                     <span class="label">Address:</span><span class="text">
-                                        @settings.FirstOrDefault(s=>s.Key == "Address")
+                                        @settings.FirstOrDefault(s=>s.Key == "Address").Value
                                     </span>
                                 </p>
-                                <p><span class="label">Phone:</span><span class="text">+@settings.FirstOrDefault(s=>s.Key == "SupportPhone")</span></p>
-                                <p><span class="label">Email:</span><span class="text">@settings.FirstOrDefault(s=>s.Key == "Email")</span></p>
+                                <p><span class="label">Phone:</span><span class="text">+@settings.FirstOrDefault(s=>s.Key == "SupportPhone").Value</span></p>
+                                <p><span class="label">Email:</span><span class="text">@settings.FirstOrDefault(s=>s.Key == "Email").Value</span></p>
                             </div>
                         </div>
                     </div>
@@ -777,10 +778,11 @@
 
         
         <!-- Use Minified Plugins Version For Fast Page Load -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+        
         <script src="~/assets/js/plugins.js"></script>
         <script src="~/assets/js/ajax-mail.js"></script>
         @RenderSection("Scripts", false)
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
         <script src="~/assets/js/custom-2.js"></script>
         <script src="~/assets/js/custom.js"></script>
 </body>

@@ -68,6 +68,43 @@
     </div>
 </div>
 
+
+@*<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/base/jquery-ui.css" />
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function (e) {
+
+        $('.deleteIndex').click( function (e) {
+            alert('sakh')
+            e.preventDefault();
+            swal({
+                title: "Əmin siniz?",
+                text: "Sildikdən sonra bərpa etmək mümkün olmayacaq!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        fetch($(this).attr('href')
+                            .then(res => {
+                                return;
+                            })
+                                                swal("Uğurla silindi!", {
+                                icon: "success",
+                            });
+                    } else {
+                        swal("Silinmə əməliyyatı ləğv olundu!");
+                    }
+                });
+        }))
+
+    })
+*@
+
+</script>
 @*@section Scripts{
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>

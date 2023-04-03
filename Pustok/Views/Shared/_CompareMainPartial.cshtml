@@ -30,20 +30,19 @@
                                     {
                                         <td class="pro-desc">
                                             <p>
-                                                Eye glasses are very important for thos whos have some difficult in
-                                                their eye to see every hing clearly and perfectly
+                                                @compareVM.BasicInfo
                                             </p>
                                         </td>
                                     }
-                                    
+
                                 </tr>
                                 <tr>
                                     <td class="first-column">Price</td>
                                     @foreach (CompareVM compareVM in Model)
                                     {
-                                        <td class="pro-price">$295</td>
+                                        <td class="pro-price">$@compareVM.Price</td>
                                     }
-                                    
+
                                 </tr>
                                 <tr>
                                     <td class="first-column">Stock</td>
@@ -75,12 +74,32 @@
                                     @foreach (CompareVM compareVM in Model)
                                     {
                                         <td class="pro-ratting">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-o"></i>
-                                    </td>
+                                            @{
+                                                double overall = (double)compareVM.Star;
+                                                double modul = 0;
+
+                                                if (overall % 1 != 0)
+                                                {
+                                                    modul = overall % 10;
+                                                }
+                                            }
+                                            @for (int i = 1; i <= 5; i++)
+                                            {
+                                                if (i <= overall)
+                                                {
+                                                    <span class="fas fa-star star_on"></span>
+                                                }
+                                                else if (modul > 0)
+                                                {
+                                                    modul = 0;
+                                                    <span class="fas fa-star-half star_on"></span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="fas fa-star "></span>
+                                                }
+                                            }
+                                        </td>
                                     }
                                 </tr>
                             </tbody>
